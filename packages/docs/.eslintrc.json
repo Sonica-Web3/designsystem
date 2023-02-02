@@ -1,0 +1,3 @@
+{
+    "extends": "@sonica/eslint-config"
+}
