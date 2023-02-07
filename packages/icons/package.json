@@ -1,0 +1,37 @@
+{
+  "name": "@sonica/icons",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "clean": "rm -rf src/icons && rm -rf build",
+    "svgr": "svgr --icon --title-prop --no-dimensions --typescript --template svgr-template.js -d src/icons assets",
+    "dev": "npm run clean && npm run svgr && npm run lint && tsup src/index.tsx  --format esm, cjs --dts --external react --watch",
+    "build": "npm run clean && npm run svgr && npm run lint && tsup src/index.tsx  --format esm, cjs --dts --external react",
+    "lint": "eslint src/**/*.ts* --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/template": "^7.20.7",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@sonica/eslint-config": "*",
+    "@sonica/ts-config": "*",
+    "@svgr/babel-plugin-transform-svg-component": "^6.5.1",
+    "@svgr/cli": "^6.5.1",
+    "@types/react": "^18.0.27",
+    "react": "^18.2.0",
+    "rollup": "^3.14.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "tsup": "^6.6.0",
+    "typescript": "^4.9.5"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
+  }
+}

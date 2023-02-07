@@ -1,0 +1,4 @@
+{
+    "extends": "@sonica/ts-config/icons.json",
+    "include": ["src"]
+}
