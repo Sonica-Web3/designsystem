@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from '@storybook/react'
-import { Checkbox, CheckboxProps } from '@sonica/react'
+import { Box, Checkbox, CheckboxProps, Text } from '@sonica/react'
 
 export default {
   title: 'Form/Checkbox',
@@ -7,6 +7,19 @@ export default {
   args: {
     children: 'CTA Checkbox',
   },
+  decorators: [
+    (Story) => {
+      return (
+        <Box
+          as="label"
+          css={{ display: 'flex', flexDirection: 'row', gap: '$2' }}
+        >
+          {Story()}
+          <Text type="text">Accept terms of use</Text>
+        </Box>
+      )
+    },
+  ],
 } as Meta<CheckboxProps>
 
 export const Primary: StoryObj<CheckboxProps> = {}
