@@ -42,11 +42,20 @@ export const CheckboxContainer = styled(Checkbox.Root, {
     },
   },
 
-  '&:active&[data-state="checked"]': {
+  '&[data-state="unchecked"]:hover&:focus': {
     backgroundColor: '$neutralColorWhite',
     border: '1px solid $primaryColor500',
     svg: {
-      visibility: 'hidden',
+      visibility: 'visible',
+    },
+  },
+
+  '&:disabled': {
+    cursor: 'not-allowed',
+
+    '&:hover': {
+      background: '$neutralColorWhite',
+      border: '1px solid $neutralColor500',
     },
   },
 })
