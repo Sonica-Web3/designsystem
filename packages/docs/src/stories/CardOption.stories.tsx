@@ -12,6 +12,12 @@ export default {
 
 export const Primary: StoryObj<CardOptionProps> = {}
 
+export const Selected: StoryObj<CardOptionProps> = {
+  args: {
+    selected: 'true',
+  },
+}
+
 export const Disabled: StoryObj<CardOptionProps> = {
   args: {
     disabled: 'true',

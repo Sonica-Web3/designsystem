@@ -16,15 +16,13 @@ export const Container = styled('div', {
 
   padding: '$2',
 
-  '&:not(disabled)&:hover': {
+  '&:hover': {
     cursor: 'pointer',
     background: '$primaryColor100',
     borderColor: '$primaryColor500',
-
     span: {
       background: '$primaryColor500',
-
-      '>svg': {
+      '> svg': {
         path: {
           stroke: '$neutralColorWhite',
         },
@@ -49,6 +47,23 @@ export const Container = styled('div', {
             stroke: '$neutralColorWhite',
           },
         },
+
+        '&:hover': {
+          background: '$primaryColor500',
+          borderColor: '$primaryColor500',
+          h2: {
+            color: '$neutralColorWhite',
+          },
+          span: {
+            background: '$primaryColor500',
+          },
+
+          svg: {
+            path: {
+              stroke: '$neutralColorWhite',
+            },
+          },
+        },
       },
     },
 
@@ -71,9 +86,34 @@ export const Container = styled('div', {
             stroke: '$neutralColor600',
           },
         },
+
+        '&:hover': {
+          cursor: 'not-allowed',
+          background: '$neutralColorWhite',
+          borderColor: '$neutralColor300',
+          h2: {
+            color: '$neutralColor300',
+          },
+          svg: {
+            path: {
+              stroke: '$neutralColor300',
+            },
+          },
+
+          span: {
+            background: '$neutralColor100',
+          },
+
+          'span svg': {
+            path: {
+              stroke: '$neutralColor600',
+            },
+          },
+        },
       },
     },
   },
+  defaultVariants: {},
 })
 
 export const Tooltip = styled('span', {
