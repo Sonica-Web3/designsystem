@@ -16,20 +16,6 @@ export const Container = styled('div', {
 
   padding: '$2',
 
-  '&:hover': {
-    cursor: 'pointer',
-    background: '$primaryColor100',
-    borderColor: '$primaryColor500',
-    span: {
-      background: '$primaryColor500',
-      '> svg': {
-        path: {
-          stroke: '$neutralColorWhite',
-        },
-      },
-    },
-  },
-
   variants: {
     selected: {
       true: {
@@ -45,23 +31,6 @@ export const Container = styled('div', {
         svg: {
           path: {
             stroke: '$neutralColorWhite',
-          },
-        },
-
-        '&:hover': {
-          background: '$primaryColor500',
-          borderColor: '$primaryColor500',
-          h2: {
-            color: '$neutralColorWhite',
-          },
-          span: {
-            background: '$primaryColor500',
-          },
-
-          svg: {
-            path: {
-              stroke: '$neutralColorWhite',
-            },
           },
         },
       },
@@ -86,34 +55,30 @@ export const Container = styled('div', {
             stroke: '$neutralColor600',
           },
         },
-
+      },
+    },
+  },
+  compoundVariants: [
+    {
+      selected: undefined,
+      disabled: undefined,
+      css: {
         '&:hover': {
-          cursor: 'not-allowed',
-          background: '$neutralColorWhite',
-          borderColor: '$neutralColor300',
-          h2: {
-            color: '$neutralColor300',
-          },
-          svg: {
-            path: {
-              stroke: '$neutralColor300',
-            },
-          },
-
+          cursor: 'pointer',
+          background: '$primaryColor100',
+          borderColor: '$primaryColor500',
           span: {
-            background: '$neutralColor100',
-          },
-
-          'span svg': {
-            path: {
-              stroke: '$neutralColor600',
+            background: '$primaryColor500',
+            '> svg': {
+              path: {
+                stroke: '$neutralColorWhite',
+              },
             },
           },
         },
       },
     },
-  },
-  defaultVariants: {},
+  ],
 })
 
 export const Tooltip = styled('span', {

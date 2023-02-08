@@ -1,13 +1,13 @@
 import React, { Suspense, FunctionComponent } from 'react'
 import {
-  IconName,
+  IconNameProps,
   IconProps,
   IconSize,
   IconSizeOptions,
   IconTypeOptions,
 } from './types/icon.types'
 
-const geIcon = (avatarType: IconName) => {
+const geIcon = (avatarType: IconNameProps) => {
   const icons: IconTypeOptions = {
     nft: React.lazy(() => import(`./icons/Nft`)),
     check: React.lazy(() => import(`./icons/Check`)),
@@ -45,5 +45,6 @@ const Icon: FunctionComponent<IconProps> = (props) => {
     </Suspense>
   )
 }
-
 export default Icon
+
+export * from './types/icon.types'
