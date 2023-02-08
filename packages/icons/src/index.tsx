@@ -11,6 +11,7 @@ const geIcon = (avatarType: IconName) => {
   const icons: IconTypeOptions = {
     nft: React.lazy(() => import(`./icons/Nft`)),
     check: React.lazy(() => import(`./icons/Check`)),
+    info: React.lazy(() => import(`./icons/Info`)),
   }
 
   if (icons[avatarType]) {
@@ -24,6 +25,7 @@ const getSize = (size: IconSize) => {
     xs: 12,
     sm: 16,
     md: 24,
+    lg: 56,
   }
   return sizes[size]
 }

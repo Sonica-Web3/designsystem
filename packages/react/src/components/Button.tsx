@@ -8,7 +8,7 @@ export const Button = styled('button', {
   fontSize: '$sm',
   lineHeight: '$md',
   color: '$neutralColorWhite',
-  borderRadius: '$xs',
+  borderRadius: '$md',
   textAlign: 'center',
   minWidth: 200,
   minHeight: 48,

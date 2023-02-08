@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
-export type IconName = 'nft' | 'check'
+export type IconName = 'nft' | 'check' | 'info'
 
-export type IconSize = 'xs' | 'sm' | 'md'
+export type IconSize = 'xs' | 'sm' | 'md' | 'lg'
 
 export interface IconProps {
   name: IconName
