@@ -10,19 +10,72 @@ export const MenuItemContainer = styled('a', {
   lineHeight: '$md',
   color: '$neutralColor800',
   width: '$80',
-  background: '$errorColor100',
-  padding: '$3',
+  height: '$10',
+  position: 'relative',
+
+  '&::before': {
+    content: `''`,
+    position: 'absolute',
+    display: 'block',
+    width: '4px',
+    height: '40px',
+    left: 0,
+    top: 0,
+    zIndex: 2,
+  },
+
+  svg: {
+    marginLeft: '$3',
+  },
 
   variants: {
     selected: {
       true: {
         '&::before': {
-          content: '',
-          width: '3px',
-          height: '20px',
           background: '$primaryColor500',
+        },
+
+        color: '$neutralColorBlack',
+
+        svg: {
+          path: {
+            stroke: '$neutralColorBlack',
+          },
+        },
+      },
+    },
+
+    collapsed: {
+      true: {
+        width: '72px',
+        justifyContent: 'center',
+        textIndent: '100%',
+        whiteSpace: 'nowrap',
+        overflow: 'hidden',
+
+        svg: {
+          position: 'absolute',
+          marginLeft: '$0',
         },
       },
     },
   },
+
+  compoundVariants: [
+    {
+      selected: undefined,
+      css: {
+        '&:hover': {
+          cursor: 'pointer',
+          '&:before': {
+            background: '$primaryColor100',
+          },
+        },
+
+        '&:hover::before': {
+          transition: 'all .2s',
+        },
+      },
+    },
+  ],
 })

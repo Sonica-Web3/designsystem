@@ -19,8 +19,15 @@ export const Selected: StoryObj<MenuItemProps> = {
   },
 }
 
-// export const Disabled: StoryObj<MenuItemProps> = {
-//   args: {
-//     disabled: 'true',
-//   },
-// }
+export const Collapsed: StoryObj<MenuItemProps> = {
+  args: {
+    collapsed: 'true',
+  },
+}
+
+export const CollapsedSelected: StoryObj<MenuItemProps> = {
+  args: {
+    collapsed: 'true',
+    selected: 'true',
+  },
+}

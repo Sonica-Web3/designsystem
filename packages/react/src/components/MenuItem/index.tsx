@@ -10,7 +10,7 @@ export interface MenuItemProps
 
 export function MenuItem({ icon, children, ...rest }: MenuItemProps) {
   return (
-    <MenuItemContainer>
+    <MenuItemContainer {...rest}>
       <Icon name={icon} size="sm" />
       {children}
     </MenuItemContainer>

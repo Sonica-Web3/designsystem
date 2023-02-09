@@ -12,6 +12,15 @@ const geIcon = (avatarType: IconNameProps) => {
     nft: React.lazy(() => import(`./icons/Nft`)),
     check: React.lazy(() => import(`./icons/Check`)),
     info: React.lazy(() => import(`./icons/Info`)),
+    'chevron-down': React.lazy(() => import(`./icons/ChevronDown`)),
+    'chevron-left': React.lazy(() => import(`./icons/ChevronLeft`)),
+    'chevron-right': React.lazy(() => import(`./icons/ChevronRight`)),
+    'chevron-up': React.lazy(() => import(`./icons/ChevronUp`)),
+    split: React.lazy(() => import(`./icons/Split`)),
+    token: React.lazy(() => import(`./icons/Token`)),
+    vote: React.lazy(() => import(`./icons/Vote`)),
+    'eth-logo': React.lazy(() => import(`./icons/EthLogo`)),
+    'polygon-logo': React.lazy(() => import(`./icons/PolygonLogo`)),
   }
 
   if (icons[avatarType]) {

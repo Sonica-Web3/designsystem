@@ -1,5 +1,17 @@
 /* eslint-disable no-unused-vars */
-export type IconNameProps = 'nft' | 'check' | 'info'
+export type IconNameProps =
+  | 'nft'
+  | 'check'
+  | 'info'
+  | 'chevron-down'
+  | 'chevron-left'
+  | 'chevron-right'
+  | 'chevron-up'
+  | 'split'
+  | 'token'
+  | 'vote'
+  | 'eth-logo'
+  | 'polygon-logo'
 
 export type IconSize = 'xs' | 'sm' | 'md' | 'lg'
 
