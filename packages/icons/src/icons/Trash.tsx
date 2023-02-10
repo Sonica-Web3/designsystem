@@ -4,7 +4,7 @@ interface SVGRProps {
   title?: string;
   titleId?: string;
 }
-const Nft = ({
+const Trash = ({
   title,
   titleId,
   ...props
@@ -18,20 +18,11 @@ const Nft = ({
   >
     {title ? <title id={titleId}>{title}</title> : null}
     <path
-      clipRule="evenodd"
-      d="M18 21H6a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3Z"
+      d="M3 6h18M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
       stroke="#fff"
-      strokeWidth={1.5}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-    <path
-      d="m3 17.486 4.612-4.612a.999.999 0 0 1 1.414 0l1.406 1.406 4.577-4.576a.999.999 0 0 1 1.414 0L21 14.281M8.515 7.407a.375.375 0 1 1-.53.53.375.375 0 0 1 .53-.53"
-      stroke="#fff"
-      strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
     />
   </svg>
 );
-export default Nft;
+export default Trash;

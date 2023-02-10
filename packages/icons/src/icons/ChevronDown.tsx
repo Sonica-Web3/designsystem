@@ -1,8 +1,8 @@
-import * as React from 'react'
-import { SVGProps } from 'react'
+import * as React from "react";
+import { SVGProps } from "react";
 interface SVGRProps {
-  title?: string
-  titleId?: string
+  title?: string;
+  titleId?: string;
 }
 const ChevronDown = ({
   title,
@@ -25,5 +25,5 @@ const ChevronDown = ({
       strokeLinejoin="round"
     />
   </svg>
-)
-export default ChevronDown
+);
+export default ChevronDown;
