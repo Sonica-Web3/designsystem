@@ -93,7 +93,7 @@ export const SelectContent = styled(Select.Content, {
 
   '.SelectItem': {
     fontFamily: '$default',
-    fontSize: '$sd',
+    fontSize: '$md',
 
     color: '$neutralColor700',
     borderRadius: '$xs',

@@ -1,8 +1,8 @@
-import * as React from "react";
-import { SVGProps } from "react";
+import * as React from 'react'
+import { SVGProps } from 'react'
 interface SVGRProps {
-  title?: string;
-  titleId?: string;
+  title?: string
+  titleId?: string
 }
 const LightMode = ({
   title,
@@ -25,5 +25,5 @@ const LightMode = ({
       strokeLinejoin="round"
     />
   </svg>
-);
-export default LightMode;
+)
+export default LightMode

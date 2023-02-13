@@ -1,8 +1,8 @@
-import * as React from "react";
-import { SVGProps } from "react";
+import * as React from 'react'
+import { SVGProps } from 'react'
 interface SVGRProps {
-  title?: string;
-  titleId?: string;
+  title?: string
+  titleId?: string
 }
 const Walletconnect = ({
   title,
@@ -22,5 +22,5 @@ const Walletconnect = ({
       fill="#3B99FC"
     />
   </svg>
-);
-export default Walletconnect;
+)
+export default Walletconnect

@@ -1,8 +1,8 @@
-import * as React from "react";
-import { SVGProps } from "react";
+import * as React from 'react'
+import { SVGProps } from 'react'
 interface SVGRProps {
-  title?: string;
-  titleId?: string;
+  title?: string
+  titleId?: string
 }
 const Split = ({
   title,
@@ -26,5 +26,5 @@ const Split = ({
       strokeLinejoin="round"
     />
   </svg>
-);
-export default Split;
+)
+export default Split

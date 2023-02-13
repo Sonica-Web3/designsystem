@@ -1,8 +1,8 @@
-import * as React from "react";
-import { SVGProps } from "react";
+import * as React from 'react'
+import { SVGProps } from 'react'
 interface SVGRProps {
-  title?: string;
-  titleId?: string;
+  title?: string
+  titleId?: string
 }
 const PlusCircle = ({
   title,
@@ -25,5 +25,5 @@ const PlusCircle = ({
       strokeLinejoin="round"
     />
   </svg>
-);
-export default PlusCircle;
+)
+export default PlusCircle

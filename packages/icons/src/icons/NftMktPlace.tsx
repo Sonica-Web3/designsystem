@@ -1,8 +1,8 @@
-import * as React from "react";
-import { SVGProps } from "react";
+import * as React from 'react'
+import { SVGProps } from 'react'
 interface SVGRProps {
-  title?: string;
-  titleId?: string;
+  title?: string
+  titleId?: string
 }
 const NftMktPlace = ({
   title,
@@ -54,5 +54,5 @@ const NftMktPlace = ({
       d="M14.5 14h9M14.5 16h6M14.5 18h4M14.5 22h9"
     />
   </svg>
-);
-export default NftMktPlace;
+)
+export default NftMktPlace

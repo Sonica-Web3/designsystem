@@ -21,6 +21,23 @@ const geIcon = (avatarType: IconNameProps) => {
     vote: React.lazy(() => import(`./icons/Vote`)),
     'eth-logo': React.lazy(() => import(`./icons/EthLogo`)),
     'polygon-logo': React.lazy(() => import(`./icons/PolygonLogo`)),
+    x: React.lazy(() => import(`./icons/X`)),
+    contracts: React.lazy(() => import(`./icons/Contracts`)),
+    'dark-mode': React.lazy(() => import(`./icons/DarkMode`)),
+    dashboard: React.lazy(() => import(`./icons/Dashboard`)),
+    filter: React.lazy(() => import(`./icons/Filter`)),
+    icon: React.lazy(() => import(`./icons/Icon`)),
+    sliders: React.lazy(() => import(`./icons/Sliders`)),
+    trash: React.lazy(() => import(`./icons/Trash`)),
+    eye: React.lazy(() => import(`./icons/Eye`)),
+    fantom: React.lazy(() => import(`./icons/Fantom`)),
+    'light-mode': React.lazy(() => import(`./icons/LightMode`)),
+    'matamask-logo': React.lazy(() => import(`./icons/MetamaskLogo`)),
+    'nft-collection': React.lazy(() => import(`./icons/NftCollection`)),
+    'nft-market-place': React.lazy(() => import(`./icons/NftCollection`)),
+    'plus-circle': React.lazy(() => import(`./icons/PlusCircle`)),
+    upload: React.lazy(() => import(`./icons/Upload`)),
+    'wallet-connect': React.lazy(() => import(`./icons/Walletconnect`)),
   }
 
   if (icons[avatarType]) {

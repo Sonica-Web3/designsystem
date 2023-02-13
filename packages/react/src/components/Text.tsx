@@ -47,6 +47,12 @@ export const Text = styled('p', {
         lineHeight: '$md',
         textDecoration: 'underline',
       },
+
+      caption: {
+        fontWeight: '$regular',
+        fontSize: '$xs',
+        lineHeight: '$sm',
+      },
     },
     variant: {},
     color: generateColorPaletteVariants({ color: '$' }),
