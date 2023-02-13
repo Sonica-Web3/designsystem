@@ -13,7 +13,6 @@ export const Primary: StoryObj<HeadingProps> = {}
 
 export const BigTitle: StoryObj<HeadingProps> = {
   args: {
-    // type: '',
     as: 'h1',
     type: 'bigTitle',
   },

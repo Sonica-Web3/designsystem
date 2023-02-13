@@ -2,7 +2,7 @@ import type { StoryObj, Meta } from '@storybook/react'
 import { Button, ButtonProps } from '@sonica/react'
 
 export default {
-  title: 'CTA/Button',
+  title: 'Buttons/CTA Button',
   component: Button,
   args: {
     children: 'CTA Button',
