@@ -19,7 +19,8 @@ module.exports = {
       config.base = '/designsystem/'
     }
 
-    return mergeConfig(config);
-    
+    console.log(config);
+
+    return config
   }
 }
