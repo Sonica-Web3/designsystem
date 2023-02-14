@@ -1,6 +1,6 @@
 import React, { ComponentProps } from 'react'
 import { MenuItemContainer } from './styles'
-import Icon, { IconNameProps } from '@sonica/icons'
+import Icon, { IconNameProps } from '@sonicaweb3/icons'
 
 export interface MenuItemProps
   extends ComponentProps<typeof MenuItemContainer> {

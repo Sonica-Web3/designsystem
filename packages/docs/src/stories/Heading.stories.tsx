@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from '@storybook/react'
-import { Heading, HeadingProps } from '@sonica/react'
+import { Heading, HeadingProps } from '@sonicaweb3/react'
 
 export default {
   title: 'Typography/Heading',

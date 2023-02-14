@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from '@storybook/react'
-import { Pill, PillProps } from '@sonica/react'
+import { Pill, PillProps } from '@sonicaweb3/react'
 
 export default {
   title: 'Complement/Pill',

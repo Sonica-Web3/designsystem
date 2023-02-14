@@ -1,4 +1,4 @@
 {
-    "extends": "@sonica/ts-config/react.json",
+    "extends": "@sonicaweb3/ts-config/react.json",
     "include": ["src"]
 }

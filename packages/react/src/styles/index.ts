@@ -6,7 +6,7 @@ import {
   lineHeights,
   radii,
   space,
-} from '@sonica/tokens'
+} from '@sonicaweb3/tokens'
 import { createStitches, defaultThemeMap } from '@stitches/react'
 
 export const {

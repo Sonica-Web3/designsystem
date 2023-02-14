@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from '@storybook/react'
-import { MenuItem, MenuItemProps } from '@sonica/react'
+import { MenuItem, MenuItemProps } from '@sonicaweb3/react'
 
 export default {
   title: 'Surfaces/Menu Item',

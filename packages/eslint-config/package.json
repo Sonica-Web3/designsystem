@@ -1,5 +1,6 @@
 {
-  "name": "@sonica/eslint-config",
+  "name": "@sonicaweb3/eslint-config",
+  "version": "1.0.0",
   "license": "ISC",
   "private": true,
   "main": "index.js",

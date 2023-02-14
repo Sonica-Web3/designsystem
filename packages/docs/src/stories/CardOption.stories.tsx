@@ -1,6 +1,6 @@
 import type { StoryObj, Meta } from '@storybook/react'
-import { CardOption, CardOptionProps } from '@sonica/react'
-import Icon from '@sonica/icons'
+import { CardOption, CardOptionProps } from '@sonicaweb3/react'
+import Icon from '@sonicaweb3/icons'
 export default {
   title: 'Surfaces/Card Option',
   component: CardOption,

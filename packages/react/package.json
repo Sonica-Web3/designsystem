@@ -1,5 +1,5 @@
 {
-  "name": "@sonica/react",
+  "name": "@sonicaweb3/react",
   "version": "1.0.0",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -14,10 +14,10 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@sonica/eslint-config": "*",
-    "@sonica/icons": "*",
-    "@sonica/tokens": "*",
-    "@sonica/ts-config": "*",
+    "@sonicaweb3/eslint-config": "*",
+    "@sonicaweb3/icons": "*",
+    "@sonicaweb3/tokens": "*",
+    "@sonicaweb3/ts-config": "*",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "react": "^18.2.0",

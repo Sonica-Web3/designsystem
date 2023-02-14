@@ -1,5 +1,5 @@
 import { styled } from '../../styles'
-import IconReact from '@sonica/icons'
+import IconReact from '@sonicaweb3/icons'
 
 export const PillContainer = styled('span', {
   borderRadius: '$md',

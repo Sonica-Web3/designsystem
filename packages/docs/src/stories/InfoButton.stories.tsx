@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from '@storybook/react'
-import { InfoButton, InfoButtonProps } from '@sonica/react'
+import { InfoButton, InfoButtonProps } from '@sonicaweb3/react'
 
 export default {
   title: 'Buttons/Info Button',

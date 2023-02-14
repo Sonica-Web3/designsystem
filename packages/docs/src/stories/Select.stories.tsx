@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from '@storybook/react'
-import { Select, SelectProps } from '@sonica/react'
+import { Select, SelectProps } from '@sonicaweb3/react'
 
 export default {
   title: 'Form/Select',

@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from '@storybook/react'
-import { Button, ButtonProps } from '@sonica/react'
+import { Button, ButtonProps } from '@sonicaweb3/react'
 
 export default {
   title: 'Buttons/CTA Button',

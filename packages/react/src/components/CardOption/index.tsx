@@ -1,7 +1,7 @@
 import React, { ComponentProps } from 'react'
 import { Heading } from '../Heading'
 
-import Icon from '@sonica/icons'
+import Icon from '@sonicaweb3/icons'
 
 import { Container, Tooltip } from './styles'
 

@@ -1,5 +1,5 @@
 import { ComponentProps, useCallback, useState } from 'react'
-import Icon from '@sonica/icons'
+import Icon from '@sonicaweb3/icons'
 
 import { FilterButtonContainer, Modal } from './styles'
 import { Checkbox } from '../Checkbox'

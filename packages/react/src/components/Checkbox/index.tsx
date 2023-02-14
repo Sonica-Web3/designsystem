@@ -1,6 +1,6 @@
 import React, { ComponentProps } from 'react'
 import { CheckboxContainer, CheckboxIndicator } from './styles'
-import Icon from '@sonica/icons'
+import Icon from '@sonicaweb3/icons'
 
 export interface CheckboxProps
   extends ComponentProps<typeof CheckboxContainer> {}

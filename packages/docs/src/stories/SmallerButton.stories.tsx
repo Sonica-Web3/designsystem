@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from '@storybook/react'
-import { SmallerButton, SmallerButtonProps } from '@sonica/react'
+import { SmallerButton, SmallerButtonProps } from '@sonicaweb3/react'
 
 export default {
   title: 'Buttons/Smaller Button',

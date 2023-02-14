@@ -1,5 +1,5 @@
 import { ComponentProps } from 'react'
-import Icon from '@sonica/icons'
+import Icon from '@sonicaweb3/icons'
 
 import { AddImageButtonContainer } from './styles'
 import { Text } from '../Text'

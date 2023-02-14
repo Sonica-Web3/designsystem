@@ -1,5 +1,5 @@
 {
-  "name": "@sonica/icons",
+  "name": "@sonicaweb3/icons",
   "version": "1.0.0",
   "description": "",
   "main": "./dist/index.js",
@@ -19,8 +19,8 @@
     "@babel/core": "^7.20.12",
     "@babel/template": "^7.20.7",
     "@rollup/plugin-node-resolve": "^15.0.1",
-    "@sonica/eslint-config": "*",
-    "@sonica/ts-config": "*",
+    "@sonicaweb3/eslint-config": "*",
+    "@sonicaweb3/ts-config": "*",
     "@svgr/babel-plugin-transform-svg-component": "^6.5.1",
     "@svgr/cli": "^6.5.1",
     "@types/react": "^18.0.27",

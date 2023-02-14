@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from '@storybook/react'
-import { Text as TextComponent, TextProps } from '@sonica/react'
+import { Text as TextComponent, TextProps } from '@sonicaweb3/react'
 
 export default {
   title: 'Typography/Text',

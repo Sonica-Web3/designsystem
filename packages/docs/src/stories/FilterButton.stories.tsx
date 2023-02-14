@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from '@storybook/react'
-import { FilterButton, FilterButtonProps } from '@sonica/react'
+import { FilterButton, FilterButtonProps } from '@sonicaweb3/react'
 
 export default {
   title: 'Buttons/Filter Button',

@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from '@storybook/react'
-import { AddImageButton, AddImageButtonProps } from '@sonica/react'
+import { AddImageButton, AddImageButtonProps } from '@sonicaweb3/react'
 
 export default {
   title: 'Buttons/Add Image Button',

@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from '@storybook/react'
-import { Loader, LoaderProps } from '@sonica/react'
+import { Loader, LoaderProps } from '@sonicaweb3/react'
 
 export default {
   title: 'Complement/Loader',

@@ -1,4 +1,4 @@
-import { colors } from '@sonica/tokens'
+import { colors } from '@sonicaweb3/tokens'
 import { getContrast } from 'polished'
 
 export function ColorsGrid() {

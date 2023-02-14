@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from '@storybook/react'
-import { Box, Checkbox, CheckboxProps, Text } from '@sonica/react'
+import { Box, Checkbox, CheckboxProps, Text } from '@sonicaweb3/react'
 
 export default {
   title: 'Form/Checkbox',

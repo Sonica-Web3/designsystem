@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from '@storybook/react'
-import { Box, BoxProps, Text } from '@sonica/react'
+import { Box, BoxProps, Text } from '@sonicaweb3/react'
 
 export default {
   title: 'Surfaces/Box',

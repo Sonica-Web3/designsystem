@@ -1,6 +1,6 @@
 import React, { ComponentProps } from 'react'
 import { SelectContainer, SelectContent, SelectTrigger } from './styles'
-import Icon, { IconNameProps } from '@sonica/icons'
+import Icon, { IconNameProps } from '@sonicaweb3/icons'
 import * as RadixSelect from '@radix-ui/react-select'
 import classnames from 'classnames'
 
