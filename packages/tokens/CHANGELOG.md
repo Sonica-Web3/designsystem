@@ -1,5 +1,11 @@
 # @sonicaweb3/tokens
 
+## 3.0.0
+
+### Major Changes
+
+- 2e6f47d: first publish
+
 ## 2.0.0
 
 ### Major Changes
