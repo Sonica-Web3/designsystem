@@ -1,6 +1,5 @@
 {
   "name": "@sonicaweb3/tokens",
-  "private": false,
   "version": "2.0.0",
   "description": "",
   "main": "./dist/index.js",
@@ -12,7 +11,7 @@
     "lint": "eslint src/**/*.ts* --fix"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@sonicaweb3/ts-config": "*",
     "@sonicaweb3/eslint-config": "*",

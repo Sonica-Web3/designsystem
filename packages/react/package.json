@@ -1,7 +1,6 @@
 {
   "name": "@sonicaweb3/react",
   "version": "2.0.0",
-  "private": false,
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -12,7 +11,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "description": "",
   "devDependencies": {
     "@sonicaweb3/eslint-config": "*",
