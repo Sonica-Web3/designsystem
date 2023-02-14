@@ -1,5 +1,6 @@
 {
   "name": "@sonicaweb3/ts-config",
   "version": "2.0.0",
-  "license": "ISC"
+  "license": "ISC",
+  "private": false
 }

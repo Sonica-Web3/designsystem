@@ -2,6 +2,7 @@
   "name": "@sonicaweb3/eslint-config",
   "version": "2.0.0",
   "license": "ISC",
+  "private": false,
   "main": "index.js",
   "devDependencies": {
     "@rocketseat/eslint-config": "^1.1.3",
