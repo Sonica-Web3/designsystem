@@ -1,3 +1,5 @@
+const { mergeConfig } = require('vite');
+
 module.exports = {
   "stories": ['../src/pages/**/*.stories.mdx', '../src/stories/**/*.stories.tsx'],
   "addons": [
@@ -17,7 +19,7 @@ module.exports = {
       config.base = '/designsystem/'
     }
 
-    return config
+    return mergeConfig(config);
     
   }
 }
