@@ -16,7 +16,7 @@ module.exports = {
   },
   viteFinal: (config, { configType }) => {
     if (configType === 'PRODUCTION') {
-      config.base = '/designsystem/'
+      config.base = 'https://sonica-web3.github.io/designsystem/'
     }
 
     console.log(config);
