@@ -13,7 +13,7 @@ export const Primary: StoryObj<ActionButtonProps> = {}
 
 export const Remove: StoryObj<ActionButtonProps> = {
   args: {
-    iconName: 'trash',
     variant: 'remove',
+    iconName: 'trash',
   },
 }
