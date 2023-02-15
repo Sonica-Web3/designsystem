@@ -16,7 +16,7 @@ module.exports = {
   },
   viteFinal: (config, { configType }) => {
     return mergeConfig(config, {
-      base: (configType === 'PRODUCTION') ? "/designsystem/" : '',
+      base: (configType === 'PRODUCTION') ? "designsystem/" : '',
     });
   }
 }
