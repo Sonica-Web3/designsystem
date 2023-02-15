@@ -1,5 +1,3 @@
-const { mergeConfig } = require('vite');
-
 module.exports = {
   "stories": ['../src/pages/**/*.stories.mdx', '../src/stories/**/*.stories.tsx'],
   "addons": [
@@ -14,16 +12,5 @@ module.exports = {
   },
   "features": {
     "storyStoreV7": true,
-  },
-  async viteFinal(config, { configType }) {
-
-    config.devtool = 'source-map'
-    
-    if (configType === 'PRODUCTION') {
-      config.base = '/'
-    }
-
-    return config
-    
   }
 }
