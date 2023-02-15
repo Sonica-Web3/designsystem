@@ -16,9 +16,11 @@ module.exports = {
   },
   async viteFinal(config, { configType }) {
     
-    config.base  = (configType === 'PRODUCTION') ? "/designsystem/" : config.base;
+    if (configType === 'PRODUCTION') {
+      config.base = '/designsystem/'
+    }
 
-    return config;
+    return config
     
   }
 }
