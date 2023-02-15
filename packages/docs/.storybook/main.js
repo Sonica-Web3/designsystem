@@ -15,12 +15,8 @@ module.exports = {
     "storyStoreV7": true,
   },
   viteFinal: (config, { configType }) => {
-    if (configType === 'PRODUCTION') {
-      config.base = 'https://sonica-web3.github.io/designsystem/'
-    }
-
-    console.log(config);
-
-    return config
+    return mergeConfig(config, {
+      base: (configType === 'PRODUCTION') ? "/designsystem/" : '',
+    });
   }
 }
