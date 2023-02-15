@@ -16,9 +16,11 @@ module.exports = {
     "storyStoreV7": true,
   },
   async viteFinal(config, { configType }) {
+
+    config.devtool = 'source-map'
     
     if (configType === 'PRODUCTION') {
-      config.base = '/designsystem/'
+      config.base = '/'
     }
 
     return config
