@@ -14,9 +14,9 @@ module.exports = {
   "features": {
     "storyStoreV7": true,
   },
-  viteFinal: (config, { configType }) => {
-    return mergeConfig(config, {
-      base: (configType === 'PRODUCTION') ? "./" : '',
-    });
-  }
+  // viteFinal: (config, { configType }) => {
+  //   return mergeConfig(config, {
+  //     base: (configType === 'PRODUCTION') ? "./" : '',
+  //   });
+  // }
 }
