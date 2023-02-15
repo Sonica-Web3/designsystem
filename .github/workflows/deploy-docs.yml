@@ -20,6 +20,9 @@ jobs:
       - run: npm ci
 
       - run: npm run build
+        env:
+          TURBO_TOKEN: jV1hey9gr7iKcuGocm4O23kf
+          TURBO_TEAM: sonica
 
       - name: Deploy storybook
         working-directory: ./packages/docs
