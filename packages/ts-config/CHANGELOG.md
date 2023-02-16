@@ -1,5 +1,11 @@
 # @sonicaweb3/ts-config
 
+## 1.1.0
+
+### Minor Changes
+
+- 4193973: add packages
+
 ## 3.0.0
 
 ### Major Changes
