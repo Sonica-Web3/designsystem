@@ -22,7 +22,7 @@ export const generateColorPaletteVariants = (css: Stitches.CSS) => {
       substringToReplace[0],
       replacedSubstring,
     )
-    console.log(replacedString)
+
     return { ...prev, [color.token]: JSON.parse(replacedString) }
   }, {}) as Record<keyof typeof theme.colors, Stitches.CSS>
 }
