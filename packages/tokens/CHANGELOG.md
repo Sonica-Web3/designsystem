@@ -1,5 +1,11 @@
 # @sonicaweb3/tokens
 
+## 1.2.0
+
+### Minor Changes
+
+- Add Icon sizes to tokens
+
 ## 1.1.0
 
 ### Minor Changes
