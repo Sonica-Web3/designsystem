@@ -1,13 +1,11 @@
 # @sonicaweb3/react
 
-## 3.0.0
+## 1.1.0
 
-### Major Changes
+### Minor Changes
 
-- 2e6f47d: first publish
+- 4193973: add packages
 
-## 2.0.0
+### Patch Changes
 
-### Major Changes
-
-- 4fb5c6e: add packages
+- 4193973: Removing debug console
