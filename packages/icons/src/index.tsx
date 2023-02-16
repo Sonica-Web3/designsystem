@@ -38,6 +38,7 @@ const geIcon = (avatarType: IconNameProps) => {
     'plus-circle': React.lazy(() => import(`./icons/PlusCircle`)),
     upload: React.lazy(() => import(`./icons/Upload`)),
     'wallet-connect': React.lazy(() => import(`./icons/Walletconnect`)),
+    'coinbase-wallet': React.lazy(() => import(`./icons/CoinbaseWallet`)),
   }
 
   if (icons[avatarType]) {

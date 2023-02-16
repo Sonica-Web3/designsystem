@@ -7,6 +7,7 @@ export type IconNameProps =
   | 'chevron-left'
   | 'chevron-right'
   | 'chevron-up'
+  | 'coinbase-wallet'
   | 'split'
   | 'token'
   | 'vote'
