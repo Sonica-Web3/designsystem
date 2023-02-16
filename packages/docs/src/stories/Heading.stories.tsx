@@ -14,7 +14,7 @@ export const Primary: StoryObj<HeadingProps> = {}
 export const BigTitle: StoryObj<HeadingProps> = {
   args: {
     as: 'h1',
-    type: 'bigTitle',
+    variant: 'big-title',
   },
   parameters: {
     docs: {
@@ -28,12 +28,12 @@ export const BigTitle: StoryObj<HeadingProps> = {
 
 export const SmallTitle: StoryObj<HeadingProps> = {
   args: {
-    type: 'smallTitle',
+    variant: 'small-title',
   },
 }
 
 export const SmallerTitle: StoryObj<HeadingProps> = {
   args: {
-    type: 'smallerTitle',
+    variant: 'smaller-title',
   },
 }

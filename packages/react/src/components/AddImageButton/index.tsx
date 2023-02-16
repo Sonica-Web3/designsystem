@@ -19,10 +19,10 @@ export function AddImageButton({
     <AddImageButtonContainer {...rest}>
       <Icon name="upload" size="md" />
 
-      <Text as={'h4'} type="highlight">
+      <Text as={'h4'} variant="highlight">
         {title}
       </Text>
-      <Text type="caption">{subtitle}</Text>
+      <Text variant="caption">{subtitle}</Text>
     </AddImageButtonContainer>
   )
 }

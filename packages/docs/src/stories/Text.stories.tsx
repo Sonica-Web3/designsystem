@@ -14,7 +14,7 @@ export const Primary: StoryObj<TextProps> = {}
 
 export const CustomTag: StoryObj<TextProps> = {
   args: {
-    type: 'tinyLinkText',
+    variant: 'tiny-link-text',
     color: 'neutralColor800',
     children: 'This is a tiny link text with a tag',
     as: 'a',
@@ -31,42 +31,42 @@ export const CustomTag: StoryObj<TextProps> = {
 
 export const CTAText: StoryObj<TextProps> = {
   args: {
-    type: 'CTAText',
+    variant: 'CTA-text',
     children: 'This is a CTA text',
   },
 }
 
 export const OverText: StoryObj<TextProps> = {
   args: {
-    type: 'overText',
+    variant: 'over-text',
     children: 'This is a over text',
   },
 }
 
 export const Highlight: StoryObj<TextProps> = {
   args: {
-    type: 'highlight',
+    variant: 'highlight',
     children: 'This is a text highlight',
   },
 }
 
 export const TableText: StoryObj<TextProps> = {
   args: {
-    type: 'tableText',
+    variant: 'table-text',
     children: 'This is a table text',
   },
 }
 
 export const TableTextUppercase: StoryObj<TextProps> = {
   args: {
-    type: 'tableTextUppercase',
+    variant: 'table-text-uppercase',
     children: 'This is a table text uppercase',
   },
 }
 
 export const TinyLinkText: StoryObj<TextProps> = {
   args: {
-    type: 'tinyLinkText',
+    variant: 'tiny-link-text',
     children: 'This is a tiny link text',
   },
 }

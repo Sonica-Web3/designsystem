@@ -9,13 +9,13 @@ export const Text = styled('p', {
   color: '$neutralColor800',
 
   variants: {
-    type: {
-      overText: {
+    variant: {
+      'over-text': {
         fontWeight: '$semiBold',
         fontSize: '$sm',
         lineHeight: '$md',
       },
-      CTAText: {
+      'CTA-text': {
         fontWeight: '$semiBold',
         fontSize: '$sm',
         lineHeight: '$md',
@@ -30,35 +30,39 @@ export const Text = styled('p', {
         fontSize: '$sm',
         lineHeight: '$md',
       },
-      tableText: {
+      'table-text': {
         fontWeight: '$regular',
         fontSize: '$sm',
         lineHeight: '$lg',
       },
-      tableTextUppercase: {
+      'table-text-uppercase': {
         fontWeight: '$regular',
         fontSize: '$xxs',
         lineHeight: '$xs',
         textTransform: 'uppercase',
       },
-      tinyLinkText: {
+      'tiny-link-text': {
         fontWeight: '$regular',
         fontSize: '$xxs',
         lineHeight: '$md',
         textDecoration: 'underline',
       },
-
       caption: {
         fontWeight: '$regular',
         fontSize: '$xs',
         lineHeight: '$sm',
       },
+      'body-tiny': {
+        fontWeight: '$regular',
+        fontSize: '$sm',
+        lineHeight: '$md',
+      },
     },
-    variant: {},
+
     color: generateColorPaletteVariants({ color: '$' }),
   },
   defaultVariants: {
-    type: 'text',
+    variant: 'text',
   },
 })
 

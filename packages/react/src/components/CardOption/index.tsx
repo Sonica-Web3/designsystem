@@ -19,7 +19,7 @@ export function CardOption({ icon, text, ...rest }: CardOptionProps) {
 
       {icon}
       <Heading
-        type="smallTitle"
+        variant="small-title"
         color="neutralColor800"
         css={{ marginTop: '$10', color: '$neutralColor800' }}
       >

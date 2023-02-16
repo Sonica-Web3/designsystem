@@ -9,24 +9,28 @@ export const Heading = styled('h2', {
   color: '$neutralColor800',
 
   variants: {
-    type: {
-      bigTitle: {
+    variant: {
+      'big-title': {
         fontWeight: '$bold',
         fontSize: '$2xl',
         lineHeight: '$2xl',
       },
-      smallTitle: {
+      'small-title': {
         fontWeight: '$semiBold',
         fontSize: '$lg',
         lineHeight: '$lg',
       },
-      smallerTitle: {
+      'smaller-title': {
         fontWeight: '$bold',
         fontSize: '$xs',
         lineHeight: '$md',
       },
     },
     color: generateColorPaletteVariants({ color: '$' }),
+  },
+
+  defaultVariants: {
+    variant: 'small-title',
   },
 })
 
