@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 1.2.1
+
+### Minor Changes
+
+- Change MenuIcon width
+
 ## 1.2.0
 
 ### Minor Changes
