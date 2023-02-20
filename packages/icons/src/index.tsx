@@ -32,7 +32,7 @@ const geIcon = (avatarType: IconNameProps) => {
     eye: React.lazy(() => import(`./icons/Eye`)),
     fantom: React.lazy(() => import(`./icons/Fantom`)),
     'light-mode': React.lazy(() => import(`./icons/LightMode`)),
-    'matamask-logo': React.lazy(() => import(`./icons/MetamaskLogo`)),
+    'metamask-logo': React.lazy(() => import(`./icons/MetamaskLogo`)),
     'nft-collection': React.lazy(() => import(`./icons/NftCollection`)),
     'nft-market-place': React.lazy(() => import(`./icons/NftCollection`)),
     'plus-circle': React.lazy(() => import(`./icons/PlusCircle`)),

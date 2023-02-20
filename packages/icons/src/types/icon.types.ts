@@ -24,7 +24,7 @@ export type IconNameProps =
   | 'eye'
   | 'fantom'
   | 'light-mode'
-  | 'matamask-logo'
+  | 'metamask-logo'
   | 'nft-collection'
   | 'nft-market-place'
   | 'plus-circle'
