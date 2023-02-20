@@ -37,6 +37,8 @@ export const MenuItemContainer = styled('a', {
 
         color: '$neutralColorBlack',
 
+        background: '$primaryColor100',
+
         svg: {
           path: {
             stroke: '$neutralColorBlack',
@@ -47,7 +49,7 @@ export const MenuItemContainer = styled('a', {
 
     collapsed: {
       true: {
-        width: '72px',
+        width: '71px',
         justifyContent: 'center',
         textIndent: '100%',
         whiteSpace: 'nowrap',
