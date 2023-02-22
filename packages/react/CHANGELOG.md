@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 1.3.2
+
+### Patch Changes
+
+- Update Heading variants add title variant
+
 ## 1.3.1
 
 ### Patch Changes
