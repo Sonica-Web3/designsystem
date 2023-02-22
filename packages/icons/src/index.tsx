@@ -65,7 +65,6 @@ const getSize = (size: IconSize) => {
 }
 
 const getColor = (color: IconColor) => {
-  console.log(colors[color])
   return colors[color]
 }
 

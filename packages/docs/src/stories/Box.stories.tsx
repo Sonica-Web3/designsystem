@@ -17,7 +17,7 @@ export default {
           borderRadius: '$xs',
         }}
       >
-        <Icon name="brazil-flag" />
+        <Icon name="chevron-down" color="primaryColor500" />
         Testando o elemento Box
       </Text>
     ),
