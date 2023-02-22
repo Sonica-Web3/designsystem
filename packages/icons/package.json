@@ -22,7 +22,6 @@
     "@rollup/plugin-node-resolve": "^15.0.1",
     "@sonicaweb3/eslint-config": "*",
     "@sonicaweb3/ts-config": "*",
-    "@sonicaweb3/tokens": "*",
     "@svgr/babel-plugin-transform-svg-component": "^6.5.1",
     "@svgr/cli": "^6.5.1",
     "@types/react": "^18.0.27",
@@ -32,6 +31,9 @@
     "rollup-plugin-typescript2": "^0.34.1",
     "tsup": "^6.6.0",
     "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "@sonicaweb3/tokens": "*"
   },
   "peerDependencies": {
     "react": "^16.8.0"
