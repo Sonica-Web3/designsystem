@@ -1,6 +1,11 @@
 /* eslint-disable no-unused-vars */
+
+import { colors } from '@sonicaweb3/tokens'
+
 export type IconNameProps =
   | 'nft'
+  | 'avalanche'
+  | 'brazil-flag'
   | 'check'
   | 'info'
   | 'chevron-down'
@@ -11,6 +16,7 @@ export type IconNameProps =
   | 'split'
   | 'token'
   | 'vote'
+  | 'email-wallet'
   | 'eth-logo'
   | 'polygon-logo'
   | 'x'
@@ -28,10 +34,14 @@ export type IconNameProps =
   | 'nft-collection'
   | 'nft-market-place'
   | 'plus-circle'
+  | 'search'
+  | 'settings'
   | 'upload'
   | 'wallet-connect'
 
 export type IconSize = 'xs' | 'sm' | 'md' | 'lg'
+
+export type IconColor = keyof typeof colors
 
 export interface IconProps {
   name: IconNameProps
@@ -39,6 +49,7 @@ export interface IconProps {
   id?: string
   width?: number
   size?: IconSize
+  color?: IconColor
 }
 
 export type IconSizeOptions = { [key in IconSize]: number }

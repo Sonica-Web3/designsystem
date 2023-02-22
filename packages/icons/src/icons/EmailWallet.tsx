@@ -1,8 +1,8 @@
-import * as React from 'react'
-import { SVGProps } from 'react'
+import * as React from "react";
+import { SVGProps } from "react";
 interface SVGRProps {
-  title?: string
-  titleId?: string
+  title?: string;
+  titleId?: string;
 }
 const EmailWallet = ({
   title,
@@ -22,5 +22,5 @@ const EmailWallet = ({
       fill="#6851FF"
     />
   </svg>
-)
-export default EmailWallet
+);
+export default EmailWallet;

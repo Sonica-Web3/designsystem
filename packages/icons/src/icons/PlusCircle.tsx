@@ -1,8 +1,8 @@
-import * as React from 'react'
-import { SVGProps } from 'react'
+import * as React from "react";
+import { SVGProps } from "react";
 interface SVGRProps {
-  title?: string
-  titleId?: string
+  title?: string;
+  titleId?: string;
 }
 const PlusCircle = ({
   title,
@@ -17,13 +17,7 @@ const PlusCircle = ({
     {...props}
   >
     {title ? <title id={titleId}>{title}</title> : null}
-    <path
-      d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10ZM12 8v8M8 12h8"
-      stroke="#fff"
-      strokeWidth={1.5}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
+    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10ZM12 8v8M8 12h8" />
   </svg>
-)
-export default PlusCircle
+);
+export default PlusCircle;

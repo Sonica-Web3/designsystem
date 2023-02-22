@@ -1,8 +1,8 @@
-import * as React from 'react'
-import { SVGProps } from 'react'
+import * as React from "react";
+import { SVGProps } from "react";
 interface SVGRProps {
-  title?: string
-  titleId?: string
+  title?: string;
+  titleId?: string;
 }
 const Token = ({
   title,
@@ -17,20 +17,8 @@ const Token = ({
     {...props}
   >
     {title ? <title id={titleId}>{title}</title> : null}
-    <path
-      d="M6 13V9h8v4M14 9h1V5H7v4M17.828 14.172a4 4 0 1 1-5.656 5.656 4 4 0 0 1 5.656-5.656"
-      stroke="#fff"
-      strokeWidth={1.5}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-    <path
-      d="M6 17v4h9M15 13H5v4h6"
-      stroke="#fff"
-      strokeWidth={1.5}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
+    <path d="M6 13V9h8v4M14 9h1V5H7v4M17.828 14.172a4 4 0 1 1-5.656 5.656 4 4 0 0 1 5.656-5.656" />
+    <path d="M6 17v4h9M15 13H5v4h6" />
   </svg>
-)
-export default Token
+);
+export default Token;

@@ -1,8 +1,8 @@
-import * as React from 'react'
-import { SVGProps } from 'react'
+import * as React from "react";
+import { SVGProps } from "react";
 interface SVGRProps {
-  title?: string
-  titleId?: string
+  title?: string;
+  titleId?: string;
 }
 const Search = ({
   title,
@@ -17,12 +17,7 @@ const Search = ({
     {...props}
   >
     {title ? <title id={titleId}>{title}</title> : null}
-    <path
-      d="M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16ZM21 21l-4.35-4.35"
-      stroke="#fff"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
+    <path d="M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16ZM21 21l-4.35-4.35" />
   </svg>
-)
-export default Search
+);
+export default Search;

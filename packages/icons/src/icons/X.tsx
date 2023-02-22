@@ -1,8 +1,8 @@
-import * as React from 'react'
-import { SVGProps } from 'react'
+import * as React from "react";
+import { SVGProps } from "react";
 interface SVGRProps {
-  title?: string
-  titleId?: string
+  title?: string;
+  titleId?: string;
 }
 const X = ({
   title,
@@ -17,13 +17,7 @@ const X = ({
     {...props}
   >
     {title ? <title id={titleId}>{title}</title> : null}
-    <path
-      d="M18 6 6 18M6 6l12 12"
-      stroke="#fff"
-      strokeWidth={2}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
+    <path d="M18 6 6 18M6 6l12 12" />
   </svg>
-)
-export default X
+);
+export default X;

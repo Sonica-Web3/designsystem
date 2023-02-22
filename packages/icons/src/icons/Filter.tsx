@@ -1,8 +1,8 @@
-import * as React from 'react'
-import { SVGProps } from 'react'
+import * as React from "react";
+import { SVGProps } from "react";
 interface SVGRProps {
-  title?: string
-  titleId?: string
+  title?: string;
+  titleId?: string;
 }
 const Filter = ({
   title,
@@ -17,12 +17,7 @@ const Filter = ({
     {...props}
   >
     {title ? <title id={titleId}>{title}</title> : null}
-    <path
-      d="M22 3H2l8 9.46V19l4 2v-8.54L22 3Z"
-      stroke="#fff"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
+    <path d="M22 3H2l8 9.46V19l4 2v-8.54L22 3Z" />
   </svg>
-)
-export default Filter
+);
+export default Filter;

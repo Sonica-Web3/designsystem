@@ -1,16 +1,16 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M9 11H3C2.1715 11 1.5 10.3285 1.5 9.5V3.5C1.5 2.6715 2.1715 2 3 2H9C9.8285 2 10.5 2.6715 10.5 3.5V9.5C10.5 10.3285 9.8285 11 9 11Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M1.5 9.243L3.806 6.937C4.0015 6.7415 4.318 6.7415 4.513 6.937L5.216 7.64L7.5045 5.352C7.7 5.1565 8.0165 5.1565 8.2115 5.352L10.5 7.6405" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M4.25709 4.20342C4.33032 4.27665 4.33032 4.39537 4.25709 4.46859C4.18387 4.54181 4.06515 4.54181 3.99193 4.46859C3.91871 4.39537 3.91871 4.27665 3.99193 4.20342C4.06515 4.1302 4.18387 4.1302 4.25709 4.20342" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-<line x1="1.5" y1="14" x2="10.5" y2="14" stroke="white" stroke-linecap="round"/>
-<line x1="1.5" y1="16" x2="7.5" y2="16" stroke="white" stroke-linecap="round"/>
-<line x1="1.5" y1="18" x2="5.5" y2="18" stroke="white" stroke-linecap="round"/>
-<line x1="1.5" y1="22" x2="10.5" y2="22" stroke="white" stroke-linecap="round"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M22 11H16C15.1715 11 14.5 10.3285 14.5 9.5V3.5C14.5 2.6715 15.1715 2 16 2H22C22.8285 2 23.5 2.6715 23.5 3.5V9.5C23.5 10.3285 22.8285 11 22 11Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M14.5 9.243L16.806 6.937C17.0015 6.7415 17.318 6.7415 17.513 6.937L18.216 7.64L20.5045 5.352C20.7 5.1565 21.0165 5.1565 21.2115 5.352L23.5 7.6405" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M17.2571 4.20342C17.3303 4.27665 17.3303 4.39537 17.2571 4.46859C17.1839 4.54181 17.0652 4.54181 16.9919 4.46859C16.9187 4.39537 16.9187 4.27665 16.9919 4.20342C17.0652 4.1302 17.1839 4.1302 17.2571 4.20342" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-<line x1="14.5" y1="14" x2="23.5" y2="14" stroke="white" stroke-linecap="round"/>
-<line x1="14.5" y1="16" x2="20.5" y2="16" stroke="white" stroke-linecap="round"/>
-<line x1="14.5" y1="18" x2="18.5" y2="18" stroke="white" stroke-linecap="round"/>
-<line x1="14.5" y1="22" x2="23.5" y2="22" stroke="white" stroke-linecap="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9 11H3C2.1715 11 1.5 10.3285 1.5 9.5V3.5C1.5 2.6715 2.1715 2 3 2H9C9.8285 2 10.5 2.6715 10.5 3.5V9.5C10.5 10.3285 9.8285 11 9 11Z" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1.5 9.243L3.806 6.937C4.0015 6.7415 4.318 6.7415 4.513 6.937L5.216 7.64L7.5045 5.352C7.7 5.1565 8.0165 5.1565 8.2115 5.352L10.5 7.6405" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4.25709 4.20342C4.33032 4.27665 4.33032 4.39537 4.25709 4.46859C4.18387 4.54181 4.06515 4.54181 3.99193 4.46859C3.91871 4.39537 3.91871 4.27665 3.99193 4.20342C4.06515 4.1302 4.18387 4.1302 4.25709 4.20342" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="1.5" y1="14" x2="10.5" y2="14" stroke-linecap="round"/>
+<line x1="1.5" y1="16" x2="7.5" y2="16" stroke-linecap="round"/>
+<line x1="1.5" y1="18" x2="5.5" y2="18" stroke-linecap="round"/>
+<line x1="1.5" y1="22" x2="10.5" y2="22" stroke-linecap="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M22 11H16C15.1715 11 14.5 10.3285 14.5 9.5V3.5C14.5 2.6715 15.1715 2 16 2H22C22.8285 2 23.5 2.6715 23.5 3.5V9.5C23.5 10.3285 22.8285 11 22 11Z" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.5 9.243L16.806 6.937C17.0015 6.7415 17.318 6.7415 17.513 6.937L18.216 7.64L20.5045 5.352C20.7 5.1565 21.0165 5.1565 21.2115 5.352L23.5 7.6405" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17.2571 4.20342C17.3303 4.27665 17.3303 4.39537 17.2571 4.46859C17.1839 4.54181 17.0652 4.54181 16.9919 4.46859C16.9187 4.39537 16.9187 4.27665 16.9919 4.20342C17.0652 4.1302 17.1839 4.1302 17.2571 4.20342" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="14.5" y1="14" x2="23.5" y2="14" stroke-linecap="round"/>
+<line x1="14.5" y1="16" x2="20.5" y2="16" stroke-linecap="round"/>
+<line x1="14.5" y1="18" x2="18.5" y2="18" stroke-linecap="round"/>
+<line x1="14.5" y1="22" x2="23.5" y2="22" stroke-linecap="round"/>
 </svg>

@@ -1,14 +1,18 @@
 import React, { Suspense, FunctionComponent } from 'react'
 import {
+  IconColor,
   IconNameProps,
   IconProps,
   IconSize,
   IconSizeOptions,
   IconTypeOptions,
 } from './types/icon.types'
+import { colors } from '@sonicaweb3/tokens'
 
 const geIcon = (avatarType: IconNameProps) => {
   const icons: IconTypeOptions = {
+    avalanche: React.lazy(() => import(`./icons/Avalanche`)),
+    'brazil-flag': React.lazy(() => import(`./icons/BandeiraBrasil`)),
     nft: React.lazy(() => import(`./icons/Nft`)),
     check: React.lazy(() => import(`./icons/Check`)),
     info: React.lazy(() => import(`./icons/Info`)),
@@ -20,6 +24,7 @@ const geIcon = (avatarType: IconNameProps) => {
     token: React.lazy(() => import(`./icons/Token`)),
     vote: React.lazy(() => import(`./icons/Vote`)),
     'eth-logo': React.lazy(() => import(`./icons/EthLogo`)),
+    'email-wallet': React.lazy(() => import(`./icons/EmailWallet`)),
     'polygon-logo': React.lazy(() => import(`./icons/PolygonLogo`)),
     x: React.lazy(() => import(`./icons/X`)),
     contracts: React.lazy(() => import(`./icons/Contracts`)),
@@ -34,8 +39,10 @@ const geIcon = (avatarType: IconNameProps) => {
     'light-mode': React.lazy(() => import(`./icons/LightMode`)),
     'metamask-logo': React.lazy(() => import(`./icons/MetamaskLogo`)),
     'nft-collection': React.lazy(() => import(`./icons/NftCollection`)),
-    'nft-market-place': React.lazy(() => import(`./icons/NftCollection`)),
+    'nft-market-place': React.lazy(() => import(`./icons/NftMktPlace`)),
     'plus-circle': React.lazy(() => import(`./icons/PlusCircle`)),
+    search: React.lazy(() => import(`./icons/Search`)),
+    settings: React.lazy(() => import(`./icons/Settings`)),
     upload: React.lazy(() => import(`./icons/Upload`)),
     'wallet-connect': React.lazy(() => import(`./icons/Walletconnect`)),
     'coinbase-wallet': React.lazy(() => import(`./icons/CoinbaseWallet`)),
@@ -57,10 +64,17 @@ const getSize = (size: IconSize) => {
   return sizes[size]
 }
 
+const getColor = (color: IconColor) => {
+  console.log(colors[color])
+  return colors[color]
+}
+
 const Icon: FunctionComponent<IconProps> = (props) => {
-  const { name, size = 'md', width = null } = props
+  const { name, size = 'md', width = null, color: colorProp } = props
   const TrComponent = geIcon(name)
   const TrWidth = width || getSize(size)
+
+  const color = colorProp ? getColor(colorProp) : 'none'
 
   if (!name) {
     return null
@@ -68,7 +82,7 @@ const Icon: FunctionComponent<IconProps> = (props) => {
 
   return (
     <Suspense fallback="">
-      <TrComponent {...props} width={TrWidth} />
+      <TrComponent {...props} width={TrWidth} color={color} stroke={color} />
     </Suspense>
   )
 }

@@ -1,8 +1,8 @@
-import * as React from 'react'
-import { SVGProps } from 'react'
+import * as React from "react";
+import { SVGProps } from "react";
 interface SVGRProps {
-  title?: string
-  titleId?: string
+  title?: string;
+  titleId?: string;
 }
 const ChevronUp = ({
   title,
@@ -17,13 +17,7 @@ const ChevronUp = ({
     {...props}
   >
     {title ? <title id={titleId}>{title}</title> : null}
-    <path
-      d="m18 15-6-6-6 6"
-      stroke="#fff"
-      strokeWidth={1.5}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
+    <path d="m18 15-6-6-6 6" />
   </svg>
-)
-export default ChevronUp
+);
+export default ChevronUp;

@@ -22,6 +22,7 @@
     "@rollup/plugin-node-resolve": "^15.0.1",
     "@sonicaweb3/eslint-config": "*",
     "@sonicaweb3/ts-config": "*",
+    "@sonicaweb3/tokens": "*",
     "@svgr/babel-plugin-transform-svg-component": "^6.5.1",
     "@svgr/cli": "^6.5.1",
     "@types/react": "^18.0.27",

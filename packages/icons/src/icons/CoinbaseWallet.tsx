@@ -1,8 +1,8 @@
-import * as React from 'react'
-import { SVGProps } from 'react'
+import * as React from "react";
+import { SVGProps } from "react";
 interface SVGRProps {
-  title?: string
-  titleId?: string
+  title?: string;
+  titleId?: string;
 }
 const CoinbaseWallet = ({
   title,
@@ -36,5 +36,5 @@ const CoinbaseWallet = ({
       />
     </defs>
   </svg>
-)
-export default CoinbaseWallet
+);
+export default CoinbaseWallet;

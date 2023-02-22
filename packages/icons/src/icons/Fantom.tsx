@@ -1,8 +1,8 @@
-import * as React from 'react'
-import { SVGProps } from 'react'
+import * as React from "react";
+import { SVGProps } from "react";
 interface SVGRProps {
-  title?: string
-  titleId?: string
+  title?: string;
+  titleId?: string;
 }
 const Fantom = ({
   title,
@@ -22,5 +22,5 @@ const Fantom = ({
       fill="#0511F3"
     />
   </svg>
-)
-export default Fantom
+);
+export default Fantom;
