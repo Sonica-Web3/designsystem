@@ -15,6 +15,11 @@ export const Heading = styled('h2', {
         fontSize: '$2xl',
         lineHeight: '$2xl',
       },
+      title: {
+        fontWeight: '$semiBold',
+        fontSize: '$xl',
+        lineHeight: '$xl',
+      },
       'small-title': {
         fontWeight: '$semiBold',
         fontSize: '$lg',
@@ -30,7 +35,7 @@ export const Heading = styled('h2', {
   },
 
   defaultVariants: {
-    variant: 'small-title',
+    variant: 'title',
   },
 })
 
