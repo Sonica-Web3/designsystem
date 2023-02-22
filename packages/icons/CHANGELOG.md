@@ -1,5 +1,11 @@
 # @sonicaweb3/icons
 
+## 1.3.3
+
+### Patch Changes
+
+- Add tokens packages as production dependencies
+
 ## 1.3.2
 
 ### Patch Changes
