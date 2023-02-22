@@ -1,5 +1,11 @@
 # @sonicaweb3/icons
 
+## 1.3.1
+
+### Patch Changes
+
+- Add possibility to select a color when show Icon component
+
 ## 1.2.1
 
 ### Minor Changes
