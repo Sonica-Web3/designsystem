@@ -1,5 +1,11 @@
 # @sonicaweb3/icons
 
+## 1.3.2
+
+### Patch Changes
+
+- remove console log
+
 ## 1.3.1
 
 ### Patch Changes
