@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 1.3.1
+
+### Patch Changes
+
+- Update Select styles to use 100% width instead of a static value
+
 ## 1.2.1
 
 ### Minor Changes
