@@ -14,7 +14,7 @@ export function CardOption({ icon, text, ...rest }: CardOptionProps) {
   return (
     <Container {...rest}>
       <Tooltip>
-        <Icon name="info" size="sm" />
+        <Icon name="info" size="sm" color="errorColor600" />
       </Tooltip>
 
       {icon}
