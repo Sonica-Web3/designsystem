@@ -18,7 +18,7 @@ export const SelectTrigger = styled(Select.Trigger, {
   border: '1px solid $neutralColor500',
 
   height: '$8',
-  width: '$64',
+  width: '100%',
   gap: '$1',
   backgroundColor: '$neutralColorWhite',
   color: '$neutralColor700',

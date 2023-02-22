@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from '@storybook/react'
-import { Select, SelectProps } from '@sonicaweb3/react'
+import { Box, Select, SelectProps } from '@sonicaweb3/react'
 
 export default {
   title: 'Form/Select',
@@ -20,26 +20,17 @@ export default {
     ],
     placeholder: 'Select',
   },
+  decorators: [
+    (Story) => {
+      return <Box css={{ display: 'flex', width: '200px' }}>{Story()}</Box>
+    },
+  ],
 } as Meta<SelectProps>
 
 export const Primary: StoryObj<SelectProps> = {}
 
-// export const Selected: StoryObj<SelectProps> = {
-//   args: {
-//     selected: 'true',
-//   },
-// }
-
 export const Collapsed: StoryObj<SelectProps> = {
   args: {
     collapsed: 'true',
-    // value: 'eth-logo',
   },
 }
-
-// export const CollapsedSelected: StoryObj<SelectProps> = {
-//   args: {
-//     collapsed: 'true',
-//     selected: 'true',
-//   },
-// }
