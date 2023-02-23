@@ -10,7 +10,7 @@ interface Item {
   icon: IconNameProps
 }
 
-export interface SelectProps extends ComponentProps<typeof SelectContainer> {
+export interface SelectProps extends ComponentProps<typeof SelectTrigger> {
   options: Item[]
   label?: string
   placeholder?: string
@@ -18,7 +18,7 @@ export interface SelectProps extends ComponentProps<typeof SelectContainer> {
 
 export function Select({ label, placeholder, options, ...rest }: SelectProps) {
   return (
-    <SelectContainer {...rest}>
+    <SelectContainer>
       <SelectTrigger aria-label={label} className="Trigger" {...rest}>
         <RadixSelect.Value placeholder={placeholder} className="SelectValue" />
         <RadixSelect.Icon className="SelectIcon">

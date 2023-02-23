@@ -15,7 +15,6 @@
   "description": "",
   "devDependencies": {
     "@sonicaweb3/eslint-config": "*",
-    "@sonicaweb3/icons": "*",
     "@sonicaweb3/tokens": "*",
     "@sonicaweb3/ts-config": "*",
     "@types/react": "^18.0.27",
@@ -27,6 +26,7 @@
   "dependencies": {
     "@radix-ui/react-checkbox": "^1.0.1",
     "@radix-ui/react-select": "^1.2.0",
+    "@sonicaweb3/icons": "*",
     "@stitches/react": "^1.2.8",
     "classnames": "^2.3.2"
   }
