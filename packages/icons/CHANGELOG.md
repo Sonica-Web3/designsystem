@@ -1,5 +1,11 @@
 # @sonicaweb3/icons
 
+## 2.0.1
+
+### Patch Changes
+
+- Add Log Out icon to icon list and import
+
 ## 1.3.3
 
 ### Patch Changes
