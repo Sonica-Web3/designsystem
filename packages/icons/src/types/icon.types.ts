@@ -20,6 +20,7 @@ export type IconNameProps =
   | 'eth-logo'
   | 'polygon-logo'
   | 'x'
+  | 'log-out'
   | 'contracts'
   | 'dark-mode'
   | 'dashboard'

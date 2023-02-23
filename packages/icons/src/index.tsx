@@ -46,6 +46,7 @@ const geIcon = (avatarType: IconNameProps) => {
     upload: React.lazy(() => import(`./icons/Upload`)),
     'wallet-connect': React.lazy(() => import(`./icons/Walletconnect`)),
     'coinbase-wallet': React.lazy(() => import(`./icons/CoinbaseWallet`)),
+    'log-out': React.lazy(() => import(`./icons/LogOut`)),
   }
 
   if (icons[avatarType]) {
