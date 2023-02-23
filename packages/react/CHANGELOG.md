@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 1.3.3
+
+### Patch Changes
+
+- Change Dev dependency @sonicaweb3/icons to dependencies and update Select component structure
+
 ## 1.3.2
 
 ### Patch Changes
