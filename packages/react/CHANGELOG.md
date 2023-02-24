@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 1.3.5
+
+### Patch Changes
+
+- Update MenuItemContainer styles to include width and height.
+
 ## 1.3.4
 
 ### Patch Changes
