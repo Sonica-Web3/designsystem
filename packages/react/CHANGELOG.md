@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 1.3.6
+
+### Patch Changes
+
+- Component Select changes to stay like the layout.
+
 ## 1.3.5
 
 ### Patch Changes
