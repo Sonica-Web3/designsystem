@@ -11,7 +11,7 @@ export interface MenuItemProps
 export function MenuItem({ iconName, children, ...rest }: MenuItemProps) {
   return (
     <MenuItemContainer {...rest}>
-      <Icon name={iconName} size="sm" color="neutralColor800" />
+      <Icon name={iconName} size="md" color="neutralColor800" />
       {children}
     </MenuItemContainer>
   )

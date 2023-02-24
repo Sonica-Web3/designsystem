@@ -3,7 +3,7 @@ import { styled } from '../../styles'
 export const MenuItemContainer = styled('a', {
   display: 'flex',
   alignItems: 'center',
-  gap: '$2',
+  gap: '$3',
 
   fontFamily: '$default',
   fontSize: '$sm',
@@ -12,6 +12,7 @@ export const MenuItemContainer = styled('a', {
   width: '100%',
   height: '$10',
   position: 'relative',
+  transition: 'all .1s',
 
   '&::before': {
     content: `''`,
@@ -25,7 +26,7 @@ export const MenuItemContainer = styled('a', {
   },
 
   svg: {
-    marginLeft: '$3',
+    marginLeft: '$4',
   },
 
   variants: {
@@ -37,7 +38,7 @@ export const MenuItemContainer = styled('a', {
 
         color: '$neutralColorBlack',
 
-        background: '$primaryColor100',
+        background: '$primaryColor50',
 
         svg: {
           path: {
@@ -69,13 +70,15 @@ export const MenuItemContainer = styled('a', {
       css: {
         '&:hover': {
           cursor: 'pointer',
+          background: '$primaryColor50',
+          color: '$neutralColor900',
           '&:before': {
             background: '$primaryColor100',
           },
         },
 
         '&:hover::before': {
-          transition: 'all .2s',
+          transition: 'all .1s',
         },
       },
     },
