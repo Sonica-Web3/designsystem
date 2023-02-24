@@ -10,39 +10,50 @@ interface Item {
   icon: IconNameProps
 }
 
+interface GroupItem {
+  description: string
+  items: Item[]
+}
+
 export interface SelectProps extends ComponentProps<typeof SelectTrigger> {
-  options: Item[]
+  options: GroupItem[]
   label?: string
   placeholder?: string
 }
 
 export function Select({ label, placeholder, options, ...rest }: SelectProps) {
   return (
-    <SelectContainer>
+    <SelectContainer defaultOpen>
       <SelectTrigger aria-label={label} className="Trigger" {...rest}>
         <RadixSelect.Value placeholder={placeholder} className="SelectValue" />
         <RadixSelect.Icon className="SelectIcon">
           <Icon name="chevron-down" size="sm" />
         </RadixSelect.Icon>
       </SelectTrigger>
-      <SelectContent>
-        <RadixSelect.ScrollUpButton className="SelectScrollButton">
-          <Icon name="chevron-up" />
-        </RadixSelect.ScrollUpButton>
-        <RadixSelect.Viewport className="SelectViewport">
-          {options.map((option) => {
-            return (
-              <SelectItem key={option.value} value={option.value}>
-                <Icon name={option.icon} size="sm" />
-                {option.text}
-              </SelectItem>
-            )
-          })}
-        </RadixSelect.Viewport>
-        <RadixSelect.ScrollDownButton className="SelectScrollButton">
-          <Icon name="chevron-down" size="sm" />
-        </RadixSelect.ScrollDownButton>
-      </SelectContent>
+      <RadixSelect.Portal>
+        <SelectContent>
+          <RadixSelect.Viewport className="SelectViewport">
+            {options.map((group) => {
+              return (
+                <RadixSelect.Group
+                  key={group.description}
+                  className="SelectGroup"
+                >
+                  <RadixSelect.Label className="SelectLabel">
+                    {group.description}
+                  </RadixSelect.Label>
+                  {group.items.map((item) => (
+                    <SelectItem key={item.value} value={item.value}>
+                      <Icon name={item.icon} size="sm" />
+                      {item.text}
+                    </SelectItem>
+                  ))}
+                </RadixSelect.Group>
+              )
+            })}
+          </RadixSelect.Viewport>
+        </SelectContent>
+      </RadixSelect.Portal>
     </SelectContainer>
   )
 }
@@ -63,9 +74,6 @@ const SelectItem = React.forwardRef<
         ref={forwardedRef}
       >
         <RadixSelect.ItemText>{children}</RadixSelect.ItemText>
-        <RadixSelect.ItemIndicator className="SelectItemIndicator">
-          <Icon name="check" size="sm" />
-        </RadixSelect.ItemIndicator>
       </RadixSelect.Item>
     )
   },

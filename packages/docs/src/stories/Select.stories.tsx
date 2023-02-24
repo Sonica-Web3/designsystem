@@ -8,21 +8,62 @@ export default {
   args: {
     options: [
       {
-        icon: 'eth-logo',
-        text: 'Ethereum',
-        value: 'eth',
+        description: 'Selecione uma rede',
+        items: [
+          {
+            icon: 'eth-logo',
+            text: 'Ethereum',
+            value: 'ethereum',
+          },
+          {
+            icon: 'polygon-logo',
+            text: 'Polygon',
+            value: 'polygon',
+          },
+          {
+            icon: 'fantom',
+            text: 'Fantom',
+            value: 'fantom',
+          },
+        ],
       },
       {
-        icon: 'polygon-logo',
-        text: 'Polygon',
-        value: 'pol',
+        description: 'Redes de testes',
+        items: [
+          {
+            icon: 'eth-logo',
+            text: 'Goerli',
+            value: 'goerli',
+          },
+          {
+            icon: 'polygon-logo',
+            text: 'Mumbai',
+            value: 'mumbai',
+          },
+          {
+            icon: 'fantom',
+            text: 'Fantom testnet',
+            value: 'fantom-test',
+          },
+        ],
       },
     ],
     placeholder: 'Select',
   },
   decorators: [
     (Story) => {
-      return <Box css={{ display: 'flex', width: '200px' }}>{Story()}</Box>
+      return (
+        <Box
+          css={{
+            display: 'flex',
+            padding: '16px',
+            width: '200px',
+            height: '100%',
+          }}
+        >
+          {Story()}
+        </Box>
+      )
     },
   ],
 } as Meta<SelectProps>

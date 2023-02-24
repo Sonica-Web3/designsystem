@@ -12,29 +12,43 @@ export const SelectTrigger = styled(Select.Trigger, {
   alignItems: 'center',
   justifyContent: 'space-between',
   borderRadius: '$md',
-  padding: '$2',
+  padding: '$4 $2',
   lineHeight: '$md',
   fontSize: '$sm',
   border: '1px solid $neutralColor500',
 
+  background: '$neutralColorWhite',
+
+  fontFamily: '$default',
+
   height: '$8',
   width: '100%',
-  gap: '$1',
-  backgroundColor: '$neutralColorWhite',
+
   color: '$neutralColor700',
-  boxShadow: '0 2px 10px $neutralColor100',
+
+  '&[aria-expanded="true"]': {
+    'span:last-child': {
+      transform: 'rotate(3.142rad)',
+    },
+
+    borderBottom: 'none',
+    borderBottomLeftRadius: 0,
+    borderBottomRightRadius: 0,
+  },
 
   span: {
     display: 'flex',
     alignItems: 'center',
-
+    gap: '$1',
     svg: {
-      margin: '0 $2',
+      width: '$4',
+      height: '$4',
     },
   },
 
   '&:hover': {
-    background: '$neutralColor100',
+    background: '$primaryColor50',
+    cursor: 'pointer',
   },
 
   '&:focus': {
@@ -51,6 +65,8 @@ export const SelectTrigger = styled(Select.Trigger, {
 
   '.SelectIcon svg': {
     margin: '$0',
+    width: '$4',
+    height: '$4',
     path: {
       stroke: '$neutralColor500',
     },
@@ -81,66 +97,75 @@ export const SelectTrigger = styled(Select.Trigger, {
 })
 
 export const SelectContent = styled(Select.Content, {
-  overflow: 'hidden',
   backgroundColor: '$neutralColorWhite',
   borderRadius: '$default',
-  boxShadow:
-    '0px 10px 38px -10px rgba(22, 23, 24, 0.35), 0px 10px 20px -15px rgba(22, 23, 24, 0.2)',
+  borderWidth: '1px',
+  borderStyle: 'solid',
+  borderColor: '$neutralColor500',
+  borderTop: 'none',
+  borderTopLeftRadius: 0,
+  borderTopRightRadius: 0,
+  width: '100%',
+  display: 'flex',
+  marginTop: '54px',
 
-  '.SelectViewport': {
+  '.SelectLabel': {
     padding: '$2',
+    color: '$neutralColor500',
+    fontSize: '$xxs',
+    fontFamily: '$default',
+    lineHeight: '$xs',
   },
 
   '.SelectItem': {
     fontFamily: '$default',
-    fontSize: '$md',
+    fontSize: '$sm',
+    lineHeight: '$md',
+    width: '100%',
 
-    color: '$neutralColor700',
-    borderRadius: '$xs',
-    display: 'flex',
-    alignItems: 'center',
-    gap: '$2',
+    color: '$neutralColor800',
 
-    height: '$8',
-    padding: '0 35px 0 25px',
+    padding: '$3 $2',
     position: 'relative',
     userSelect: 'none',
 
+    transition: 'all 0.1s',
+
+    svg: {
+      marginRight: '$1',
+      width: '$4',
+      height: '$4',
+    },
+
     span: {
       display: 'flex',
-      alignItem: 'center',
-      svg: {
-        margin: '0 $2',
-      },
+      alignItems: 'center',
+      justifyContent: 'flex-start',
     },
 
     '&:focus-visible': {
-      outline: '1px solid $primaryColor50',
+      outline: 'none',
     },
-  },
 
-  '.SelectItemIndicator': {
-    position: 'absolute',
-    left: 0,
-    width: '25px',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
+    '&:not(:last-child)': {
+      borderBottomColor: '$neutralColor200',
+      borderBottomWidth: '1px',
+      borderBottomStyle: 'solid',
+    },
 
-    svg: {
-      path: {
-        stroke: '$primaryColor500',
+    '&:hover': {
+      '> span::before': {
+        content: `''`,
+        position: 'absolute',
+        display: 'block',
+        width: '4px',
+        height: '100%',
+        background: '$primaryColor100',
+        left: 0,
+        top: 0,
       },
+      background: '$primaryColor50',
+      cursor: 'pointer',
     },
-  },
-
-  '.SelectScrollButton': {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    height: '25px',
-    backgroundColor: 'white',
-    color: '$neutralColor500',
-    cursor: 'default',
   },
 })
