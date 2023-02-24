@@ -27,6 +27,8 @@ export const MenuItemContainer = styled('a', {
 
   svg: {
     marginLeft: '$4',
+    width: '$6',
+    height: '$6',
   },
 
   variants: {
