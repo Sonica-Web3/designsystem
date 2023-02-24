@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 1.3.4
+
+### Patch Changes
+
+- Update size and margins of MenuItem icon and container, add hover effect to MenuItem container.
+
 ## 1.3.3
 
 ### Patch Changes
