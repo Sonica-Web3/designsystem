@@ -80,7 +80,8 @@ export const SelectTrigger = styled(Select.Trigger, {
 
         'span:not(.SelectIcon)': {
           position: 'absolute',
-          left: '0',
+          left: '7px',
+
           display: 'flex',
           alignItems: 'center',
         },

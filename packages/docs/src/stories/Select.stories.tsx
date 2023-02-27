@@ -6,7 +6,7 @@ export default {
   component: Select,
 
   args: {
-    side: 'top',
+    side: 'bottom',
     options: [
       {
         description: 'Selecione uma rede',
