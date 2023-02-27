@@ -189,6 +189,10 @@ export const SelectContent = styled(Select.Content, {
         borderBottomLeftRadius: 0,
         borderBottomRightRadius: 0,
 
+        borderTop: '1px solid',
+        borderTopLeftRadius: '$md',
+        borderTopRightRadius: '$md',
+
         '.SelectGroup:last-child': {
           '.SelectItem:last-child': {
             borderBottomLeftRadius: 0,
@@ -205,6 +209,10 @@ export const SelectContent = styled(Select.Content, {
         borderTop: 'none',
         borderTopLeftRadius: '0',
         borderTopRightRadius: '0',
+
+        borderBottom: '1px solid',
+        borderBottomLeftRadius: '$md',
+        borderBottomRightRadius: '$md',
 
         '.SelectGroup:last-child': {
           '.SelectItem:last-child': {

@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 1.3.11
+
+### Patch Changes
+
+- Update Select component to support top side option and adjust styling accordingly.
+
 ## 1.3.10
 
 ### Patch Changes

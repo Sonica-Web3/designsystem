@@ -6,7 +6,7 @@ export default {
   component: Select,
 
   args: {
-    side: 'bottom',
+    side: 'top',
     options: [
       {
         description: 'Selecione uma rede',
@@ -59,7 +59,8 @@ export default {
             display: 'flex',
             padding: '16px',
             width: '200px',
-            alignSelf: 'center',
+            alignItems: 'center',
+            height: '800px',
           }}
         >
           {Story()}

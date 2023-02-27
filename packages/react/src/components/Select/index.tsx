@@ -40,6 +40,10 @@ export function Select({
     }
   }, [])
 
+  if (side === 'top') {
+    options = options.reverse()
+  }
+
   return (
     <SelectContainer onOpenChange={handleOpenChange}>
       <SelectTrigger
@@ -67,15 +71,23 @@ export function Select({
                   key={group.description}
                   className="SelectGroup"
                 >
-                  <RadixSelect.Label className="SelectLabel">
-                    {group.description}
-                  </RadixSelect.Label>
+                  {side === 'bottom' && (
+                    <RadixSelect.Label className="SelectLabel">
+                      {group.description}
+                    </RadixSelect.Label>
+                  )}
+
                   {group.items.map((item) => (
                     <SelectItem key={item.value} value={item.value}>
                       <Icon name={item.icon} size="sm" />
                       {item.text}
                     </SelectItem>
                   ))}
+                  {side === 'top' && (
+                    <RadixSelect.Label className="SelectLabel">
+                      {group.description}
+                    </RadixSelect.Label>
+                  )}
                 </RadixSelect.Group>
               )
             })}
