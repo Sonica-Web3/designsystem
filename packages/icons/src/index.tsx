@@ -81,7 +81,9 @@ const Icon: FunctionComponent<IconProps> = (props) => {
   }
 
   return (
-    <Suspense fallback="">
+    <Suspense
+      fallback={<span style={{ width: TrWidth, height: TrWidth }}></span>}
+    >
       <TrComponent {...props} width={TrWidth} color={color} stroke={color} />
     </Suspense>
   )
