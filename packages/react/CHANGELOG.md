@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 1.3.9
+
+### Patch Changes
+
+- Update SelectContent styling to adjust border radius and border when side is passed as top.
+
 ## 1.3.8
 
 ### Patch Changes
