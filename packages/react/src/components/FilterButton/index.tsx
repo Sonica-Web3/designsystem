@@ -1,7 +1,7 @@
 import { ComponentProps, useCallback, useState } from 'react'
 import Icon from '@sonicaweb3/icons'
 
-import { FilterButtonContainer, Modal } from './styles'
+import { FilterButtonContainer, FilterWrapper, Modal } from './styles'
 import { Checkbox } from '../Checkbox'
 import { Text } from '../Text'
 
@@ -16,6 +16,7 @@ export interface FilterButtonProps
   modalTitle: string
   options: OptionsProps[]
   onOptionClick: (key: string | number) => void
+  side: 'left' | 'right'
 }
 
 export function FilterButton({
@@ -23,6 +24,7 @@ export function FilterButton({
   modalTitle,
   options,
   onOptionClick,
+  side = 'right',
   ...rest
 }: FilterButtonProps) {
   const [modalOpen, setModalOpen] = useState(false)
@@ -38,7 +40,7 @@ export function FilterButton({
     setModalOpen((state) => !state)
   }, [])
   return (
-    <>
+    <FilterWrapper>
       <FilterButtonContainer
         {...rest}
         onClick={handleToggleModal}
@@ -48,7 +50,7 @@ export function FilterButton({
         {buttonTitle}
       </FilterButtonContainer>
       {modalOpen && (
-        <Modal>
+        <Modal side={side}>
           <header>
             <span>{modalTitle}</span>
             <button onClick={handleToggleModal}>
@@ -72,6 +74,6 @@ export function FilterButton({
           </ul>
         </Modal>
       )}
-    </>
+    </FilterWrapper>
   )
 }

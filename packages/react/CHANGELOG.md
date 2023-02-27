@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 1.3.13
+
+### Patch Changes
+
+- Update FilterButton stories and components to include side prop and add FilterWrapper for positioning
+
 ## 1.3.12
 
 ### Patch Changes

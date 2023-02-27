@@ -1,5 +1,9 @@
 import { styled } from '../../styles'
 
+export const FilterWrapper = styled('div', {
+  position: 'relative',
+})
+
 export const FilterButtonContainer = styled('button', {
   all: 'unset',
 
@@ -9,7 +13,8 @@ export const FilterButtonContainer = styled('button', {
   fontFamily: '$default',
   color: '$neutralColor600',
   fontSize: '$md',
-  padding: '$2',
+  padding: '0 $2',
+  height: '$8',
 
   border: '1px solid $neutralColor300',
 
@@ -58,11 +63,12 @@ export const FilterButtonContainer = styled('button', {
 
 export const Modal = styled('div', {
   background: '$neutralColorWhite',
-  maxWidth: '200px',
+  width: '200px',
   padding: '$4',
   borderRadius: '$md',
   marginTop: '$2',
   border: '1px solid $neutralColor500',
+  position: 'absolute',
 
   header: {
     display: 'flex',
@@ -105,10 +111,9 @@ export const Modal = styled('div', {
 
   ul: {
     all: 'unset',
-    display: 'inline-block',
+    display: 'block',
     marginTop: '$2',
     listStyleType: 'none',
-    width: '100%',
   },
 
   'ul li button.item': {
@@ -123,5 +128,17 @@ export const Modal = styled('div', {
   },
   'ul li button.item p': {
     color: '$neutralColor800',
+  },
+
+  variants: {
+    side: {
+      left: {
+        left: 0,
+      },
+
+      right: {
+        right: 0,
+      },
+    },
   },
 })

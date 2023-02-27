@@ -38,7 +38,6 @@ export function Select({
 
       let parsedWidth: any = getComputedStyle(box!).width.replace('px', '')
       parsedWidth = parseInt(parsedWidth) - BORDERS_WIDTH
-      console.log(parsedWidth)
       body.style.width = `${parsedWidth}px`
     }
   }, [])
