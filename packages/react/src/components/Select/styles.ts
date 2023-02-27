@@ -99,9 +99,9 @@ export const SelectTrigger = styled(Select.Trigger, {
       },
       top: {
         '&[aria-expanded="true"]': {
-          borderBottom: 'none',
-          borderBottomLeftRadius: 0,
-          borderBottomRightRadius: 0,
+          borderTop: 'none',
+          borderTopLeftRadius: 0,
+          borderTopRightRadius: 0,
         },
       },
     },
@@ -182,24 +182,19 @@ export const SelectContent = styled(Select.Content, {
   },
 
   variants: {
-    side: {
+    sideEffect: {
       top: {
-        borderBottom: '1px solid',
-        borderBottomLeftRadius: '$md',
-        borderBottomRightRadius: '$md',
-
-        // borderBottom: 'none',
-
-        // borderBottomLeftRadius: 0,
-        // borderBottomRightRadius: 0,
+        borderBottom: 'none',
+        borderBottomLeftRadius: 0,
+        borderBottomRightRadius: 0,
 
         '.SelectGroup:last-child': {
           '.SelectItem:last-child': {
-            borderBottomLeftRadius: '$default',
-            borderBottomRightRadius: '$default',
+            borderBottomLeftRadius: 0,
+            borderBottomRightRadius: 0,
 
             '> span::before': {
-              borderBottomLeftRadius: '$default',
+              borderBottomLeftRadius: 0,
             },
           },
         },

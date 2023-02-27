@@ -54,7 +54,12 @@ export function Select({
         </RadixSelect.Icon>
       </SelectTrigger>
       <RadixSelect.Portal>
-        <SelectContent position="popper" avoidCollisions={false} side={side}>
+        <SelectContent
+          position="popper"
+          avoidCollisions={false}
+          sideEffect={side}
+          side={side}
+        >
           <RadixSelect.Viewport className="SelectViewport">
             {options.map((group) => {
               return (
