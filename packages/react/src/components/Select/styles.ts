@@ -30,10 +30,6 @@ export const SelectTrigger = styled(Select.Trigger, {
     'span:last-child': {
       transform: 'rotate(3.142rad)',
     },
-
-    borderBottom: 'none',
-    borderBottomLeftRadius: 0,
-    borderBottomRightRadius: 0,
   },
 
   span: {
@@ -93,6 +89,22 @@ export const SelectTrigger = styled(Select.Trigger, {
         },
       },
     },
+    side: {
+      bottom: {
+        '&[aria-expanded="true"]': {
+          borderBottom: 'none',
+          borderBottomLeftRadius: 0,
+          borderBottomRightRadius: 0,
+        },
+      },
+      top: {
+        '&[aria-expanded="true"]': {
+          borderBottom: 'none',
+          borderBottomLeftRadius: 0,
+          borderBottomRightRadius: 0,
+        },
+      },
+    },
   },
 })
 
@@ -106,17 +118,6 @@ export const SelectContent = styled(Select.Content, {
   borderTopLeftRadius: 0,
   borderTopRightRadius: 0,
   width: '100%',
-
-  '.SelectGroup:last-child': {
-    '.SelectItem:last-child': {
-      borderBottomLeftRadius: '$default',
-      borderBottomRightRadius: '$default',
-
-      '> span::before': {
-        borderBottomLeftRadius: '$default',
-      },
-    },
-  },
 
   '.SelectLabel': {
     padding: '$2',
@@ -177,6 +178,49 @@ export const SelectContent = styled(Select.Content, {
 
       background: '$primaryColor50',
       cursor: 'pointer',
+    },
+  },
+
+  variants: {
+    side: {
+      top: {
+        borderBottom: '1px solid',
+        borderBottomLeftRadius: '$md',
+        borderBottomRightRadius: '$md',
+
+        // borderBottom: 'none',
+
+        // borderBottomLeftRadius: 0,
+        // borderBottomRightRadius: 0,
+
+        '.SelectGroup:last-child': {
+          '.SelectItem:last-child': {
+            borderBottomLeftRadius: '$default',
+            borderBottomRightRadius: '$default',
+
+            '> span::before': {
+              borderBottomLeftRadius: '$default',
+            },
+          },
+        },
+      },
+
+      bottom: {
+        borderTop: 'none',
+        borderTopLeftRadius: '0',
+        borderTopRightRadius: '0',
+
+        '.SelectGroup:last-child': {
+          '.SelectItem:last-child': {
+            borderBottomLeftRadius: '$default',
+            borderBottomRightRadius: '$default',
+
+            '> span::before': {
+              borderBottomLeftRadius: '$default',
+            },
+          },
+        },
+      },
     },
   },
 })

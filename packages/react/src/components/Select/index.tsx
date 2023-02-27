@@ -19,9 +19,16 @@ export interface SelectProps extends ComponentProps<typeof SelectTrigger> {
   options: GroupItem[]
   label?: string
   placeholder?: string
+  side: 'bottom' | 'top'
 }
 
-export function Select({ label, placeholder, options, ...rest }: SelectProps) {
+export function Select({
+  label,
+  placeholder,
+  side,
+  options,
+  ...rest
+}: SelectProps) {
   const handleOpenChange = useCallback(() => {
     const box = document.querySelector<HTMLButtonElement>('.Trigger')
     const body = document.querySelector<HTMLDivElement>('.SelectViewport')
@@ -32,16 +39,22 @@ export function Select({ label, placeholder, options, ...rest }: SelectProps) {
       body.style.width = `${parsedWidth}px`
     }
   }, [])
+
   return (
     <SelectContainer onOpenChange={handleOpenChange}>
-      <SelectTrigger aria-label={label} className="Trigger" {...rest}>
+      <SelectTrigger
+        aria-label={label}
+        side={side}
+        className="Trigger"
+        {...rest}
+      >
         <RadixSelect.Value placeholder={placeholder} className="SelectValue" />
         <RadixSelect.Icon className="SelectIcon">
           <Icon name="chevron-down" size="sm" />
         </RadixSelect.Icon>
       </SelectTrigger>
       <RadixSelect.Portal>
-        <SelectContent position="popper">
+        <SelectContent position="popper" avoidCollisions={false} side={side}>
           <RadixSelect.Viewport className="SelectViewport">
             {options.map((group) => {
               return (
