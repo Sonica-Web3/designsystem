@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 1.3.12
+
+### Patch Changes
+
+- Update width and height for Select components.
+
 ## 1.3.11
 
 ### Patch Changes

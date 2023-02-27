@@ -35,7 +35,10 @@ export function Select({
 
     if (body && box) {
       const BORDERS_WIDTH = 2
-      const parsedWidth = String(box.offsetWidth - BORDERS_WIDTH)
+
+      let parsedWidth: any = getComputedStyle(box!).width.replace('px', '')
+      parsedWidth = parseInt(parsedWidth) - BORDERS_WIDTH
+      console.log(parsedWidth)
       body.style.width = `${parsedWidth}px`
     }
   }, [])

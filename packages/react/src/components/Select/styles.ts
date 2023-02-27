@@ -8,7 +8,7 @@ export const SelectContainer = styled(Select.Root, {
 export const SelectTrigger = styled(Select.Trigger, {
   unset: 'all',
   position: 'relative',
-  display: 'inline-flex',
+  display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',
   borderRadius: '$md',
@@ -22,7 +22,7 @@ export const SelectTrigger = styled(Select.Trigger, {
   fontFamily: '$default',
 
   height: '$8',
-  width: '100%',
+  width: 'inherit',
 
   color: '$neutralColor700',
 

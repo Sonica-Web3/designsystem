@@ -60,7 +60,7 @@ export default {
             padding: '16px',
             width: '200px',
             alignItems: 'center',
-            height: '800px',
+            height: '500px',
           }}
         >
           {Story()}
