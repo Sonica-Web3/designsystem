@@ -1,5 +1,11 @@
 # @sonicaweb3/icons
 
+## 2.0.2
+
+### Patch Changes
+
+- Update Suspense fallback to render a placeholder element.
+
 ## 2.0.1
 
 ### Patch Changes
