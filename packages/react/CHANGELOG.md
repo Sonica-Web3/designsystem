@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 1.3.7
+
+### Patch Changes
+
+- Update Select component with more styles, adjust icon size and font weight for MenuItem, and adjust popper position for Select
+
 ## 1.3.6
 
 ### Patch Changes
