@@ -106,8 +106,17 @@ export const SelectContent = styled(Select.Content, {
   borderTopLeftRadius: 0,
   borderTopRightRadius: 0,
   width: '100%',
-  display: 'flex',
-  marginTop: '54px',
+
+  '.SelectGroup:last-child': {
+    '.SelectItem:last-child': {
+      borderBottomLeftRadius: '$default',
+      borderBottomRightRadius: '$default',
+
+      '> span::before': {
+        borderBottomLeftRadius: '$default',
+      },
+    },
+  },
 
   '.SelectLabel': {
     padding: '$2',
@@ -121,7 +130,6 @@ export const SelectContent = styled(Select.Content, {
     fontFamily: '$default',
     fontSize: '$sm',
     lineHeight: '$md',
-    width: '100%',
 
     color: '$neutralColor800',
 
@@ -153,6 +161,8 @@ export const SelectContent = styled(Select.Content, {
       borderBottomStyle: 'solid',
     },
 
+    zIndex: 0,
+
     '&:hover': {
       '> span::before': {
         content: `''`,
@@ -164,6 +174,7 @@ export const SelectContent = styled(Select.Content, {
         left: 0,
         top: 0,
       },
+
       background: '$primaryColor50',
       cursor: 'pointer',
     },

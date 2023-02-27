@@ -39,7 +39,7 @@ export const MenuItemContainer = styled('a', {
         },
 
         color: '$neutralColorBlack',
-
+        fontWeight: '$medium',
         background: '$primaryColor50',
 
         svg: {

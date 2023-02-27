@@ -7,7 +7,7 @@ export default {
 
   args: {
     children: 'Menu Item',
-    iconName: 'info',
+    iconName: 'dashboard',
   },
 } as Meta<MenuItemProps>
 

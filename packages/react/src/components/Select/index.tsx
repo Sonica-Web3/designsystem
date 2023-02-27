@@ -1,4 +1,4 @@
-import React, { ComponentProps } from 'react'
+import React, { ComponentProps, useCallback } from 'react'
 import { SelectContainer, SelectContent, SelectTrigger } from './styles'
 import Icon, { IconNameProps } from '@sonicaweb3/icons'
 import * as RadixSelect from '@radix-ui/react-select'
@@ -22,8 +22,18 @@ export interface SelectProps extends ComponentProps<typeof SelectTrigger> {
 }
 
 export function Select({ label, placeholder, options, ...rest }: SelectProps) {
+  const handleOpenChange = useCallback(() => {
+    const box = document.querySelector<HTMLButtonElement>('.Trigger')
+    const body = document.querySelector<HTMLDivElement>('.SelectViewport')
+
+    if (body && box) {
+      const BORDERS_WIDTH = 2
+      const parsedWidth = String(box.offsetWidth - BORDERS_WIDTH)
+      body.style.width = `${parsedWidth}px`
+    }
+  }, [])
   return (
-    <SelectContainer defaultOpen>
+    <SelectContainer onOpenChange={handleOpenChange}>
       <SelectTrigger aria-label={label} className="Trigger" {...rest}>
         <RadixSelect.Value placeholder={placeholder} className="SelectValue" />
         <RadixSelect.Icon className="SelectIcon">
@@ -31,7 +41,7 @@ export function Select({ label, placeholder, options, ...rest }: SelectProps) {
         </RadixSelect.Icon>
       </SelectTrigger>
       <RadixSelect.Portal>
-        <SelectContent>
+        <SelectContent position="popper">
           <RadixSelect.Viewport className="SelectViewport">
             {options.map((group) => {
               return (
