@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 1.3.8
+
+### Patch Changes
+
+- Update Select component to include side prop and style adjustments.
+
 ## 1.3.7
 
 ### Patch Changes
