@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 1.3.15
+
+### Patch Changes
+
+- Create TextInput and TextArea component.
+
 ## 1.3.14
 
 ### Patch Changes
