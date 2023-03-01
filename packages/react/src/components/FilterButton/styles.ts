@@ -141,4 +141,8 @@ export const Modal = styled('div', {
       },
     },
   },
+
+  defaultVariants: {
+    side: 'right',
+  },
 })

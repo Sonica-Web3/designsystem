@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 1.3.14
+
+### Patch Changes
+
+- Style FilterButton component, add defaultVariants side "right"
+
 ## 1.3.13
 
 ### Patch Changes
