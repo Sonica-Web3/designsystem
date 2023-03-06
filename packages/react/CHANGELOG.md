@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 2.0.2
+
+### Patch Changes
+
+- Update TextInput and TextArea styles to match styling guidelines.
+
 ## 2.0.1
 
 ### Patch Changes
