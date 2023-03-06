@@ -26,11 +26,11 @@ export const Container = styled('div', {
         },
         span: {
           background: '$primaryColor500',
-        },
 
-        svg: {
-          path: {
-            stroke: '$neutralColorWhite',
+          svg: {
+            path: {
+              stroke: '$neutralColorWhite',
+            },
           },
         },
       },
@@ -45,9 +45,7 @@ export const Container = styled('div', {
           color: '$neutralColor300',
         },
         svg: {
-          path: {
-            stroke: '$neutralColor300',
-          },
+          opacity: 0.3,
         },
 
         'span svg': {
