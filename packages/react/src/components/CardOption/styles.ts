@@ -12,7 +12,6 @@ export const Container = styled('div', {
   alignItems: 'center',
   justifyContent: 'center',
   flexDirection: 'column',
-  transition: 'all .1s',
 
   padding: '$2',
 
@@ -58,8 +57,8 @@ export const Container = styled('div', {
   },
   compoundVariants: [
     {
-      selected: false,
-      disabled: false,
+      selected: undefined,
+      disabled: undefined,
       css: {
         '&:hover': {
           cursor: 'pointer',
