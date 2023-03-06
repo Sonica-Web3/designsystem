@@ -12,7 +12,7 @@ export const Container = styled('div', {
   alignItems: 'center',
   justifyContent: 'center',
   flexDirection: 'column',
-  transition: 'all .2s',
+  transition: 'all .1s',
 
   padding: '$2',
 
@@ -32,10 +32,6 @@ export const Container = styled('div', {
               stroke: '$neutralColorWhite',
             },
           },
-        },
-
-        '> svg': {
-          background: 'transparent',
         },
       },
     },
@@ -62,8 +58,8 @@ export const Container = styled('div', {
   },
   compoundVariants: [
     {
-      selected: undefined,
-      disabled: undefined,
+      selected: false,
+      disabled: false,
       css: {
         '&:hover': {
           cursor: 'pointer',
@@ -93,7 +89,7 @@ export const Tooltip = styled('span', {
   alignItems: 'center',
   justifyContent: 'center',
   borderRadius: '$md',
-  transition: 'all .2s',
+  transition: 'all .1s',
 
   background: '$neutralColor100',
 })
