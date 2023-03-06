@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 2.0.3
+
+### Patch Changes
+
+- Update CardOption styles for span and Tooltip components.
+
 ## 2.0.2
 
 ### Patch Changes
