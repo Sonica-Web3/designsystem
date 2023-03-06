@@ -6,7 +6,7 @@ export default {
   component: CardOption,
   args: {
     text: 'Token',
-    icon: <Icon name="info" size="lg" />,
+    icon: <Icon name="coinbase-wallet" size="lg" />,
   },
 } as Meta<CardOptionProps>
 
