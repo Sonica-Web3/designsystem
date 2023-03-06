@@ -68,14 +68,14 @@ export const TextArea = styled('textarea', {
     outline: 'none',
 
     '& + label': {
-      transform: 'scale(0.75) translateY(-5.2rem) translateX(-0.125rem)',
+      transform: 'scale(0.75) translateY(-1.2rem) translateX(-0.125rem)',
       padding: '0 2px',
     },
   },
 
   '&:not(:placeholder-shown)': {
     '& + label': {
-      transform: 'scale(0.75) translateY(-5.2rem) translateX(-0.125rem)',
+      transform: 'scale(0.75) translateY(-1.2rem) translateX(-0.125rem)',
       padding: '0 2px',
     },
   },
@@ -149,7 +149,7 @@ export const Label = styled('label', {
   position: 'absolute',
   margin: '0 auto',
   left: '0.5625rem',
-  top: '3.375rem',
+  top: '0.375rem',
 
   background: '$neutralColorWhite',
 
