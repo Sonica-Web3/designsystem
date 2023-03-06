@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 2.0.5
+
+### Patch Changes
+
+- Add hover styles for false state in CardOption styles
+
 ## 2.0.4
 
 ### Patch Changes
