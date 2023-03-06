@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 2.0.4
+
+### Patch Changes
+
+- Update compoundVariants logic for CardOption styles
+
 ## 2.0.3
 
 ### Patch Changes

@@ -57,7 +57,7 @@ export const Container = styled('div', {
   },
   compoundVariants: [
     {
-      selected: undefined,
+      selected: false || undefined,
       disabled: undefined,
       css: {
         '&:hover': {
