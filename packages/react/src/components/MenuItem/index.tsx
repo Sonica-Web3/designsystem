@@ -5,7 +5,7 @@ import Icon, { IconNameProps } from '@sonicaweb3/icons'
 export interface MenuItemProps
   extends ComponentProps<typeof MenuItemContainer> {
   iconName: IconNameProps
-  children: React.ReactNode
+  children?: React.ReactNode
 }
 
 export function MenuItem({ iconName, children, ...rest }: MenuItemProps) {

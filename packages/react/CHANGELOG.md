@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 2.0.7
+
+### Patch Changes
+
+- Update MenuItem to accept optional children
+
 ## 2.0.6
 
 ### Patch Changes
