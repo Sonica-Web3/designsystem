@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 1.3.17
+
+### Patch Changes
+
+- Update CardOption styles to use correct svg stroke
+
 ## 1.3.16
 
 ### Patch Changes
