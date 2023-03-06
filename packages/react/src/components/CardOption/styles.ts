@@ -33,6 +33,10 @@ export const Container = styled('div', {
             },
           },
         },
+
+        '> svg': {
+          background: 'transparent',
+        },
       },
     },
 
