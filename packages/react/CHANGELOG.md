@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 1.3.18
+
+### Patch Changes
+
+- Update styles for CardOption component to add background transparency to SVG elements.
+
 ## 1.3.17
 
 ### Patch Changes
