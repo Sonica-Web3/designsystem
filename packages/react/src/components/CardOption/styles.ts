@@ -24,7 +24,7 @@ export const Container = styled('div', {
           color: '$neutralColorWhite',
         },
         span: {
-          background: '$primaryColor500',
+          background: 'transparent',
 
           svg: {
             path: {
@@ -88,7 +88,6 @@ export const Tooltip = styled('span', {
   alignItems: 'center',
   justifyContent: 'center',
   borderRadius: '$md',
-  transition: 'all .1s',
 
   background: '$neutralColor100',
 })
