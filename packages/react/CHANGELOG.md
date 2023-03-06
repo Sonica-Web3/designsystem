@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 2.0.1
+
+### Patch Changes
+
+- Update CardOption styles to remove transition, set selected and disabled to undefined, and add hover style for cursor.
+
 ## 2.0.0
 
 ### Major Changes
