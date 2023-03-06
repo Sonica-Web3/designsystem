@@ -41,7 +41,7 @@ export const Button = styled('button', {
           background: '$primaryColor400',
         },
 
-        '&:not(:disabled):focus': {
+        '&:not(:disabled):active': {
           background: '$primaryColor700',
         },
 
@@ -59,7 +59,7 @@ export const Button = styled('button', {
           background: '$primaryColor100',
         },
 
-        '&:not(:disabled):focus': {
+        '&:not(:disabled):active': {
           background: '$primaryColor500',
           color: '$neutralColorWhite',
         },
@@ -76,7 +76,7 @@ export const Button = styled('button', {
         '&:not(:disabled):hover': {
           background: '$errorColor100',
         },
-        '&:not(:disabled):focus': {
+        '&:not(:disabled):active': {
           background: '$errorColor500',
           color: '$neutralColorWhite',
         },

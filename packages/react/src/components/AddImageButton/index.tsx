@@ -17,8 +17,7 @@ export function AddImageButton({
 }: AddImageButtonProps) {
   return (
     <AddImageButtonContainer {...rest}>
-      <Icon name="upload" size="md" />
-
+      <Icon name="upload" size="md" color="neutralColor700" />
       <Text as={'h4'} variant="highlight">
         {title}
       </Text>

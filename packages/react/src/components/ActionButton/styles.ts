@@ -40,7 +40,7 @@ export const ActionButtonContainer = styled('button', {
           },
         },
 
-        '&:not(:focus)&:hover': {
+        '&:not(:active)&:hover': {
           cursor: 'pointer',
           background: '$primaryColor100',
           borderColor: '$primaryColor500',
@@ -51,7 +51,7 @@ export const ActionButtonContainer = styled('button', {
           },
         },
 
-        '&:focus': {
+        '&:active': {
           cursor: 'pointer',
           background: '$primaryColor500',
           borderColor: '$primaryColor500',
@@ -73,7 +73,7 @@ export const ActionButtonContainer = styled('button', {
           },
         },
 
-        '&:not(:focus)&:hover': {
+        '&:not(:active)&:hover': {
           cursor: 'pointer',
           background: '$errorColor100',
           borderColor: '$errorColor500',
@@ -84,7 +84,7 @@ export const ActionButtonContainer = styled('button', {
           },
         },
 
-        '&:focus': {
+        '&:active': {
           cursor: 'pointer',
           background: '$errorColor500',
           borderColor: '$errorColor500',

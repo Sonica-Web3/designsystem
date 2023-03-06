@@ -22,7 +22,7 @@ export const InfoButtonContainer = styled('button', {
     },
   },
 
-  '&:not(:focus)&:hover': {
+  '&:not(:active)&:hover': {
     cursor: 'pointer',
     background: '$primaryColor100',
     svg: {
@@ -32,7 +32,7 @@ export const InfoButtonContainer = styled('button', {
     },
   },
 
-  '&:focus': {
+  '&:active': {
     cursor: 'pointer',
     background: '$primaryColor500',
     svg: {

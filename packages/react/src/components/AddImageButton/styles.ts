@@ -2,7 +2,7 @@ import { styled } from '../../styles'
 
 export const AddImageButtonContainer = styled('button', {
   all: 'unset',
-
+  position: 'relative',
   background: '$neutralColorWhite',
   borderRadius: '$md',
 
@@ -14,6 +14,7 @@ export const AddImageButtonContainer = styled('button', {
   flexDirection: 'column',
 
   width: '230px',
+  height: '100%',
 
   h4: {
     marginTop: '$3',
@@ -21,16 +22,16 @@ export const AddImageButtonContainer = styled('button', {
   },
 
   p: {
-    margin: '$3 0px $2',
     color: '$neutralColor500',
+    position: 'absolute',
+    bottom: '$2',
   },
 
   transition: 'all 0.1s',
 
   svg: {
-    marginTop: 'calc($6 - 0.125rem)',
     path: {
-      stroke: '$neutralColor600',
+      stroke: '$neutralColor700',
     },
   },
 
