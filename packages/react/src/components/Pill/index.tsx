@@ -7,9 +7,9 @@ import { PillContainer, Button, Icon } from './styles'
 
 export interface PillProps extends ComponentProps<typeof PillContainer> {
   children: string
-  bgColor: Stitches.PropertyValue<'backgroundColor', typeof config>
-  iconColor: Stitches.PropertyValue<'backgroundColor', typeof config>
-  textColor: Stitches.PropertyValue<'color', typeof config>
+  bgColor?: Stitches.PropertyValue<'backgroundColor', typeof config>
+  iconColor?: Stitches.PropertyValue<'backgroundColor', typeof config>
+  textColor?: Stitches.PropertyValue<'color', typeof config>
   onClick?: () => void
 }
 

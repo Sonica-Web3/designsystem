@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 2.0.8
+
+### Patch Changes
+
+- Update Pill component to make backgroundColor, iconColor, and textColor optional.
+
 ## 2.0.7
 
 ### Patch Changes
