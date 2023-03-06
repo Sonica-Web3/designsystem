@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 2.0.9
+
+### Patch Changes
+
+- c4c4b25: Update TextArea label transform and top position
+
 ## 2.0.8
 
 ### Patch Changes
