@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 2.0.6
+
+### Patch Changes
+
+- Update CardOption component to support selected and disabled states, and add hover states for non-selected options.
+
 ## 2.0.5
 
 ### Patch Changes

@@ -16,7 +16,6 @@ export function CardOption({ icon, text, ...rest }: CardOptionProps) {
       <Tooltip>
         <Icon name="info" size="sm" color="errorColor600" />
       </Tooltip>
-
       {icon}
       <Heading
         variant="small-title"

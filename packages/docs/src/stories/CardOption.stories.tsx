@@ -6,11 +6,15 @@ export default {
   component: CardOption,
   args: {
     text: 'Token',
-    icon: <Icon name="coinbase-wallet" size="lg" />,
+    icon: <Icon name="nft" size="lg" color="neutralColor800" />,
   },
 } as Meta<CardOptionProps>
 
-export const Primary: StoryObj<CardOptionProps> = {}
+export const Primary: StoryObj<CardOptionProps> = {
+  args: {
+    selected: false,
+  },
+}
 
 export const Selected: StoryObj<CardOptionProps> = {
   args: {
@@ -20,6 +24,7 @@ export const Selected: StoryObj<CardOptionProps> = {
 
 export const Disabled: StoryObj<CardOptionProps> = {
   args: {
-    disabled: 'true',
+    disabled: true,
+    selected: false,
   },
 }

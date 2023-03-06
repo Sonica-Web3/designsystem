@@ -33,21 +33,6 @@ export const Container = styled('div', {
           },
         },
       },
-      false: {
-        '&:hover': {
-          cursor: 'pointer',
-          background: '$primaryColor100',
-          borderColor: '$primaryColor500',
-          span: {
-            background: '$primaryColor500',
-            '> svg': {
-              path: {
-                stroke: '$neutralColorWhite',
-              },
-            },
-          },
-        },
-      },
     },
 
     disabled: {
@@ -69,10 +54,46 @@ export const Container = styled('div', {
         },
       },
     },
+    isBranding: {
+      false: {},
+    },
   },
+
   defaultVariants: {
     disabled: false,
+    isBranding: false,
+    selected: false,
   },
+  compoundVariants: [
+    {
+      selected: true,
+      isBranding: false,
+      css: {
+        '> svg': {
+          stroke: '$neutralColorWhite',
+        },
+      },
+    },
+    {
+      selected: false,
+      disabled: false,
+      css: {
+        '&:hover': {
+          cursor: 'pointer',
+          background: '$primaryColor100',
+          borderColor: '$primaryColor500',
+          span: {
+            background: '$primaryColor500',
+            '> svg': {
+              path: {
+                stroke: '$neutralColorWhite',
+              },
+            },
+          },
+        },
+      },
+    },
+  ],
 })
 
 export const Tooltip = styled('span', {
