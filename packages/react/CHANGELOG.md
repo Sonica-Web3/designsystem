@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 2.0.0
+
+### Major Changes
+
+- Update CardOption styles, including reducing transition duration, adding hover states, and setting selected/disabled states.
+
 ## 1.3.18
 
 ### Patch Changes
