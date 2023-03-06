@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 1.3.16
+
+### Patch Changes
+
+- Update AddImageButton and ActionButton styles
+
 ## 1.3.15
 
 ### Patch Changes
