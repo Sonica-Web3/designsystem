@@ -48,7 +48,8 @@ export const Input = styled('input', {
   unset: 'all',
   width: '100%',
   background: '$neutralColorWhite',
-  padding: '$3 $2',
+  padding: '0 $2',
+  height: '40px',
   border: '1px solid $neutralColor500',
   borderRadius: '$md',
   fontSize: '$md',
@@ -148,7 +149,7 @@ export const Label = styled('label', {
   position: 'absolute',
   margin: '0 auto',
   left: '9px',
-  top: '12.5px',
+  top: '9.5px',
 
   background: '$neutralColorWhite',
 

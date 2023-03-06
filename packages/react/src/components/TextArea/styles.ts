@@ -56,7 +56,7 @@ export const TextArea = styled('textarea', {
   color: '$neutralColor700',
   fontFamily: '$default',
   fontWeight: '$regular',
-  minHeight: '6.75rem',
+  height: '6.75rem',
 
   '&::placeholder': {
     opacity: 0,
