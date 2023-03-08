@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 2.0.10
+
+### Patch Changes
+
+- Update action button border color and text input label translation
+
 ## 2.0.9
 
 ### Patch Changes

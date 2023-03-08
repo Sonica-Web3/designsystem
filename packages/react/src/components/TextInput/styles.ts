@@ -64,7 +64,7 @@ export const Input = styled('input', {
     outline: 'none',
 
     '& + label': {
-      transform: 'scale(0.75) translateY(-1.8rem) translateX(-0.125rem)',
+      transform: 'scale(0.75) translateY(-1.5rem) translateX(-0.125rem)',
       padding: '0 2px',
     },
   },
@@ -75,7 +75,7 @@ export const Input = styled('input', {
     },
 
     '& + label': {
-      transform: 'scale(0.75) translateY(-1.8rem) translateX(-0.125rem)',
+      transform: 'scale(0.75) translateY(-1.5rem) translateX(-0.125rem)',
       padding: '0 2px',
     },
   },
