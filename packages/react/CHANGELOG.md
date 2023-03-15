@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 2.0.11
+
+### Patch Changes
+
+- Remove unused borderColor prop and associated styles
+
 ## 2.0.10
 
 ### Patch Changes

@@ -6,7 +6,6 @@ export default {
   component: ActionButton,
   args: {
     iconName: 'chevron-left',
-    borderColor: '$primaryColor500',
   },
 } as Meta<ActionButtonProps>
 
