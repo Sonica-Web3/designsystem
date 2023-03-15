@@ -6,7 +6,6 @@ export default {
   component: Pill,
   args: {
     children: 'testnet',
-    css: { background: '$neutralColor100' },
   },
   argTypes: {
     small: {
@@ -15,7 +14,7 @@ export default {
       },
     },
     bgColor: {
-      cotrol: 'radio',
+      control: 'radio',
       option: [],
     },
   },
