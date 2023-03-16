@@ -1,5 +1,11 @@
 # @sonicaweb3/tokens
 
+## 1.2.1
+
+### Patch Changes
+
+- Update lineHeights to include '2md' value of '1.25rem'
+
 ## 1.2.0
 
 ### Minor Changes

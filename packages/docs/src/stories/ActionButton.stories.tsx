@@ -5,7 +5,8 @@ export default {
   title: 'Buttons/Action Button',
   component: ActionButton,
   args: {
-    iconName: 'chevron-left',
+    iconName: 'plus',
+    size: 'md',
   },
 } as Meta<ActionButtonProps>
 

@@ -5,7 +5,7 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "turbo run dev --parallel",
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider turbo run dev --parallel",
     "build": "turbo run build",
     "changeset": "changeset",
     "version-packages": "changeset version",

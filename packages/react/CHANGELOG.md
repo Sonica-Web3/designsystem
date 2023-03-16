@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 2.0.10
+
+### Patch Changes
+
+- Update font weights and sizes throughout the codebase
+
 ## 2.0.9
 
 ### Patch Changes

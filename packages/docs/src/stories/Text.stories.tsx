@@ -29,6 +29,20 @@ export const CustomTag: StoryObj<TextProps> = {
   },
 }
 
+export const BodySmall: StoryObj<TextProps> = {
+  args: {
+    variant: 'body-small',
+    children: 'This is a Body text',
+  },
+}
+
+export const Body: StoryObj<TextProps> = {
+  args: {
+    variant: 'body',
+    children: 'This is a Body text',
+  },
+}
+
 export const CTAText: StoryObj<TextProps> = {
   args: {
     variant: 'CTA-text',

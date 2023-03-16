@@ -1,5 +1,11 @@
 # @sonicaweb3/icons
 
+## 2.0.3
+
+### Patch Changes
+
+- Add Plus icon to list of available icons
+
 ## 2.0.2
 
 ### Patch Changes
