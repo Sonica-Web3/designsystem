@@ -35,6 +35,7 @@ export type IconNameProps =
   | 'nft-collection'
   | 'nft-market-place'
   | 'plus-circle'
+  | 'plus'
   | 'search'
   | 'settings'
   | 'upload'

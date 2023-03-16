@@ -41,6 +41,7 @@ const geIcon = (avatarType: IconNameProps) => {
     'nft-collection': React.lazy(() => import(`./icons/NftCollection`)),
     'nft-market-place': React.lazy(() => import(`./icons/NftMktPlace`)),
     'plus-circle': React.lazy(() => import(`./icons/PlusCircle`)),
+    plus: React.lazy(() => import(`./icons/Plus`)),
     search: React.lazy(() => import(`./icons/Search`)),
     settings: React.lazy(() => import(`./icons/Settings`)),
     upload: React.lazy(() => import(`./icons/Upload`)),
