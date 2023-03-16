@@ -1,10 +1,17 @@
 # @sonicaweb3/react
 
+## 2.0.13
+
+### Patch Changes
+
+- Update lineHeight for Text component to '$lg'
+
 ## 2.0.12
 
 ### Patch Changes
 
 - Update font weights and sizes throughout the codebase
+
 ## 2.0.11
 
 ### Patch Changes

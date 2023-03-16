@@ -60,7 +60,7 @@ export const Text = styled('p', {
       body: {
         fontWeight: '$regular',
         fontSize: '$md',
-        lineHeight: '$xl',
+        lineHeight: '$lg',
       },
       'body-small': {
         fontWeight: '$regular',
