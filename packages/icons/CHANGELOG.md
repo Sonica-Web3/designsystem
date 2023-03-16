@@ -1,5 +1,11 @@
 # @sonicaweb3/icons
 
+## 2.0.4
+
+### Patch Changes
+
+- Update packages/icons to add new icons and rename existing files.
+
 ## 2.0.3
 
 ### Patch Changes
