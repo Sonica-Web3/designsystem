@@ -57,6 +57,16 @@ export const Text = styled('p', {
         fontSize: '$sm',
         lineHeight: '$md',
       },
+      body: {
+        fontWeight: '$regular',
+        fontSize: '$md',
+        lineHeight: '$xl',
+      },
+      'body-small': {
+        fontWeight: '$regular',
+        fontSize: '$sm',
+        lineHeight: '$2md',
+      },
     },
 
     color: generateColorPaletteVariants({ color: '$' }),

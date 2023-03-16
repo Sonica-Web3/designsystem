@@ -163,8 +163,6 @@ export const SelectContent = styled(Select.Content, {
       borderBottomStyle: 'solid',
     },
 
-    zIndex: 0,
-
     '&:hover': {
       '> span::before': {
         content: `''`,

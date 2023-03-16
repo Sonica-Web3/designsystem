@@ -8,6 +8,7 @@ export const MenuItemContainer = styled('a', {
   fontFamily: '$default',
   fontSize: '$sm',
   lineHeight: '$md',
+  fontWeight: 'regular',
   color: '$neutralColor800',
   width: '100%',
   height: '$10',
