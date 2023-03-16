@@ -1,4 +1,4 @@
-import React, { Suspense, FunctionComponent } from 'react'
+import React, { FunctionComponent } from 'react'
 import {
   Avalanche,
   BrazilFlag,
