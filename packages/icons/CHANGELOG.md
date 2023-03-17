@@ -1,5 +1,11 @@
 # @sonicaweb3/icons
 
+## 2.0.7
+
+### Patch Changes
+
+- a8dea11: Added 9 new Icons
+
 ## 2.0.6
 
 ### Patch Changes
