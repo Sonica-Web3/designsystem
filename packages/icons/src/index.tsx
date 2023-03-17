@@ -36,6 +36,15 @@ import {
   Vote,
   WalletConnect,
   X,
+  Calendar,
+  Code,
+  Copy,
+  ExternalLink,
+  Order,
+  Pined,
+  Refresh,
+  Unpin,
+  Chain,
 } from './icons'
 import {
   IconColor,
@@ -86,6 +95,15 @@ const geIcon = (avatarType: IconNameProps) => {
     'wallet-connect': WalletConnect,
     'coinbase-wallet': CoinbaseWallet,
     'log-out': LogOut,
+    calendar: Calendar,
+    code: Code,
+    copy: Copy,
+    'external-link': ExternalLink,
+    order: Order,
+    pined: Pined,
+    refresh: Refresh,
+    unpin: Unpin,
+    chain: Chain,
   }
 
   if (icons[avatarType]) {

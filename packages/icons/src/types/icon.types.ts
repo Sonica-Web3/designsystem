@@ -40,6 +40,15 @@ export type IconNameProps =
   | 'settings'
   | 'upload'
   | 'wallet-connect'
+  | 'code'
+  | 'unpin'
+  | 'refresh'
+  | 'pined'
+  | 'order'
+  | 'chain'
+  | 'external-link'
+  | 'copy'
+  | 'calendar'
 
 export type IconSize = 'xs' | 'sm' | 'md' | 'lg'
 
