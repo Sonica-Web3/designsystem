@@ -1,5 +1,17 @@
 # @sonicaweb3/react
 
+## 2.0.15
+
+### Patch Changes
+
+- Update transition duration for ActionButton styles
+
+## 2.0.14
+
+### Patch Changes
+
+- Update transition time for ActionButtonContainer style.
+
 ## 2.0.13
 
 ### Patch Changes
