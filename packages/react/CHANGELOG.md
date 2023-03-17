@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 2.0.16
+
+### Patch Changes
+
+- Update z-index of Select components
+
 ## 2.0.15
 
 ### Patch Changes

@@ -59,14 +59,15 @@ export function Select({
           <Icon name="chevron-down" size="sm" />
         </RadixSelect.Icon>
       </SelectTrigger>
-      <RadixSelect.Portal>
+      <RadixSelect.Portal style={{ zIndex: 50 }}>
         <SelectContent
+          style={{ zIndex: 50 }}
           position="popper"
           avoidCollisions={false}
           sideEffect={side}
           side={side}
         >
-          <RadixSelect.Viewport className="SelectViewport">
+          <RadixSelect.Viewport className="SelectViewport ">
             {options.map((group) => {
               return (
                 <RadixSelect.Group
