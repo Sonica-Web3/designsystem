@@ -34,7 +34,7 @@ export const ActionButtonContainer = styled('button', {
         border: '1px solid $neutralColor400',
 
         svg: {
-          transition: 'all 0.2s',
+          transition: 'all 0.1s',
           path: {
             stroke: '$neutralColor600',
           },
@@ -67,7 +67,7 @@ export const ActionButtonContainer = styled('button', {
         border: '1px solid $errorColor500',
 
         svg: {
-          transition: 'all 0.2s',
+          transition: 'all 0.1s',
           path: {
             stroke: '$errorColor500',
           },
