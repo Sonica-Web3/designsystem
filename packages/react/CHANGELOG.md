@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 2.0.18
+
+### Patch Changes
+
+- Update Button and Text components styling
+
 ## 2.0.17
 
 ### Patch Changes

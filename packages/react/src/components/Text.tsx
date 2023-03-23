@@ -46,6 +46,11 @@ export const Text = styled('p', {
         lineHeight: '$md',
         textDecoration: 'underline',
       },
+      'input-label': {
+        fontWeight: '$regular',
+        fontSize: '$xxs',
+        lineHeight: '$xs',
+      },
       caption: {
         fontWeight: '$regular',
         fontSize: '$xs',

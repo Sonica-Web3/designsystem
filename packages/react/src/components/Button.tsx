@@ -66,6 +66,7 @@ export const Button = styled('button', {
         '&:disabled': {
           background: 'transparent',
           border: '1px solid $neutralColor300',
+          color: '$neutralColor400',
         },
       },
       error: {
@@ -84,6 +85,7 @@ export const Button = styled('button', {
         '&:disabled': {
           background: 'transparent',
           border: '1px solid $neutralColor300',
+          color: '$neutralColor400',
         },
       },
     },
