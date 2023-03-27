@@ -12,6 +12,7 @@ export default {
 export const Solid: StoryObj<ButtonProps> = {
   args: {
     disabled: false,
+    loading: false,
   },
 }
 
@@ -19,6 +20,7 @@ export const Outline: StoryObj<ButtonProps> = {
   args: {
     variant: 'outline',
     disabled: false,
+    loading: false,
   },
 }
 
@@ -26,5 +28,6 @@ export const Error: StoryObj<ButtonProps> = {
   args: {
     variant: 'error',
     disabled: false,
+    loading: false,
   },
 }

@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 2.0.20
+
+### Patch Changes
+
+- added loading on CTA Button.
+
 ## 2.0.19
 
 ### Patch Changes
