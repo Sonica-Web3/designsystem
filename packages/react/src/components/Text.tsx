@@ -5,7 +5,6 @@ import { generateColorPaletteVariants } from '../utils/generateColorPaletteVaria
 export const Text = styled('p', {
   fontFamily: '$default',
   lineHeight: '$md',
-  margin: 0,
   color: '$neutralColor800',
 
   variants: {
@@ -46,6 +45,11 @@ export const Text = styled('p', {
         fontSize: '$xxs',
         lineHeight: '$md',
         textDecoration: 'underline',
+      },
+      'input-label': {
+        fontWeight: '$regular',
+        fontSize: '$xxs',
+        lineHeight: '$xs',
       },
       caption: {
         fontWeight: '$regular',

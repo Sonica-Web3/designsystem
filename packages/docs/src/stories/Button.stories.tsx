@@ -9,16 +9,22 @@ export default {
   },
 } as Meta<ButtonProps>
 
-export const Solid: StoryObj<ButtonProps> = {}
+export const Solid: StoryObj<ButtonProps> = {
+  args: {
+    disabled: false,
+  },
+}
 
 export const Outline: StoryObj<ButtonProps> = {
   args: {
     variant: 'outline',
+    disabled: false,
   },
 }
 
 export const Error: StoryObj<ButtonProps> = {
   args: {
     variant: 'error',
+    disabled: false,
   },
 }
