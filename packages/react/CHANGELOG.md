@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 2.0.19
+
+### Patch Changes
+
+- Refactor Loader component
+
 ## 2.0.18
 
 ### Patch Changes

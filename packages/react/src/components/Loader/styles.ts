@@ -9,6 +9,7 @@ export const LoaderContainer = styled('div', {
   flexDirection: 'column',
 
   h4: {
+    marginTop: '1rem',
     fontFamily: '$default',
     fontWeight: '$semiBold',
     fontSize: '1.125rem',
@@ -17,47 +18,45 @@ export const LoaderContainer = styled('div', {
   },
 })
 
-const spinner = keyframes({
-  '0%': { transform: 'rotate(0deg)' },
-  '100%': { transform: ' rotate(360deg)' },
+const rotate = keyframes({
+  '0%': {
+    transform: 'rotate(360deg)',
+  },
+  '100%': {
+    transform: 'rotate(0deg)',
+  },
 })
 
-export const LoaderSpin = styled('span', {
-  //   animation: `1.5s linear infinite ${spinner}`,
-  //   display: 'block',
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  width: '41px',
-  height: '41px',
-  borderRadius: '99999px',
+export const LoaderSpin = styled('div', {
+  display: 'flex',
+  position: 'relative',
+  width: '3rem',
+  height: '3rem',
+  'align-items': 'center',
+  'justify-content': 'center',
 
-  overflow: 'hidden',
-  backgroundColor: '#9747FF',
-
-  animation: `${spinner} 1s infinite linear`,
-
-  '.spinner-circle-inner, .spinner-circle-gradient': {
+  '._1': {
     position: 'absolute',
-    width: '46px',
-    height: '46px',
-    transform: 'translate(-50%, -50%)',
-  },
+    width: '100%',
+    height: '100%',
+    border: '0px',
+    animation: `${rotate} 1s linear infinite`,
+    top: '0px',
+    borderRadius: '50%',
 
-  '.spinner-circle-inner': {
-    top: '50%',
-    left: '50%',
-    backgroundColor: '#FFF',
-    borderRadius: '100%',
+    background:
+      'conic-gradient(from 300.31deg at 30.87% 50%, #9747FF 0deg, rgba(255, 255, 255, 0) 250deg)',
   },
-
-  '.spinner-circle-gradient': {
-    top: '-24px',
-    left: '6px',
-    backgroundColor: '#9747FF',
-    backgroundImage:
-      '-moz-linear-gradient(0deg,$primaryColor 0%,$secondaryColor 60%)',
-    transform: 'rotate(-45deg)',
+  '._2': {
+    top: '5px',
+    position: 'absolute',
+    width: 'calc(100% - 10px)',
+    height: 'calc(100% - 10px)',
+    border: '0px',
+    background: '#fff',
+    borderRadius: '50%',
+  },
+  '._3': {
+    display: 'none',
   },
 })

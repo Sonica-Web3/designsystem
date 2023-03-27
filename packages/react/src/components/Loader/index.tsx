@@ -9,11 +9,9 @@ export function Loader({ children, ...rest }: LoaderProps) {
   return (
     <LoaderContainer {...rest}>
       <LoaderSpin>
-        <div className="spinner-circle">
-          <div className="spinner-circle-gradient"></div>
-
-          <div className="spinner-circle-inner"></div>
-        </div>
+        <i className="_1"></i>
+        <i className="_2"></i>
+        <i className="_3"></i>
       </LoaderSpin>
       <h4>{children}</h4>
     </LoaderContainer>
