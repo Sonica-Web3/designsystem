@@ -45,6 +45,12 @@ import {
   Refresh,
   Unpin,
   Chain,
+  CheckCircle,
+  Defi,
+  Edit,
+  FreePlan,
+  PremiumPlan,
+  Payments,
 } from './icons'
 import {
   IconColor,
@@ -104,6 +110,12 @@ const geIcon = (avatarType: IconNameProps) => {
     refresh: Refresh,
     unpin: Unpin,
     chain: Chain,
+    'check-circle': CheckCircle,
+    defi: Defi,
+    edit: Edit,
+    'free-plan': FreePlan,
+    'premium-plan': PremiumPlan,
+    payments: Payments,
   }
 
   if (icons[avatarType]) {

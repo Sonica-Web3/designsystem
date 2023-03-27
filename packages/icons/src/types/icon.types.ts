@@ -48,6 +48,12 @@ export type IconNameProps =
   | 'chain'
   | 'external-link'
   | 'copy'
+  | 'check-circle'
+  | 'defi'
+  | 'edit'
+  | 'free-plan'
+  | 'premium-plan'
+  | 'payments'
   | 'calendar'
 
 export type IconSize = 'xs' | 'sm' | 'md' | 'lg'

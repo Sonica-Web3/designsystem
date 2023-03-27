@@ -1,5 +1,11 @@
 # @sonicaweb3/icons
 
+## 2.0.8
+
+### Patch Changes
+
+- 6 new icons - edit, check-circle, free and premium plan, payments and defi
+
 ## 2.0.7
 
 ### Patch Changes
