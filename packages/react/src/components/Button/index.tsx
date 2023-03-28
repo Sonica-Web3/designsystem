@@ -3,9 +3,9 @@ import { Loading } from '../Loading'
 import { ButtonContainer } from './styles'
 
 export interface ButtonProps extends ComponentProps<typeof ButtonContainer> {
-  loading: boolean
+  loading?: boolean
   children: React.ReactNode
-  variant: 'solid' | 'outline' | 'error'
+  variant?: 'solid' | 'outline' | 'error'
 }
 
 export function Button({

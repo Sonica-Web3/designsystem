@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 2.0.21
+
+### Patch Changes
+
+- Update Button props to add optional loading and variant properties.
+
 ## 2.0.20
 
 ### Patch Changes
