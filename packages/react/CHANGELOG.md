@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 2.0.22
+
+### Patch Changes
+
+- Fix on CTA button disabled prop
+
 ## 2.0.21
 
 ### Patch Changes

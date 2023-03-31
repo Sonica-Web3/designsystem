@@ -7,6 +7,9 @@ export default {
   args: {
     iconName: 'plus',
     size: 'md',
+    onClick: () => {
+      console.log('clicked')
+    },
   },
 } as Meta<ActionButtonProps>
 

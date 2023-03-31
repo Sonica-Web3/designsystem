@@ -6,6 +6,9 @@ export default {
   component: Button,
   args: {
     children: 'CTA Button',
+    onClick: () => {
+      console.log('clicked')
+    },
   },
 } as Meta<ButtonProps>
 

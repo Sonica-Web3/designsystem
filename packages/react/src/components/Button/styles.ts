@@ -25,7 +25,9 @@ export const ButtonContainer = styled('button', {
     height: '$4',
   },
 
-  '&:disabled': {},
+  '&[disabled]': {
+    cursor: 'not-allowed',
+  },
 
   variants: {
     variant: {
@@ -48,7 +50,7 @@ export const ButtonContainer = styled('button', {
     loading: {
       true: {},
     },
-    disabled: {
+    customDisabled: {
       true: {},
       false: {},
     },
@@ -60,15 +62,15 @@ export const ButtonContainer = styled('button', {
 
   compoundVariants: [
     {
-      disabled: true,
+      customDisabled: true,
       variant: 'solid',
       css: {
-        cursor: 'not-allowed',
+        // pointerEvents: 'none',
         background: '$neutralColor300',
       },
     },
     {
-      disabled: false,
+      customDisabled: false,
       variant: 'solid',
       css: {
         '&:hover': {
@@ -82,17 +84,16 @@ export const ButtonContainer = styled('button', {
       },
     },
     {
-      disabled: true,
+      customDisabled: true,
       variant: 'outline',
       css: {
-        cursor: 'not-allowed',
         background: 'transparent',
         border: '1px solid $neutralColor300',
         color: '$neutralColor400',
       },
     },
     {
-      disabled: false,
+      customDisabled: false,
       variant: 'outline',
       css: {
         '&:hover': {
@@ -107,17 +108,16 @@ export const ButtonContainer = styled('button', {
       },
     },
     {
-      disabled: true,
+      customDisabled: true,
       variant: 'error',
       css: {
-        cursor: 'not-allowed',
         background: 'transparent',
         border: '1px solid $neutralColor300',
         color: '$neutralColor400',
       },
     },
     {
-      disabled: false,
+      customDisabled: false,
       variant: 'error',
       css: {
         '&:hover': {
@@ -133,7 +133,7 @@ export const ButtonContainer = styled('button', {
     },
     {
       loading: true,
-      disabled: false,
+      customDisabled: false,
       variant: 'solid',
       css: {
         pointerEvents: 'none',

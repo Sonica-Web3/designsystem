@@ -28,6 +28,8 @@ export function Button({
       variant={variant}
       loading={loading}
       disabled={disabled}
+      customDisabled={disabled}
+      aria-disabled={!disabled}
       {...rest}
     >
       {loading ? <Loading variant={currentVariant} /> : children}
