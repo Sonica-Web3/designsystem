@@ -51,7 +51,7 @@ export const SelectTrigger = styled(Select.Trigger, {
 
   fontFamily: '$default',
 
-  height: '$8',
+  height: '$10',
   width: 'inherit',
 
   color: '$neutralColor700',
@@ -211,7 +211,7 @@ export const Label = styled('label', {
   position: 'absolute',
   margin: '0 auto',
   left: '9px',
-  top: '5px',
+  top: '7px',
 
   background: '$neutralColorWhite',
 
@@ -224,7 +224,7 @@ export const Label = styled('label', {
     lineHeight: '$xs',
     color: '$primaryColor500',
 
-    transform: 'translateY(-0.70rem) translateX(-0.125rem)',
+    transform: 'translateY(-0.75rem) translateX(-0.125rem)',
     padding: '0 2px',
   },
 
@@ -242,7 +242,7 @@ export const Label = styled('label', {
           lineHeight: '$xs',
           color: '$errorColor500',
 
-          transform: 'translateY(-0.70rem) translateX(-0.125rem)',
+          transform: 'translateY(-0.75rem) translateX(-0.125rem)',
           padding: '0 2px',
         },
       },
@@ -256,7 +256,7 @@ export const Label = styled('label', {
           lineHeight: '$xs',
           color: '$neutralColor500',
 
-          transform: 'translateY(-0.70rem) translateX(-0.125rem)',
+          transform: 'translateY(-0.75rem) translateX(-0.125rem)',
           padding: '0 2px',
         },
       },

@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 2.0.24
+
+### Patch Changes
+
+- Adjust Select Input min-height to 40px
+
 ## 2.0.23
 
 ### Patch Changes
