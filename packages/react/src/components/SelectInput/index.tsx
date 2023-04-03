@@ -14,7 +14,6 @@ import classnames from 'classnames'
 
 export interface SelectInputProps
   extends ComponentProps<typeof SelectContainer> {
-  value: string | undefined
   label: string
   placeholder?: string
   options: string[]

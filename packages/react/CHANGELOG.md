@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 2.0.26
+
+### Patch Changes
+
+- Removed value necessary prop from SelectInput component
+
 ## 2.0.25
 
 ### Patch Changes
