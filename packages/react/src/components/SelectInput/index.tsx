@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react'
+import React, { ComponentProps, useCallback, useState } from 'react'
 import {
   Container,
   Label,
@@ -12,7 +12,9 @@ import Icon from '@sonicaweb3/icons'
 import * as Select from '@radix-ui/react-select'
 import classnames from 'classnames'
 
-export interface SelectInputProps {
+export interface SelectInputProps
+  extends ComponentProps<typeof SelectContainer> {
+  value: string | undefined
   label: string
   placeholder?: string
   options: string[]
@@ -30,6 +32,8 @@ export function SelectInput({
   disabled,
   ...rest
 }: SelectInputProps) {
+  const [isSelected, setIsSelected] = useState<string>('false')
+
   const handleOpenChange = useCallback(() => {
     const box = document.querySelector<HTMLButtonElement>('.Trigger')
     const body = document.querySelector<HTMLDivElement>('.SelectViewport')
@@ -41,24 +45,22 @@ export function SelectInput({
       parsedWidth = parseInt(parsedWidth) - BORDERS_WIDTH
       body.style.width = `${parsedWidth}px`
     }
-  }, [])
 
-  const [selected, setSelected] = useState<string | undefined>(undefined)
+    setIsSelected('true')
+  }, [])
 
   return (
     <Container>
       <SelectContainer
-        value={selected}
-        onValueChange={setSelected}
         onOpenChange={handleOpenChange}
         disabled={disabled}
+        {...rest}
       >
         <SelectTrigger
           hasError={hasError}
           disabled={disabled}
-          selected-value={selected}
+          selected-value={isSelected}
           className="Trigger"
-          {...rest}
         >
           <Select.Value aria-label={label} />
           <Select.Icon className="SelectIcon">
@@ -70,7 +72,7 @@ export function SelectInput({
             style={{ zIndex: 50 }}
             position="popper"
             avoidCollisions={false}
-            selected-value={selected}
+            selected-value={isSelected}
             hasError={hasError}
           >
             <Select.Viewport className="SelectViewport">
@@ -79,7 +81,7 @@ export function SelectInput({
                   <>
                     <SelectSeparator
                       hasError={hasError}
-                      selected-value={selected}
+                      selected-value={isSelected}
                     />
                     <SelectItem value={option} textValue={option}>
                       {option}
@@ -91,7 +93,7 @@ export function SelectInput({
           </SelectContent>
         </Select.Portal>
         <Label
-          selected-value={selected}
+          selected-value={isSelected}
           hasError={hasError}
           disabled={disabled}
         >

@@ -9,11 +9,7 @@ export const SelectContainer = styled(Select.Root, {
 export const SelectSeparator = styled(Select.Separator, {
   borderTop: '1px solid $neutralColor200',
 
-  '&[selected-value="enabled"]': {
-    borderColor: '$primaryColor100',
-  },
-
-  '&[selected-value="disabled"]': {
+  '&[selected-value="true"]': {
     borderColor: '$primaryColor100',
   },
 
@@ -22,11 +18,7 @@ export const SelectSeparator = styled(Select.Separator, {
       true: {
         borderTop: '1px solid $errorColor100',
 
-        '&[selected-value="enabled"]': {
-          borderColor: '$errorColor100',
-        },
-
-        '&[selected-value="disabled"]': {
+        '&[selected-value="true"]': {
           borderColor: '$errorColor100',
         },
       },
@@ -56,7 +48,7 @@ export const SelectTrigger = styled(Select.Trigger, {
 
   color: '$neutralColor700',
 
-  '&[selected-value]': {
+  '&[selected-value="true"]': {
     borderColor: '$primaryColor500',
   },
 
@@ -99,7 +91,7 @@ export const SelectTrigger = styled(Select.Trigger, {
       true: {
         border: '1px solid $errorColor500',
 
-        '&[selected-value]': {
+        '&[selected-value="true"]': {
           borderColor: '$errorColor500',
         },
 
@@ -211,7 +203,7 @@ export const Label = styled('label', {
   position: 'absolute',
   margin: '0 auto',
   left: '9px',
-  top: '7px',
+  top: '8px',
 
   background: '$neutralColorWhite',
 
@@ -219,7 +211,7 @@ export const Label = styled('label', {
   transformOrigin: ' 0 0',
   transition: 'all 0.2s ease-in-out',
 
-  '&[selected-value]': {
+  '&[selected-value="true"]': {
     fontSize: '$xxs',
     lineHeight: '$xs',
     color: '$primaryColor500',
@@ -237,7 +229,7 @@ export const Label = styled('label', {
   variants: {
     hasError: {
       true: {
-        '&[selected-value]': {
+        '&[selected-value="true"]': {
           fontSize: '$xxs',
           lineHeight: '$xs',
           color: '$errorColor500',
@@ -251,7 +243,7 @@ export const Label = styled('label', {
       true: {
         color: '$neutralColor500',
 
-        '&[selected-value]': {
+        '&[selected-value="true"]': {
           fontSize: '$xxs',
           lineHeight: '$xs',
           color: '$neutralColor500',

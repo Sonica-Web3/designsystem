@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 2.0.25
+
+### Patch Changes
+
+- Added onValueChange to SelectInput component so it can be controlled
+
 ## 2.0.24
 
 ### Patch Changes
