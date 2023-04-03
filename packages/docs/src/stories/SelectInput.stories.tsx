@@ -20,9 +20,9 @@ export default {
           css={{
             display: 'flex',
             padding: '16px',
-            width: '350px',
+            width: '500px',
             alignItems: 'center',
-            height: '500px',
+            height: '400px',
           }}
         >
           {Story()}

@@ -32,9 +32,9 @@ export const SelectTrigger = styled(Select.Trigger, {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',
-  padding: '$4 $2',
-  lineHeight: '$md',
-  fontSize: '$sm',
+  padding: '0 $2',
+  lineHeight: '$lg',
+  fontSize: '$md',
 
   borderRadius: '$md',
   border: '1px solid $neutralColor500',
@@ -78,6 +78,9 @@ export const SelectTrigger = styled(Select.Trigger, {
   },
 
   '.SelectIcon svg': {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
     margin: '$0',
     width: '$4',
     height: '$4',
@@ -212,15 +215,13 @@ export const Label = styled('label', {
   transition: 'all 0.2s ease-in-out',
 
   '&[selected-value="true"]': {
-    fontSize: '$xxs',
-    lineHeight: '$xs',
     color: '$primaryColor500',
 
-    transform: 'translateY(-0.75rem) translateX(-0.125rem)',
+    transform: 'scale(0.75) translateY(-1.4rem) translateX(-0.125rem)',
     padding: '0 2px',
   },
 
-  fontSize: '$sm',
+  fontSize: '$md',
   lineHeight: '$lg',
   color: '$neutralColor800',
   fontFamily: '$default',

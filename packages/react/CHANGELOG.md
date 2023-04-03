@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 2.0.27
+
+### Patch Changes
+
+- Small adjustments to SelectInput component
+
 ## 2.0.26
 
 ### Patch Changes

@@ -33,7 +33,7 @@ export function SelectInput({
 }: SelectInputProps) {
   const [isSelected, setIsSelected] = useState<string>('false')
 
-  const handleOpenChange = useCallback(() => {
+  const handleOpenChange = useCallback((value: boolean) => {
     const box = document.querySelector<HTMLButtonElement>('.Trigger')
     const body = document.querySelector<HTMLDivElement>('.SelectViewport')
 
@@ -45,13 +45,13 @@ export function SelectInput({
       body.style.width = `${parsedWidth}px`
     }
 
-    setIsSelected('true')
+    value && setIsSelected('true')
   }, [])
 
   return (
     <Container>
       <SelectContainer
-        onOpenChange={handleOpenChange}
+        onOpenChange={(value) => handleOpenChange(value)}
         disabled={disabled}
         {...rest}
       >
@@ -99,9 +99,11 @@ export function SelectInput({
           {placeholder}
         </Label>
       </SelectContainer>
-      <Message hasError={hasError} disabled={disabled}>
-        {message}
-      </Message>
+      {message && (
+        <Message hasError={hasError} disabled={disabled}>
+          {message}
+        </Message>
+      )}
     </Container>
   )
 }
