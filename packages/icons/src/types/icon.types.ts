@@ -71,4 +71,5 @@ export interface IconProps {
 }
 
 export type IconSizeOptions = { [key in IconSize]: number }
+
 export type IconTypeOptions = { [key in IconNameProps]: any }
