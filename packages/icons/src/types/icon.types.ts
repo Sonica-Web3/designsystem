@@ -55,6 +55,7 @@ export type IconNameProps =
   | 'premium-plan'
   | 'payments'
   | 'calendar'
+  | 'menu'
 
 export type IconSize = 'xs' | 'sm' | 'md' | 'lg'
 

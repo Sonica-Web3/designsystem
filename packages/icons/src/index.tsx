@@ -51,6 +51,7 @@ import {
   FreePlan,
   PremiumPlan,
   Payments,
+  Menu,
 } from './icons'
 import {
   IconColor,
@@ -116,6 +117,7 @@ const geIcon = (avatarType: IconNameProps) => {
     'free-plan': FreePlan,
     'premium-plan': PremiumPlan,
     payments: Payments,
+    menu: Menu,
   }
 
   if (icons[avatarType]) {

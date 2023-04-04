@@ -1,5 +1,11 @@
 # @sonicaweb3/icons
 
+## 2.0.9
+
+### Patch Changes
+
+- Add Menu icon
+
 ## 2.0.8
 
 ### Patch Changes
