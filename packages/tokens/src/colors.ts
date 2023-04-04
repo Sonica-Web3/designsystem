@@ -29,4 +29,5 @@ export const colors = <const>{
   errorColor700: '#5B0808',
   errorColor800: '#3C0605',
   errorColor900: '#1E0303',
+  successColor500: '#297D13',
 }

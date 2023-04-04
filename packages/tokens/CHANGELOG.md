@@ -1,5 +1,11 @@
 # @sonicaweb3/tokens
 
+## 1.2.2
+
+### Patch Changes
+
+- Add successColor500 color token
+
 ## 1.2.1
 
 ### Patch Changes
