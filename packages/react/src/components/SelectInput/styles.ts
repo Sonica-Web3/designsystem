@@ -37,7 +37,7 @@ export const SelectTrigger = styled(Select.Trigger, {
   fontSize: '$md',
 
   borderRadius: '$md',
-  border: '1px solid $neutralColor500',
+  border: '1px solid $neutralColor700',
 
   background: '$neutralColorWhite',
 
@@ -66,7 +66,7 @@ export const SelectTrigger = styled(Select.Trigger, {
   },
 
   '&:focus': {
-    boxShadow: '0 0 0 2px $neutralColor500',
+    boxShadow: '0 0 0 2px $neutralColor700',
   },
 
   '&:focus-visible': {
@@ -85,7 +85,7 @@ export const SelectTrigger = styled(Select.Trigger, {
     width: '$4',
     height: '$4',
     path: {
-      stroke: '$neutralColor500',
+      stroke: '$neutralColor700',
     },
   },
 
@@ -116,7 +116,7 @@ export const SelectContent = styled(Select.Content, {
   borderRadius: '$default',
   borderWidth: '1px',
   borderStyle: 'solid',
-  borderColor: '$neutralColor500',
+  borderColor: '$neutralColor700',
   borderTop: 'none',
   borderTopLeftRadius: 0,
   borderTopRightRadius: 0,
@@ -124,13 +124,13 @@ export const SelectContent = styled(Select.Content, {
   borderBottomRightRadius: '$md',
   minWidth: '100%',
 
-  '&[selected-value]': {
+  '&[selected-value="true"]': {
     borderColor: '$primaryColor500',
   },
 
   '.SelectLabel': {
     padding: '$2',
-    color: '$neutralColor500',
+    color: '$neutralColor700',
     fontSize: '$xxs',
     fontFamily: '$default',
     lineHeight: '$xs',
@@ -141,7 +141,7 @@ export const SelectContent = styled(Select.Content, {
     fontSize: '$sm',
     lineHeight: '$md',
 
-    color: '$neutralColor800',
+    color: '$neutralColor700',
 
     padding: '$3 $2',
     position: 'relative',
@@ -171,7 +171,7 @@ export const SelectContent = styled(Select.Content, {
         borderBottomLeftRadius: '$md',
         borderBottomRightRadius: '$md',
 
-        '&[selected-value]': {
+        '&[selected-value="true"]': {
           borderColor: '$errorColor500',
         },
       },
@@ -187,7 +187,7 @@ export const SelectContent = styled(Select.Content, {
         borderBottomLeftRadius: '$md',
         borderBottomRightRadius: '$md',
 
-        '&[selected-value]': {
+        '&[selected-value="true"]': {
           borderColor: '$neutralColor500',
         },
       },
@@ -223,7 +223,7 @@ export const Label = styled('label', {
 
   fontSize: '$md',
   lineHeight: '$lg',
-  color: '$neutralColor800',
+  color: '$neutralColor700',
   fontFamily: '$default',
   fontWeight: '$regular',
 

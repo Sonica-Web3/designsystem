@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 2.0.28
+
+### Patch Changes
+
+- Fix SelectInput component to show initial defaultValue
+
 ## 2.0.27
 
 ### Patch Changes

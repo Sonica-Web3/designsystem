@@ -1,4 +1,4 @@
-import React, { ComponentProps, useCallback, useState } from 'react'
+import React, { ComponentProps, useCallback, useEffect, useState } from 'react'
 import {
   Container,
   Label,
@@ -14,6 +14,7 @@ import classnames from 'classnames'
 
 export interface SelectInputProps
   extends ComponentProps<typeof SelectContainer> {
+  value?: string
   label: string
   placeholder?: string
   options: string[]
@@ -23,6 +24,7 @@ export interface SelectInputProps
 }
 
 export function SelectInput({
+  value,
   label,
   placeholder,
   options,
@@ -48,9 +50,14 @@ export function SelectInput({
     value && setIsSelected('true')
   }, [])
 
+  useEffect(() => {
+    value && handleOpenChange(true)
+  }, [handleOpenChange, value])
+
   return (
     <Container>
       <SelectContainer
+        value={value}
         onOpenChange={(value) => handleOpenChange(value)}
         disabled={disabled}
         {...rest}
