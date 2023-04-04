@@ -6,6 +6,7 @@ export default {
   component: SelectInput,
 
   args: {
+    value: 'Enabled',
     placeholder: 'Gasless',
     message:
       'A relayer can be used to make the transaction gasless for the user',
