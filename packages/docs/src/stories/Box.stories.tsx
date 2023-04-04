@@ -17,7 +17,7 @@ export default {
           borderRadius: '$xs',
         }}
       >
-        <Icon name="log-out" color="primaryColor500" />
+        <Icon name="log-out" color="successColor500" />
         Testando o elemento Box
       </Text>
     ),
