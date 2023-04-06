@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 2.0.29
+
+### Patch Changes
+
+- Change MenuItem component from <a> to <div> and Selected state hover
+
 ## 2.0.28
 
 ### Patch Changes

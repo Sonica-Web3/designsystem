@@ -1,6 +1,6 @@
 import { styled } from '../../styles'
 
-export const MenuItemContainer = styled('a', {
+export const MenuItemContainer = styled('div', {
   display: 'flex',
   alignItems: 'center',
   gap: '$3',
@@ -69,7 +69,6 @@ export const MenuItemContainer = styled('a', {
 
   compoundVariants: [
     {
-      selected: undefined,
       css: {
         '&:hover': {
           cursor: 'pointer',
