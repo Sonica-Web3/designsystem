@@ -1,5 +1,11 @@
 # @sonicaweb3/icons
 
+## 2.0.10
+
+### Patch Changes
+
+- Update IconProps to include IconTypeOptions.
+
 ## 2.0.9
 
 ### Patch Changes
