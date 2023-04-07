@@ -1,6 +1,6 @@
 import { styled } from '../../styles'
 
-export const AddImageButtonContainer = styled('button', {
+export const AddImageButtonContainer = styled('label', {
   all: 'unset',
   position: 'relative',
   background: '$neutralColorWhite',

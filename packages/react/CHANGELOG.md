@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 2.0.30
+
+### Patch Changes
+
+- Change AddImageButton component from button to label
+
 ## 2.0.29
 
 ### Patch Changes
