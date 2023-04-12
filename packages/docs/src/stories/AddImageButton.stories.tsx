@@ -33,3 +33,9 @@ export default {
 } as Meta<AddImageButtonProps>
 
 export const Primary: StoryObj<AddImageButtonProps> = {}
+
+export const Loading: StoryObj<AddImageButtonProps> = {
+  args: {
+    isLoading: true,
+  },
+}

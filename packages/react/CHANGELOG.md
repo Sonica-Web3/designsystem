@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 2.0.31
+
+### Patch Changes
+
+- Add loading in AddImageButton component.
+
 ## 2.0.30
 
 ### Patch Changes
