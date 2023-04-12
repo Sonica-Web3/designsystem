@@ -8,12 +8,17 @@ export const Container = styled('div', {
   borderRadius: '$default',
   border: '1px solid $neutralColor500',
 
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  flexDirection: 'column',
-
   padding: '$2',
+
+  h2: {
+    height: '50%',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    textAlign: 'center',
+    color: '$neutralColor800',
+    wordBreak: 'break-word',
+  },
 
   variants: {
     selected: {
@@ -23,7 +28,7 @@ export const Container = styled('div', {
         h2: {
           color: '$neutralColorWhite',
         },
-        span: {
+        div: {
           background: 'transparent',
 
           svg: {
@@ -94,6 +99,13 @@ export const Container = styled('div', {
       },
     },
   ],
+})
+
+export const SvgContainer = styled('div', {
+  height: '50%',
+  display: 'flex',
+  alignItems: 'flex-end',
+  justifyContent: 'center',
 })
 
 export const Tooltip = styled('span', {

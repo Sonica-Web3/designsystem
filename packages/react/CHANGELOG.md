@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 2.0.32
+
+### Patch Changes
+
+- Remodel inside structure of CardOption component to accept more text and not move the Icon
+
 ## 2.0.31
 
 ### Patch Changes
