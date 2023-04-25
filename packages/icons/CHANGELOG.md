@@ -1,5 +1,11 @@
 # @sonicaweb3/icons
 
+## 2.0.11
+
+### Patch Changes
+
+- Add Binance and Directional-Arrows Icons
+
 ## 2.0.10
 
 ### Patch Changes

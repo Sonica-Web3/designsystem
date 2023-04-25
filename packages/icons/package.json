@@ -1,6 +1,6 @@
 {
   "name": "@sonicaweb3/icons",
-  "version": "2.0.10",
+  "version": "2.0.11",
   "private": false,
   "description": "",
   "main": "./dist/index.js",
