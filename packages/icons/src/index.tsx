@@ -52,6 +52,11 @@ import {
   PremiumPlan,
   Payments,
   Menu,
+  ArrowDown,
+  ArrowLeft,
+  ArrowRight,
+  ArrowUp,
+  Binance,
 } from './icons'
 import {
   IconColor,
@@ -118,6 +123,11 @@ const geIcon = (avatarType: IconNameProps) => {
     'premium-plan': PremiumPlan,
     payments: Payments,
     menu: Menu,
+    'arrow-down': ArrowDown,
+    'arrow-left': ArrowLeft,
+    'arrow-right': ArrowRight,
+    'arrow-up': ArrowUp,
+    binance: Binance,
   }
 
   if (icons[avatarType]) {
