@@ -84,7 +84,7 @@ export function SelectInput({
             <Select.Viewport className="SelectViewport">
               <Select.Group className="SelectGroup">
                 {options.map((option) => (
-                  <>
+                  <div key={option}>
                     <SelectSeparator
                       hasError={hasError}
                       selected-value={isSelected}
@@ -92,7 +92,7 @@ export function SelectInput({
                     <SelectItem value={option} textValue={option}>
                       {option}
                     </SelectItem>
-                  </>
+                  </div>
                 ))}
               </Select.Group>
             </Select.Viewport>

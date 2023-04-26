@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 2.0.33
+
+### Patch Changes
+
+- Add key prop in SelectInput list
+
 ## 2.0.32
 
 ### Patch Changes
