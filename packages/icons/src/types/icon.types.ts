@@ -3,6 +3,7 @@
 import { colors } from '@sonicaweb3/tokens'
 
 export type IconNameProps =
+  | 'arbitrum'
   | 'arrow-down'
   | 'arrow-left'
   | 'arrow-right'
@@ -39,9 +40,10 @@ export type IconNameProps =
   | 'log-out'
   | 'menu'
   | 'metamask-logo'
-  | 'nft'
   | 'nft-collection'
   | 'nft-market-place'
+  | 'nft'
+  | 'optimism'
   | 'order'
   | 'payments'
   | 'pined'

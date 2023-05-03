@@ -1,5 +1,11 @@
 # @sonicaweb3/icons
 
+## 2.0.13
+
+### Patch Changes
+
+- Add Arbitrum and Optimism network logos
+
 ## 2.0.12
 
 ### Patch Changes

@@ -57,6 +57,8 @@ import {
   ArrowRight,
   ArrowUp,
   Binance,
+  Arbitrum,
+  Optimism,
 } from './icons'
 import {
   IconColor,
@@ -70,6 +72,7 @@ import { colors } from '@sonicaweb3/tokens'
 
 const geIcon = (avatarType: IconNameProps) => {
   const icons: IconTypeOptions = {
+    arbitrum: Arbitrum,
     avalanche: Avalanche,
     'brazil-flag': BrazilFlag,
     nft: Nft,
@@ -128,6 +131,7 @@ const geIcon = (avatarType: IconNameProps) => {
     'arrow-right': ArrowRight,
     'arrow-up': ArrowUp,
     binance: Binance,
+    optimism: Optimism,
   }
 
   if (icons[avatarType]) {
