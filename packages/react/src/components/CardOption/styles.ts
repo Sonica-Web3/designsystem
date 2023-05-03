@@ -8,14 +8,15 @@ export const Container = styled('div', {
   borderRadius: '$default',
   border: '1px solid $neutralColor500',
 
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  justifyContent: 'space-evenly',
+  textAlign: 'center',
+
   padding: '$2',
 
   h2: {
-    height: '50%',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    textAlign: 'center',
     color: '$neutralColor800',
     wordBreak: 'break-word',
   },
@@ -34,6 +35,7 @@ export const Container = styled('div', {
           svg: {
             path: {
               stroke: '$neutralColorWhite',
+              fill: '',
             },
           },
         },
@@ -50,17 +52,31 @@ export const Container = styled('div', {
         },
         svg: {
           opacity: 0.3,
+          path: {
+            stroke: 'none',
+          },
         },
 
         'span svg': {
           path: {
-            stroke: '$neutralColor600',
+            stroke: 'none',
           },
         },
       },
     },
     isBranding: {
-      false: {},
+      true: {
+        div: {
+          background: 'transparent',
+
+          svg: {
+            path: {
+              stroke: 'none',
+              fill: '',
+            },
+          },
+        },
+      },
     },
   },
 
@@ -104,8 +120,8 @@ export const Container = styled('div', {
 export const SvgContainer = styled('div', {
   height: '50%',
   display: 'flex',
-  alignItems: 'flex-end',
-  justifyContent: 'center',
+  alignItems: 'flex-center',
+  justifyContent: 'space-evenly',
 })
 
 export const Tooltip = styled('span', {

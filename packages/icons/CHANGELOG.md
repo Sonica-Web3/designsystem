@@ -1,5 +1,11 @@
 # @sonicaweb3/icons
 
+## 2.0.12
+
+### Patch Changes
+
+- SVG modifications
+
 ## 2.0.11
 
 ### Patch Changes

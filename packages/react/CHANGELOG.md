@@ -1,5 +1,13 @@
 # @sonicaweb3/react
 
+## 2.0.34
+
+### Patch Changes
+
+- Update CardOption component isBranding property
+- Updated dependencies
+  - @sonicaweb3/icons@2.0.12
+
 ## 2.0.33
 
 ### Patch Changes

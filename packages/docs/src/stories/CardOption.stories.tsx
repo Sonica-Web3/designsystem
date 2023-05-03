@@ -13,12 +13,14 @@ export default {
 export const Primary: StoryObj<CardOptionProps> = {
   args: {
     selected: false,
+    isBranding: false,
   },
 }
 
 export const Selected: StoryObj<CardOptionProps> = {
   args: {
-    selected: 'true',
+    selected: true,
+    isBranding: true,
   },
 }
 
@@ -26,5 +28,6 @@ export const Disabled: StoryObj<CardOptionProps> = {
   args: {
     disabled: true,
     selected: false,
+    isBranding: false,
   },
 }
