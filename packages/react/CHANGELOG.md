@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 2.0.35
+
+### Patch Changes
+
+- Add changes to isBranding option on CardOption component
+
 ## 2.0.34
 
 ### Patch Changes

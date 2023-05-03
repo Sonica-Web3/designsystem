@@ -53,13 +53,13 @@ export const Container = styled('div', {
         svg: {
           opacity: 0.3,
           path: {
-            stroke: 'none',
+            stroke: '',
           },
         },
 
         'span svg': {
           path: {
-            stroke: 'none',
+            stroke: '',
           },
         },
       },
@@ -71,7 +71,7 @@ export const Container = styled('div', {
 
           svg: {
             path: {
-              stroke: 'none',
+              stroke: 'none !important',
               fill: '',
             },
           },
