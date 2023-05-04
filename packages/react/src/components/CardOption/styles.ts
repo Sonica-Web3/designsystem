@@ -21,6 +21,10 @@ export const Container = styled('div', {
     wordBreak: 'break-word',
   },
 
+  '.pill': {
+    minWidth: 'fit-content',
+  },
+
   variants: {
     selected: {
       true: {

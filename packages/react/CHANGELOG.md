@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 2.0.38
+
+### Patch Changes
+
+- Update Pill width from CardOption component
+
 ## 2.0.37
 
 ### Patch Changes

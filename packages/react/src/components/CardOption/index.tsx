@@ -23,7 +23,13 @@ export function CardOption({ icon, text, pillText, ...rest }: CardOptionProps) {
         {text}
       </Heading>
       {pillText && (
-        <Pill {...rest} small onClick={() => {}} style={{ padding: '2px 6px' }}>
+        <Pill
+          {...rest}
+          small
+          onClick={() => {}}
+          style={{ padding: '2px 6px' }}
+          className="pill"
+        >
           {pillText as string}
         </Pill>
       )}
