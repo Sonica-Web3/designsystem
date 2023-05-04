@@ -1,5 +1,11 @@
 # @sonicaweb3/icons
 
+## 2.0.14
+
+### Patch Changes
+
+- Update Info icon
+
 ## 2.0.13
 
 ### Patch Changes
