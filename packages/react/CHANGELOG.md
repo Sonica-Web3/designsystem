@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 2.0.36
+
+### Patch Changes
+
+- Add optional pillText props to CardOption component
+
 ## 2.0.35
 
 ### Patch Changes

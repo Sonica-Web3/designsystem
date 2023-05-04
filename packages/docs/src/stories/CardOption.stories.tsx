@@ -13,6 +13,15 @@ export default {
 export const Primary: StoryObj<CardOptionProps> = {
   args: {
     selected: false,
+    pillText: '',
+    isBranding: false,
+    disabled: false,
+  },
+}
+
+export const Pill: StoryObj<CardOptionProps> = {
+  args: {
+    pillText: 'soon',
     isBranding: false,
   },
 }
@@ -20,14 +29,15 @@ export const Primary: StoryObj<CardOptionProps> = {
 export const Selected: StoryObj<CardOptionProps> = {
   args: {
     selected: true,
-    isBranding: true,
+    pillText: '',
+    isBranding: false,
   },
 }
 
 export const Disabled: StoryObj<CardOptionProps> = {
   args: {
     disabled: true,
-    selected: false,
+    pillText: '',
     isBranding: false,
   },
 }

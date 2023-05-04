@@ -105,6 +105,7 @@ export const Container = styled('div', {
           borderColor: '$primaryColor500',
           span: {
             background: '$primaryColor500',
+            color: '$neutralColorWhite',
             '> svg': {
               path: {
                 stroke: '$neutralColorWhite',
