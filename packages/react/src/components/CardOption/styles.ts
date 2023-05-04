@@ -2,7 +2,7 @@ import { styled } from '../../styles'
 
 export const Container = styled('div', {
   position: 'relative',
-  width: '10rem',
+  width: '160px !important',
   height: '12.5rem',
   backgroundColor: '$neutralColorWhite',
   borderRadius: '$default',

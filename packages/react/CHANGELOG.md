@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 2.0.37
+
+### Patch Changes
+
+- Update CardOption component Width
+
 ## 2.0.36
 
 ### Patch Changes
