@@ -59,6 +59,9 @@ import {
   Binance,
   Arbitrum,
   Optimism,
+  Browser,
+  MoneyGrowth,
+  Multitasking,
 } from './icons'
 import {
   IconColor,
@@ -132,6 +135,9 @@ const geIcon = (avatarType: IconNameProps) => {
     'arrow-up': ArrowUp,
     binance: Binance,
     optimism: Optimism,
+    browser: Browser,
+    'money-growth': MoneyGrowth,
+    multitasking: Multitasking,
   }
 
   if (icons[avatarType]) {

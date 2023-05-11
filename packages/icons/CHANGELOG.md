@@ -1,5 +1,11 @@
 # @sonicaweb3/icons
 
+## 2.0.15
+
+### Patch Changes
+
+- Add Browser, MoneyGrowth and MultiTasking icons
+
 ## 2.0.14
 
 ### Patch Changes
