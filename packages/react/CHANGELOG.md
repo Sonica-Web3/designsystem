@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 2.0.39
+
+### Patch Changes
+
+- Add scroll to SelectInput component dropdown
+
 ## 2.0.38
 
 ### Patch Changes

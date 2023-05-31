@@ -1,6 +1,11 @@
 import * as Select from '@radix-ui/react-select'
 import { styled } from '../../styles'
 
+export const SelectGroup = styled(Select.Group, {
+  maxHeight: '150px',
+  overflowY: 'auto',
+})
+
 export const SelectContainer = styled(Select.Root, {
   unset: 'all',
   position: 'relative',

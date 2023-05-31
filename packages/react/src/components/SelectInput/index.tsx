@@ -7,6 +7,7 @@ import {
   SelectContent,
   SelectTrigger,
   SelectSeparator,
+  SelectGroup,
 } from './styles'
 import Icon from '@sonicaweb3/icons'
 import * as Select from '@radix-ui/react-select'
@@ -82,7 +83,7 @@ export function SelectInput({
             hasError={hasError}
           >
             <Select.Viewport className="SelectViewport">
-              <Select.Group className="SelectGroup">
+              <SelectGroup className="SelectGroup">
                 {options.map((option) => (
                   <div key={option}>
                     <SelectSeparator
@@ -94,7 +95,7 @@ export function SelectInput({
                     </SelectItem>
                   </div>
                 ))}
-              </Select.Group>
+              </SelectGroup>
             </Select.Viewport>
           </SelectContent>
         </Select.Portal>
