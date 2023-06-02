@@ -1,5 +1,11 @@
 # @sonicaweb3/icons
 
+## 2.0.16
+
+### Patch Changes
+
+- Update wallet-connect icon
+
 ## 2.0.15
 
 ### Patch Changes
