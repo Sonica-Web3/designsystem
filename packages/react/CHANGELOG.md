@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 2.0.42
+
+### Patch Changes
+
+- Add disabled styles to ActionButton component
+
 ## 2.0.41
 
 ### Patch Changes

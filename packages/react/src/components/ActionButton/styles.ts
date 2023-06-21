@@ -40,7 +40,7 @@ export const ActionButtonContainer = styled('button', {
           },
         },
 
-        '&:not(:active)&:hover': {
+        '&:hover': {
           cursor: 'pointer',
           background: '$primaryColor100',
           borderColor: '$primaryColor500',
@@ -61,6 +61,17 @@ export const ActionButtonContainer = styled('button', {
             },
           },
         },
+
+        '&:disabled': {
+          cursor: 'not-allowed',
+          background: '$neutralColorWhite',
+          borderColor: '$neutralColor400',
+          svg: {
+            path: {
+              stroke: '$neutralColor400',
+            },
+          },
+        },
       },
 
       remove: {
@@ -73,7 +84,7 @@ export const ActionButtonContainer = styled('button', {
           },
         },
 
-        '&:not(:active)&:hover': {
+        '&:hover': {
           cursor: 'pointer',
           background: '$errorColor100',
           borderColor: '$errorColor500',
@@ -91,6 +102,17 @@ export const ActionButtonContainer = styled('button', {
           svg: {
             path: {
               stroke: '$neutralColorWhite',
+            },
+          },
+        },
+
+        '&:disabled': {
+          cursor: 'not-allowed',
+          background: '$neutralColorWhite',
+          borderColor: '$neutralColor400',
+          svg: {
+            path: {
+              stroke: '$neutralColor400',
             },
           },
         },

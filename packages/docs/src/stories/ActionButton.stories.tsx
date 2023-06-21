@@ -13,11 +13,17 @@ export default {
   },
 } as Meta<ActionButtonProps>
 
-export const Primary: StoryObj<ActionButtonProps> = {}
+export const Primary: StoryObj<ActionButtonProps> = {
+  args: {
+    variant: 'default',
+    disabled: false,
+  },
+}
 
 export const Remove: StoryObj<ActionButtonProps> = {
   args: {
     variant: 'remove',
     iconName: 'trash',
+    disabled: false,
   },
 }
