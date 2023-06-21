@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 2.0.40
+
+### Patch Changes
+
+- Add Anton font for big-title
+
 ## 2.0.39
 
 ### Patch Changes

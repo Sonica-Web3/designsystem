@@ -1,5 +1,11 @@
 # @sonicaweb3/tokens
 
+## 1.2.3
+
+### Patch Changes
+
+- Add Anton font for big-title
+
 ## 1.2.2
 
 ### Patch Changes
