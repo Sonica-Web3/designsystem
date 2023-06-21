@@ -62,6 +62,7 @@ import {
   Browser,
   MoneyGrowth,
   Multitasking,
+  Folder,
 } from './icons'
 import {
   IconColor,
@@ -138,6 +139,7 @@ const geIcon = (avatarType: IconNameProps) => {
     browser: Browser,
     'money-growth': MoneyGrowth,
     multitasking: Multitasking,
+    folder: Folder,
   }
 
   if (icons[avatarType]) {

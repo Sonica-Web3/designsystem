@@ -1,5 +1,11 @@
 # @sonicaweb3/icons
 
+## 2.0.18
+
+### Patch Changes
+
+- Add folder icon to icons package
+
 ## 2.0.17
 
 ### Patch Changes

@@ -66,6 +66,7 @@ export type IconNameProps =
   | 'vote'
   | 'wallet-connect'
   | 'x'
+  | 'folder'
 
 export type IconSize = 'xs' | 'sm' | 'md' | 'lg'
 
