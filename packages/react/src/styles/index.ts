@@ -24,6 +24,11 @@ export const {
     height: 'space',
     width: 'space',
   },
+  media: {
+    bp1: '(min-width: 520px)',
+    bp2: '(min-width: 900px)',
+    bp3: '(min-width: 1200px)',
+  },
   theme: {
     colors,
     fontSizes,
