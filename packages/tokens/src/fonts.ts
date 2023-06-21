@@ -1,4 +1,4 @@
 export const fonts = <const>{
-  default: 'Inter, sans-serif',
+  default: 'Spline Sans, sans-serif',
   bigTitle: 'Anton, sans-serif',
 }

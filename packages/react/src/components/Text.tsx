@@ -10,9 +10,10 @@ export const Text = styled('p', {
   variants: {
     variant: {
       'over-text': {
-        fontWeight: '$semiBold',
+        fontWeight: '$medium',
         fontSize: '$sm',
         lineHeight: '$md',
+        textTransform: 'uppercase',
       },
       'CTA-text': {
         fontWeight: '$semiBold',

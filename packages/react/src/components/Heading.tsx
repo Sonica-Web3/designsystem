@@ -11,19 +11,20 @@ export const Heading = styled('h2', {
     variant: {
       'big-title': {
         fontFamily: '$bigTitle',
-        fontWeight: '$bold',
+        fontWeight: '$regular',
         fontSize: '$2xl',
         lineHeight: '$2xl',
+        textTransform: 'uppercase',
       },
       title: {
         fontFamily: '$default',
-        fontWeight: '$semiBold',
+        fontWeight: '$medium',
         fontSize: '$xl',
         lineHeight: '$xl',
       },
       'small-title': {
         fontFamily: '$default',
-        fontWeight: '$semiBold',
+        fontWeight: '$medium',
         fontSize: '$lg',
         lineHeight: '$lg',
       },

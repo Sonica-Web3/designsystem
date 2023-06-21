@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 2.0.41
+
+### Patch Changes
+
+- change font default (of inter for spline) + small adjusts
+
 ## 2.0.40
 
 ### Patch Changes

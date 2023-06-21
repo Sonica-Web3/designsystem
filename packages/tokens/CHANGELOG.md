@@ -1,5 +1,11 @@
 # @sonicaweb3/tokens
 
+## 1.2.4
+
+### Patch Changes
+
+- change font default (of inter for spline) + small adjusts
+
 ## 1.2.3
 
 ### Patch Changes
