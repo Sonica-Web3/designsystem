@@ -63,6 +63,9 @@ import {
   MoneyGrowth,
   Multitasking,
   Folder,
+  DefiV2,
+  CrmV2,
+  BrowserV2,
 } from './icons'
 import {
   IconColor,
@@ -140,6 +143,9 @@ const geIcon = (avatarType: IconNameProps) => {
     'money-growth': MoneyGrowth,
     multitasking: Multitasking,
     folder: Folder,
+    'defi-v2': DefiV2,
+    'crm-v2': CrmV2,
+    'browser-v2': BrowserV2,
   }
 
   if (icons[avatarType]) {

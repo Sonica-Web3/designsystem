@@ -30,4 +30,8 @@ export const colors = <const>{
   errorColor800: '#3C0605',
   errorColor900: '#1E0303',
   successColor500: '#297D13',
+  greenColor40: '#8ACC00',
+  greenColor50: '#A6F600',
+  greenColor60: '#BDFF33',
+  greenColor70: '#CBF76E',
 }

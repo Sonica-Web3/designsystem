@@ -9,11 +9,12 @@ export const MenuItemContainer = styled('div', {
   fontSize: '$sm',
   lineHeight: '$md',
   fontWeight: 'regular',
-  color: '$neutralColor800',
+  color: '$neutralColor200',
   width: '100%',
   height: '$10',
   position: 'relative',
   transition: 'all .1s',
+  borderRadius: 10,
 
   '&::before': {
     content: `''`,
@@ -36,16 +37,25 @@ export const MenuItemContainer = styled('div', {
     selected: {
       true: {
         '&::before': {
-          background: '$primaryColor500',
+          background: '$greenColor70',
+          borderTopRightRadius: 10,
+          borderBottomRightRadius: 10,
+          boxShadow: '0px 0px 5px 0px #A6F60099',
+          marginLeft: '-6px',
+          marginTop: '4px',
+          height: '32px',
+          width: '2px',
+          display: 'flex',
+          alignItems: 'center',
         },
 
-        color: '$neutralColorBlack',
+        color: '$greenColor70',
         fontWeight: '$medium',
-        background: '$primaryColor50',
+        background: '$neutralColor800',
 
         svg: {
           path: {
-            stroke: '$neutralColorBlack',
+            stroke: '$greenColor70',
           },
         },
       },
@@ -72,10 +82,11 @@ export const MenuItemContainer = styled('div', {
       css: {
         '&:hover': {
           cursor: 'pointer',
-          background: '$primaryColor50',
-          color: '$neutralColor900',
-          '&:before': {
-            background: '$primaryColor100',
+          background: '$neutralColor800',
+          color: '$greenColor70',
+
+          svg: {
+            stroke: '$greenColor70',
           },
         },
 
