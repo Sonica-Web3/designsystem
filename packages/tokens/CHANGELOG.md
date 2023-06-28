@@ -1,5 +1,11 @@
 # @sonicaweb3/tokens
 
+## 1.2.5
+
+### Patch Changes
+
+- changes in menu item and added icons for menu
+
 ## 1.2.4
 
 ### Patch Changes

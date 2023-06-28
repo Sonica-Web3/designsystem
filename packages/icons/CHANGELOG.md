@@ -1,5 +1,13 @@
 # @sonicaweb3/icons
 
+## 2.0.19
+
+### Patch Changes
+
+- changes in menu item and added icons for menu
+- Updated dependencies
+  - @sonicaweb3/tokens@1.2.5
+
 ## 2.0.18
 
 ### Patch Changes

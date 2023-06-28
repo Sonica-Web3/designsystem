@@ -1,5 +1,13 @@
 # @sonicaweb3/react
 
+## 2.0.43
+
+### Patch Changes
+
+- changes in menu item and added icons for menu
+- Updated dependencies
+  - @sonicaweb3/icons@2.0.19
+
 ## 2.0.42
 
 ### Patch Changes
