@@ -12,7 +12,7 @@ export function MenuItem({ iconName, children, ...rest }: MenuItemProps) {
   return (
     <MenuItemContainer {...rest}>
       <Icon name={iconName} size="md" color="neutralColor100" />
-      {children}
+      <span>{children}</span>
     </MenuItemContainer>
   )
 }

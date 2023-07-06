@@ -20,8 +20,8 @@ export const MenuItemContainer = styled('div', {
     content: `''`,
     position: 'absolute',
     display: 'block',
-    width: '4px',
-    height: '40px',
+    width: '2px',
+    height: '32px',
     left: 0,
     top: 0,
     zIndex: 2,
@@ -41,18 +41,16 @@ export const MenuItemContainer = styled('div', {
           borderTopRightRadius: 10,
           borderBottomRightRadius: 10,
           boxShadow: '0px 0px 5px 0px #A6F60099',
-          marginLeft: '-6px',
+          marginLeft: '-8px',
           marginTop: '4px',
           height: '32px',
           width: '2px',
           display: 'flex',
           alignItems: 'center',
         },
-
         color: '$greenColor70',
         fontWeight: '$medium',
         background: '$neutralColor800',
-
         svg: {
           path: {
             stroke: '$greenColor70',
@@ -63,15 +61,16 @@ export const MenuItemContainer = styled('div', {
 
     collapsed: {
       true: {
-        width: '71px',
+        width: '60px',
         justifyContent: 'center',
         textIndent: '100%',
         whiteSpace: 'nowrap',
-        overflow: 'hidden',
-
         svg: {
           position: 'absolute',
           marginLeft: '$0',
+        },
+        span: {
+          visibility: 'hidden',
         },
       },
     },
@@ -91,7 +90,16 @@ export const MenuItemContainer = styled('div', {
         },
 
         '&:hover::before': {
-          transition: 'all .1s',
+          background: '$greenColor70',
+          borderTopRightRadius: 10,
+          borderBottomRightRadius: 10,
+          boxShadow: '0px 0px 5px 0px #A6F60099',
+          marginLeft: '-8px',
+          marginTop: '4px',
+          height: '32px',
+          width: '2px',
+          display: 'flex',
+          alignItems: 'center',
         },
       },
     },

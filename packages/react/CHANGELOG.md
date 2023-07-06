@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 2.0.44
+
+### Patch Changes
+
+- adjusts in menuItem
+
 ## 2.0.43
 
 ### Patch Changes
