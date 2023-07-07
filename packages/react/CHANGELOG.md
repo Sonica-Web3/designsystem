@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 2.0.46
+
+### Patch Changes
+
+- fix position in collapsed (icon menuitem)
+
 ## 2.0.45
 
 ### Patch Changes

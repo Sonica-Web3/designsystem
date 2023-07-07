@@ -9,7 +9,7 @@ export const MenuItemContainer = styled('div', {
   fontSize: '$sm',
   lineHeight: '$md',
   fontWeight: '400',
-  color: '$neutralColor200',
+  color: '#F7F6F8',
   width: '100%',
   height: '$10',
   position: 'relative',
@@ -57,25 +57,19 @@ export const MenuItemContainer = styled('div', {
           alignItems: 'center',
         },
         color: '$greenColor70',
-        fontWeight: '$medium',
-        background: '$neutralColor800',
-        svg: {
-          path: {
-            stroke: '$greenColor70',
-          },
-        },
+        fontWeight: '400',
+        background: '#242324',
       },
     },
 
     collapsed: {
       true: {
         width: '60px',
+        display: 'flex',
         justifyContent: 'center',
-        textIndent: '100%',
-        whiteSpace: 'nowrap',
-        svg: {
-          position: 'absolute',
-          marginLeft: '$0',
+        alignItems: 'center',
+        i: {
+          marginLeft: '-8px',
         },
         span: {
           visibility: 'hidden',
@@ -89,7 +83,7 @@ export const MenuItemContainer = styled('div', {
       css: {
         '&:hover': {
           cursor: 'pointer',
-          background: '$neutralColor800',
+          background: '#242324',
           color: '$greenColor70',
 
           svg: {
