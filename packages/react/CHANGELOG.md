@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 2.0.45
+
+### Patch Changes
+
+- Icons MenuItem of material-symbols-rounded
+
 ## 2.0.44
 
 ### Patch Changes

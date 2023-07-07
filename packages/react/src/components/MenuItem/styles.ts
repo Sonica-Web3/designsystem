@@ -8,13 +8,14 @@ export const MenuItemContainer = styled('div', {
   fontFamily: '$default',
   fontSize: '$sm',
   lineHeight: '$md',
-  fontWeight: 'regular',
+  fontWeight: '400',
   color: '$neutralColor200',
   width: '100%',
   height: '$10',
   position: 'relative',
   transition: 'all .1s',
   borderRadius: 10,
+  paddingLeft: '12px',
 
   '&::before': {
     content: `''`,
@@ -27,10 +28,17 @@ export const MenuItemContainer = styled('div', {
     zIndex: 2,
   },
 
-  svg: {
-    marginLeft: '$4',
-    width: '$6',
-    height: '$6',
+  '.material-symbols-rounded': {
+    fontSize: '24px',
+    position: 'absolute',
+    top: '50%',
+    transform: 'translateY(-50%)',
+  },
+
+  span: {
+    paddingLeft: '36px',
+    whiteSpace: 'nowrap',
+    overflowY: 'hidden',
   },
 
   variants: {
