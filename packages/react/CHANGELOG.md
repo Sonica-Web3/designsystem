@@ -1,5 +1,12 @@
 # @sonicaweb3/react
 
+## 2.0.47
+
+### Patch Changes
+
+- change tokens primary-color and rebranding in button
+- change tokens of colors-primary and rebranding in button(components)
+
 ## 2.0.46
 
 ### Patch Changes

@@ -1,5 +1,12 @@
 # @sonicaweb3/tokens
 
+## 1.2.6
+
+### Patch Changes
+
+- change tokens primary-color and rebranding in button
+- change tokens of colors-primary and rebranding in button(components)
+
 ## 1.2.5
 
 ### Patch Changes

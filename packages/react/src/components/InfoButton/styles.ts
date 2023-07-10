@@ -24,7 +24,7 @@ export const InfoButtonContainer = styled('button', {
 
   '&:not(:active)&:hover': {
     cursor: 'pointer',
-    background: '$primaryColor100',
+    background: '$primaryColor500',
     svg: {
       path: {
         stroke: '$neutralColor700',

@@ -6,12 +6,13 @@ export const ButtonContainer = styled('button', {
   fontFamily: '$default',
   fontSize: '$sm',
   lineHeight: '$md',
-  color: '$neutralColorWhite',
-  borderRadius: '$md',
+  color: '#primaryColor100',
+  borderRadius: '10px',
   textAlign: 'center',
   minWidth: 200,
   minHeight: 48,
   boxSizing: 'border-box',
+  boxShadow: '0px 9px 21px -10px #1414141A',
 
   display: 'flex',
   alignItems: 'center',
@@ -97,7 +98,8 @@ export const ButtonContainer = styled('button', {
       variant: 'outline',
       css: {
         '&:hover': {
-          background: '$primaryColor100',
+          background: '$primaryColor500',
+          color: '$primaryColor100',
           cursor: 'pointer',
         },
 

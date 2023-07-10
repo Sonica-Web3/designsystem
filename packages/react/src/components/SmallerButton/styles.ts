@@ -25,7 +25,7 @@ export const SmallerButtonContainer = styled('button', {
 
   '&:not(:focus)&:hover': {
     cursor: 'pointer',
-    background: '$primaryColor100',
+    background: '$primaryColor500',
     borderColor: '$primaryColor500',
     svg: {
       path: {

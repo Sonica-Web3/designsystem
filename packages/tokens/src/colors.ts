@@ -11,15 +11,17 @@ export const colors = <const>{
   neutralColor900: '#141414',
   neutralColorBlack: '#000000',
   primaryColor50: '#F7F2FC',
-  primaryColor100: '#E7D6FC',
-  primaryColor200: '#CEADF9',
-  primaryColor300: '#B683F7',
-  primaryColor400: '#9D5AF4',
-  primaryColor500: '#8531F1',
-  primaryColor600: '#6A27C1',
-  primaryColor700: '#501D91',
-  primaryColor800: '#351460',
-  primaryColor900: '#1B0A30',
+  primaryColor100: '#223300', //
+  primaryColor200: '#456600', //
+  primaryColor300: '#689900', //
+  primaryColor400: '#8ACC00', //
+  primaryColor500: '#A6F600', //
+  primaryColor600: '#BDFF33', //
+  primaryColor700: '#C0FF66', //
+  primaryColor800: '#DEFF99', //
+  primaryColor900: '#EEFFCC', //
+  primaryColor950: '#F6FFE5' /* new */,
+  primaryColor990: '#FDFFFA' /* new */,
   errorColor100: '#EACFCF',
   errorColor200: '#D59F9E',
   errorColor300: '#C16E6E',
