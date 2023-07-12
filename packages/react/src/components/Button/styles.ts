@@ -12,8 +12,6 @@ export const ButtonContainer = styled('button', {
   minWidth: 200,
   minHeight: 48,
   boxSizing: 'border-box',
-  boxShadow: '0px 9px 21px -10px #1414141A',
-
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
@@ -34,12 +32,13 @@ export const ButtonContainer = styled('button', {
     variant: {
       solid: {
         background: '$primaryColor500',
+        boxShadow: '0px 9px 21px -10px #1414141A',
       },
 
       outline: {
         background: 'transparent',
         border: '1px solid $primaryColor500',
-        color: '$primaryColor500',
+        color: '$primaryColor100',
       },
       error: {
         background: 'transparent',
@@ -67,7 +66,8 @@ export const ButtonContainer = styled('button', {
       variant: 'solid',
       css: {
         // pointerEvents: 'none',
-        background: '$neutralColor300',
+        background: '$neutralColor200',
+        color: '$neutralColor400',
       },
     },
     {
@@ -75,12 +75,12 @@ export const ButtonContainer = styled('button', {
       variant: 'solid',
       css: {
         '&:hover': {
-          background: '$primaryColor400',
+          background: '$primaryColor600',
           cursor: 'pointer',
         },
 
         '&:active': {
-          background: '$primaryColor700',
+          background: '$primaryColor400',
         },
       },
     },
@@ -98,14 +98,13 @@ export const ButtonContainer = styled('button', {
       variant: 'outline',
       css: {
         '&:hover': {
-          background: '$primaryColor500',
+          background: '$primaryColor900',
           color: '$primaryColor100',
           cursor: 'pointer',
         },
 
         '&:active': {
-          background: '$primaryColor500',
-          color: '$neutralColorWhite',
+          background: '$primaryColor700',
         },
       },
     },

@@ -1,5 +1,5 @@
 import { ComponentProps } from 'react'
-import Icon, { IconNameProps } from '@sonicaweb3/icons'
+import { IconNameProps } from '@sonicaweb3/icons'
 
 import { SmallerButtonContainer } from './styles'
 
@@ -11,7 +11,7 @@ export interface SmallerButtonProps
 export function SmallerButton({ iconName, ...rest }: SmallerButtonProps) {
   return (
     <SmallerButtonContainer {...rest}>
-      <Icon name={iconName} size="xs" />
+      <i className="material-symbols-rounded">{iconName}</i>
     </SmallerButtonContainer>
   )
 }

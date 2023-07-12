@@ -1,5 +1,12 @@
 # @sonicaweb3/react
 
+## 3.0.0
+
+### Major Changes
+
+- Rebranding:- Tokens colors- Buttons: Action Butt
+- Rebranding all components and att tokens of colors
+
 ## 2.0.47
 
 ### Patch Changes

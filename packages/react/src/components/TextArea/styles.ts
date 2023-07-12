@@ -49,14 +49,16 @@ export const TextArea = styled('textarea', {
   width: '100%',
   background: '$neutralColorWhite',
   padding: '$3 $2',
-  border: '1px solid $neutralColor500',
-  borderRadius: '$md',
+  border: '1px solid transparent',
+  borderRadius: '10px',
   fontSize: '$md',
   lineHeight: '$lg',
   color: '$neutralColor700',
   fontFamily: '$default',
   fontWeight: '$regular',
   height: '6.75rem',
+  boxShadow:
+    '0px 9px 21px -10px rgba(20, 20, 20, 0.10), 0px 2px 3px -2px rgba(20, 20, 20, 0.07)',
 
   '&::placeholder': {
     opacity: 0,

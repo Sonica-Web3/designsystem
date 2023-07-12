@@ -14,7 +14,7 @@ export const LoaderContainer = styled('div', {
     fontWeight: '$semiBold',
     fontSize: '1.125rem',
     lineHeight: '$lg',
-    color: '$primaryColor500',
+    color: '$neutralColor900',
   },
 })
 
@@ -45,7 +45,7 @@ export const LoaderSpin = styled('div', {
     borderRadius: '50%',
 
     background:
-      'conic-gradient(from 300.31deg at 30.87% 50%, #9747FF 0deg, rgba(255, 255, 255, 0) 250deg)',
+      'conic-gradient(from 300.31deg at 30.87% 50%, #A6F600 0deg, rgba(255, 255, 255, 0) 250deg)',
   },
   '._2': {
     top: '5px',

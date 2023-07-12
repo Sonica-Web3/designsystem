@@ -10,29 +10,32 @@ export const Container = styled('div', {
         cursor: 'not-allowed',
 
         input: {
+          background: '$neutralColor200',
+          borderColor: '$neutralColor200',
           cursor: 'not-allowed',
           pointerEvents: 'none',
-          color: '$neutralColor700',
-          '&::placeholder': { color: '$neutralColor700' },
+          color: '$neutralColor200',
+          '&::placeholder': { color: '$neutralColor200' },
 
           '&:not(:placeholder-shown)': {
-            borderColor: '$neutralColor700',
+            borderColor: '$neutralColor200',
 
             '&:placeholder': {
               opacity: 1,
             },
 
             '& + label': {
-              color: '$neutralColor700',
+              color: '$neutralColor400',
             },
           },
         },
         label: {
-          color: '$neutralColor700',
+          color: '$neutralColor400',
+          background: 'transparent',
         },
 
         p: {
-          color: '$neutralColor700',
+          color: '$neutralColor400',
         },
       },
     },
@@ -50,13 +53,15 @@ export const Input = styled('input', {
   background: '$neutralColorWhite',
   padding: '0 $2',
   height: '40px',
-  border: '1px solid $neutralColor500',
-  borderRadius: '$md',
+  border: '1px solid transparent',
+  borderRadius: '10px',
   fontSize: '$md',
   lineHeight: '$lg',
   color: '$neutralColor700',
   fontFamily: '$default',
   fontWeight: '$regular',
+  boxShadow:
+    '0px 9px 21px -10px rgba(20, 20, 20, 0.10), 0px 2px 3px -2px rgba(20, 20, 20, 0.07)',
 
   transition: 'all 0.2s ease-in-out',
 
@@ -155,7 +160,7 @@ export const Label = styled('label', {
 
   pointerEvents: 'none',
   transformOrigin: ' 0 0',
-  transition: ' opacity .1s ease-in-out,transform .1s ease-in-out',
+  transition: ' opacity 0.2s ease-in-out,transform 0.2s ease-in-out',
 
   fontSize: '$md',
   lineHeight: '$lg',

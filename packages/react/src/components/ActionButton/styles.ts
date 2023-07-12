@@ -42,19 +42,19 @@ export const ActionButtonContainer = styled('button', {
 
         '&:hover': {
           cursor: 'pointer',
-          background: '$primaryColor100',
-          borderColor: '$primaryColor500',
+          background: '$primaryColor800',
+          borderColor: '$primaryColor400',
           svg: {
             path: {
-              stroke: '$neutralColor700',
+              stroke: '$primaryColor100',
             },
           },
         },
 
         '&:active': {
           cursor: 'pointer',
-          background: '$primaryColor500',
-          borderColor: '$primaryColor500',
+          background: '$primaryColor200',
+          borderColor: '$primaryColor200',
           svg: {
             path: {
               stroke: '$neutralColorWhite',

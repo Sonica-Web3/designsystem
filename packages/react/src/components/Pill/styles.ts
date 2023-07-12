@@ -2,7 +2,7 @@ import { styled } from '../../styles'
 import IconReact from '@sonicaweb3/icons'
 
 export const PillContainer = styled('span', {
-  borderRadius: '$md',
+  borderRadius: '1px',
 
   display: 'inline-flex',
   alignItems: 'center',
@@ -11,9 +11,9 @@ export const PillContainer = styled('span', {
 
   padding: '0.125rem',
 
-  background: '$primaryColor100',
+  background: '#E7D6FC',
 
-  color: '$neutralColorBlack',
+  color: '$neutralColor900',
   fontFamily: '$default',
 
   button: {
@@ -24,7 +24,7 @@ export const PillContainer = styled('span', {
 
     svg: {
       path: {
-        stroke: '$primaryColor300',
+        stroke: '$primaryColor100',
       },
     },
   },

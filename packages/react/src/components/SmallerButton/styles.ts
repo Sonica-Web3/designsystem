@@ -5,7 +5,7 @@ export const SmallerButtonContainer = styled('button', {
 
   background: '$neutralColorWhite',
   border: '1px solid $neutralColor400',
-  borderRadius: '$md',
+  borderRadius: '4px',
 
   display: 'flex',
   alignItems: 'center',
@@ -16,27 +16,25 @@ export const SmallerButtonContainer = styled('button', {
 
   transition: 'all 0.1s',
 
-  svg: {
-    transition: 'all 0.1s',
-    path: {
-      stroke: '$neutralColor600',
-    },
+  '.material-symbols-rounded': {
+    fontSize: '12px',
+    fontWeight: 'bold',
+    color: '$neutralColor900',
   },
 
   '&:not(:focus)&:hover': {
     cursor: 'pointer',
-    background: '$primaryColor500',
+    background: '$primaryColor900',
     borderColor: '$primaryColor500',
-    svg: {
-      path: {
-        stroke: '$neutralColor700',
-      },
+
+    '.material-symbols-rounded': {
+      color: '$neutralColor700',
     },
   },
 
   '&:focus': {
     cursor: 'pointer',
-    background: '$primaryColor500',
+    background: '$primaryColor700',
     borderColor: '$primaryColor500',
     svg: {
       path: {

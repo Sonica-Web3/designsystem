@@ -11,7 +11,7 @@ export const SelectTrigger = styled(Select.Trigger, {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',
-  borderRadius: '$md',
+  borderRadius: '8px',
   padding: '$4 $2',
   lineHeight: '$md',
   fontSize: '$sm',
@@ -24,7 +24,7 @@ export const SelectTrigger = styled(Select.Trigger, {
   height: '$8',
   width: 'inherit',
 
-  color: '$neutralColor700',
+  color: '$neutralColor900',
 
   '&[aria-expanded="true"]': {
     'span:last-child': {
@@ -43,7 +43,7 @@ export const SelectTrigger = styled(Select.Trigger, {
   },
 
   '&:hover': {
-    background: '$primaryColor50',
+    background: '$primaryColor700',
     cursor: 'pointer',
   },
 
@@ -52,7 +52,7 @@ export const SelectTrigger = styled(Select.Trigger, {
   },
 
   '&:focus-visible': {
-    outline: '1px solid $primaryColor50',
+    outline: '1px solid $primaryColor800',
   },
 
   '&:[data-placeholder]': {
@@ -133,7 +133,7 @@ export const SelectContent = styled(Select.Content, {
     fontSize: '$sm',
     lineHeight: '$md',
 
-    color: '$neutralColor800',
+    color: '$neutralColor900',
 
     padding: '$3 $2',
     position: 'relative',
@@ -170,12 +170,12 @@ export const SelectContent = styled(Select.Content, {
         display: 'block',
         width: '4px',
         height: '100%',
-        background: '$primaryColor100',
+        background: '$primaryColor500',
         left: 0,
         top: 0,
       },
 
-      background: '$primaryColor50',
+      background: '$primaryColor800',
       cursor: 'pointer',
     },
   },

@@ -4,7 +4,7 @@ export const InfoButtonContainer = styled('button', {
   all: 'unset',
 
   background: '$neutralColorWhite',
-  borderRadius: '$xs',
+  borderRadius: '8px',
 
   display: 'flex',
   alignItems: 'center',
@@ -37,7 +37,7 @@ export const InfoButtonContainer = styled('button', {
     background: '$primaryColor500',
     svg: {
       path: {
-        stroke: '$neutralColorWhite',
+        stroke: '$primaryColor100',
       },
     },
   },

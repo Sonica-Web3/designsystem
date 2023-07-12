@@ -7,19 +7,15 @@ export const FilterWrapper = styled('div', {
 export const FilterButtonContainer = styled('button', {
   all: 'unset',
 
-  background: '$neutralColorWhite',
-  borderRadius: '$md',
+  backgroundColor: '$neutralColorWhite',
+  borderRadius: '10px',
 
   fontFamily: '$default',
-  color: '$neutralColor600',
+  color: '$neutralColor900',
   fontSize: '$md',
-  padding: '0 $2',
-  height: '$8',
-
+  padding: '12px',
   border: '1px solid $neutralColor300',
-
-  gap: '$1',
-
+  gap: '4px',
   display: 'flex',
   alignItems: 'center',
 
@@ -28,34 +24,21 @@ export const FilterButtonContainer = styled('button', {
   svg: {
     transition: 'all 0.1s',
     path: {
-      stroke: '$neutralColor600',
+      stroke: '$neutralColor900',
     },
   },
 
   '&:hover': {
     cursor: 'pointer',
-    background: '$neutralColor200',
-    borderColor: '$neutralColor500',
-    color: '$neutralColor900',
-    svg: {
-      path: {
-        stroke: '$neutralColor900',
-      },
-    },
+    background: '$primaryColor900',
+    borderColor: '$primaryColor500',
   },
 
   variants: {
     selected: {
       true: {
         cursor: 'pointer',
-        background: '$neutralColor200',
-        borderColor: '$neutralColor500',
-        color: '$neutralColor900',
-        svg: {
-          path: {
-            stroke: '$neutralColor900',
-          },
-        },
+        background: '$primaryColor700',
       },
     },
   },
@@ -104,7 +87,7 @@ export const Modal = styled('div', {
 
     '&:hover': {
       path: {
-        stroke: '$neutralColor800',
+        stroke: '$neutralColor900',
       },
     },
   },
@@ -127,7 +110,7 @@ export const Modal = styled('div', {
     marginTop: '$4',
   },
   'ul li button.item p': {
-    color: '$neutralColor800',
+    color: '$neutralColor900',
   },
 
   variants: {

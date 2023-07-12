@@ -5,8 +5,9 @@ export const Container = styled('div', {
   width: '160px !important',
   height: '12.5rem',
   backgroundColor: '$neutralColorWhite',
-  borderRadius: '$default',
-  border: '1px solid $neutralColor500',
+  borderRadius: '16px',
+  boxShadow:
+    '0px 9px 21px -10px rgba(20, 20, 20, 0.10), 0px 2px 3px -2px rgba(20, 20, 20, 0.07)',
 
   display: 'flex',
   flexDirection: 'column',
@@ -14,10 +15,12 @@ export const Container = styled('div', {
   justifyContent: 'space-evenly',
   textAlign: 'center',
 
+  border: '1px solid transparent',
+  boxSizing: 'border-box',
   padding: '$2',
 
   h2: {
-    color: '$neutralColor800',
+    color: '$neutralColor900',
     wordBreak: 'break-word',
   },
 
@@ -29,17 +32,25 @@ export const Container = styled('div', {
     selected: {
       true: {
         background: '$primaryColor500',
-        borderColor: '$primaryColor500',
         h2: {
-          color: '$neutralColorWhite',
+          color: '$neutralColor900',
         },
         div: {
           background: 'transparent',
 
           svg: {
             path: {
-              stroke: '$neutralColorWhite',
+              stroke: '$neutralColor900',
               fill: '',
+            },
+          },
+        },
+        span: {
+          background: 'transparent',
+          color: '$neutralColor900',
+          '> svg': {
+            path: {
+              stroke: '$neutralColor900',
             },
           },
         },
@@ -48,7 +59,7 @@ export const Container = styled('div', {
 
     disabled: {
       true: {
-        cursor: 'not-allowed',
+        cursor: '$not-allowed',
         background: '$neutralColorWhite',
         borderColor: '$neutralColor300',
         h2: {
@@ -61,9 +72,14 @@ export const Container = styled('div', {
           },
         },
 
-        'span svg': {
-          path: {
-            stroke: '',
+        span: {
+          background: '$neutralColor100',
+          color: '$neutralColor300',
+          '> svg': {
+            opacity: 1,
+            path: {
+              stroke: '$neutralColor600',
+            },
           },
         },
       },
@@ -75,7 +91,7 @@ export const Container = styled('div', {
 
           svg: {
             path: {
-              stroke: 'none !important',
+              stroke: '$none !important',
               fill: '',
             },
           },
@@ -95,7 +111,7 @@ export const Container = styled('div', {
       isBranding: false,
       css: {
         '> svg': {
-          stroke: '$neutralColorWhite',
+          stroke: '$primaryColor900',
         },
       },
     },
@@ -105,14 +121,15 @@ export const Container = styled('div', {
       css: {
         '&:hover': {
           cursor: 'pointer',
-          background: '$primaryColor100',
-          borderColor: '$primaryColor500',
+          background: '$primaryColor900',
+          border: '1px solid $primaryColor500',
+
           span: {
-            background: '$primaryColor500',
-            color: '$neutralColorWhite',
+            background: '$primaryColor700',
+            color: '$neutralColor900',
             '> svg': {
               path: {
-                stroke: '$neutralColorWhite',
+                stroke: '$neutralColor900',
               },
             },
           },
@@ -131,14 +148,19 @@ export const SvgContainer = styled('div', {
 
 export const Tooltip = styled('span', {
   position: 'absolute',
-  top: '$1',
-  right: '$1',
-  width: '$6',
-  height: '$6',
+  top: '$2',
+  right: '$2',
+  width: '24px',
+  height: '24px',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  borderRadius: '$md',
+  borderRadius: '8px',
 
   background: '$neutralColor100',
+  svg: {
+    path: {
+      stroke: '$neutralColor600',
+    },
+  },
 })

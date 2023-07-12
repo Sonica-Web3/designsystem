@@ -1,5 +1,12 @@
 # @sonicaweb3/tokens
 
+## 2.0.0
+
+### Major Changes
+
+- Rebranding:- Tokens colors- Buttons: Action Butt
+- Rebranding all components and att tokens of colors
+
 ## 1.2.6
 
 ### Patch Changes

@@ -50,7 +50,7 @@ export const Input = styled('input', {
   transition: 'all 0.2s ease-in-out',
 
   '&:focus': {
-    borderBottom: '1px solid $primaryColor500',
+    borderBottom: '1px solid $secondaryColor500',
   },
 
   '&:not(:placeholder-shown)': {
@@ -85,14 +85,14 @@ export const Input = styled('input', {
       false: {
         '&:focus': {
           outline: 'none',
-          borderColor: '$primaryColor500',
+          borderColor: '$secondaryColor500',
         },
         '&:placeholder-shown': {
           '&:placeholder': {
             opacity: 0,
           },
           '&:not(:placeholder-shown)': {
-            borderColor: '$primaryColor500',
+            borderColor: '$secondaryColor500',
 
             '&:placeholder': {
               opacity: 1,

@@ -13,20 +13,20 @@ export const LoadingContainer = styled('div', {
       primary: {
         'div > ._1': {
           background:
-            'conic-gradient(from 250deg at 30% 70%, $primaryColor500 100deg, rgba(255, 255, 255, 0) 230deg)',
+            'conic-gradient(from 117deg at 50% 30%, rgba(165, 245, 0, 0), #233401 245deg)',
         },
       },
 
       error: {
         'div > ._1': {
           background:
-            'conic-gradient(from 250deg at 30% 70%, $errorColor500 100deg, rgba(255, 255, 255, 0) 230deg)',
+            'conic-gradient(from 117deg at 50% 30%, rgba(151, 14, 13, 0.00), #970E0D 245deg)',
         },
       },
       neutral: {
         'div > ._1': {
           background:
-            'conic-gradient(from 250deg at 30% 70%, $neutralColorWhite 100deg, rgba(255, 255, 255, 0) 230deg)',
+            'conic-gradient(from 117deg at 50% 30%, rgba(165, 245, 0, 0), #233401 245deg)',
         },
         'div > ._2': {
           background: '$primaryColor500',
@@ -41,10 +41,10 @@ export const LoadingContainer = styled('div', {
 })
 
 const rotate = keyframes({
-  '0%': {
+  '100%': {
     transform: 'rotate(360deg)',
   },
-  '100%': {
+  '0%': {
     transform: 'rotate(0deg)',
   },
 })

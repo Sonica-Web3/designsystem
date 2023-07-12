@@ -15,7 +15,7 @@ export const SelectSeparator = styled(Select.Separator, {
   borderTop: '1px solid $neutralColor200',
 
   '&[selected-value="true"]': {
-    borderColor: '$primaryColor100',
+    borderColor: '$primaryColor800',
   },
 
   variants: {
@@ -40,8 +40,10 @@ export const SelectTrigger = styled(Select.Trigger, {
   padding: '0 $2',
   lineHeight: '$lg',
   fontSize: '$md',
+  boxShadow:
+    '0px 9px 21px -10px rgba(20, 20, 20, 0.10), 0px 2px 3px -2px rgba(20, 20, 20, 0.07)',
 
-  borderRadius: '$md',
+  borderRadius: '10px',
   border: '1px solid $neutralColor700',
 
   background: '$neutralColorWhite',
@@ -75,7 +77,7 @@ export const SelectTrigger = styled(Select.Trigger, {
   },
 
   '&:focus-visible': {
-    outline: '1px solid $primaryColor50',
+    outline: '1px solid $primaryColor800',
   },
 
   '&:[data-placeholder]': {
@@ -118,16 +120,18 @@ export const SelectTrigger = styled(Select.Trigger, {
 
 export const SelectContent = styled(Select.Content, {
   backgroundColor: '$neutralColorWhite',
-  borderRadius: '$default',
+  borderRadius: '10px',
   borderWidth: '1px',
   borderStyle: 'solid',
   borderColor: '$neutralColor700',
   borderTop: 'none',
   borderTopLeftRadius: 0,
   borderTopRightRadius: 0,
-  borderBottomLeftRadius: '$md',
-  borderBottomRightRadius: '$md',
+  borderBottomLeftRadius: '10px',
+  borderBottomRightRadius: '10px',
   minWidth: '100%',
+  boxShadow:
+    '0px 9px 21px -10px rgba(20, 20, 20, 0.10), 0px 2px 3px -2px rgba(20, 20, 20, 0.07)',
 
   '&[selected-value="true"]': {
     borderColor: '$primaryColor500',
@@ -159,7 +163,7 @@ export const SelectContent = styled(Select.Content, {
     },
 
     '&:hover': {
-      background: '$primaryColor50',
+      background: '$primaryColor800',
       cursor: 'pointer',
     },
   },
@@ -173,11 +177,34 @@ export const SelectContent = styled(Select.Content, {
         borderTop: 'none',
         borderTopLeftRadius: 0,
         borderTopRightRadius: 0,
-        borderBottomLeftRadius: '$md',
-        borderBottomRightRadius: '$md',
+        borderBottomLeftRadius: '10px',
+        borderBottomRightRadius: '10px',
 
         '&[selected-value="true"]': {
           borderColor: '$errorColor500',
+        },
+
+        '.SelectItem': {
+          fontFamily: '$default',
+          fontSize: '$sm',
+          lineHeight: '$md',
+
+          color: '$neutralColor700',
+
+          padding: '$3 $2',
+          position: 'relative',
+          userSelect: 'none',
+
+          transition: 'all 0.1s',
+
+          '&:focus-visible': {
+            outline: 'none',
+          },
+
+          '&:hover': {
+            background: '$errorColor200',
+            cursor: 'pointer',
+          },
         },
       },
     },
@@ -189,8 +216,8 @@ export const SelectContent = styled(Select.Content, {
         borderTop: 'none',
         borderTopLeftRadius: 0,
         borderTopRightRadius: 0,
-        borderBottomLeftRadius: '$md',
-        borderBottomRightRadius: '$md',
+        borderBottomLeftRadius: '10px',
+        borderBottomRightRadius: '10px',
 
         '&[selected-value="true"]': {
           borderColor: '$neutralColor500',

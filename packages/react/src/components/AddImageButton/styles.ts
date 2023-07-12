@@ -4,9 +4,9 @@ export const AddImageButtonContainer = styled('label', {
   all: 'unset',
   position: 'relative',
   background: '$neutralColorWhite',
-  borderRadius: '$md',
+  borderRadius: '20px',
 
-  border: '1px solid $neutralColor500',
+  border: '1px solid $neutralColor400',
 
   display: 'flex',
   alignItems: 'center',
@@ -18,7 +18,7 @@ export const AddImageButtonContainer = styled('label', {
 
   h4: {
     marginTop: '$3',
-    color: '$neutralColor700',
+    color: '$neutralColor900',
   },
 
   p: {
@@ -31,11 +31,21 @@ export const AddImageButtonContainer = styled('label', {
 
   svg: {
     path: {
-      stroke: '$neutralColor700',
+      stroke: '$neutralColor900',
     },
   },
 
   '&:hover': {
     cursor: 'pointer',
+    border: '1px solid $primaryColor500',
+
+    h4: {
+      color: '$primaryColor400',
+    },
+    svg: {
+      path: {
+        stroke: '$primaryColor400',
+      },
+    },
   },
 })
