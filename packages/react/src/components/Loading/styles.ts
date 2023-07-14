@@ -72,7 +72,7 @@ export const LoadingSpin = styled('div', {
     width: 'calc(100% - 6px)',
     height: 'calc(100% - 6px)',
     border: '0px',
-    background: '#fff',
+    background: '$neutralColor100',
     borderRadius: '50%',
   },
   '._3': {

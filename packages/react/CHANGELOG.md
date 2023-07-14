@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 3.0.1
+
+### Patch Changes
+
+- change background loader and loading for neutralColor100
+
 ## 3.0.0
 
 ### Major Changes
