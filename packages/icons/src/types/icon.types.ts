@@ -70,6 +70,7 @@ export type IconNameProps =
   | 'defi-v2'
   | 'crm-v2'
   | 'browser-v2'
+  | 'backup'
 
 export type IconSize = 'xs' | 'sm' | 'md' | 'lg'
 

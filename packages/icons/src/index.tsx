@@ -66,6 +66,7 @@ import {
   DefiV2,
   CrmV2,
   BrowserV2,
+  Backup,
 } from './icons'
 import {
   IconColor,
@@ -146,6 +147,7 @@ const geIcon = (avatarType: IconNameProps) => {
     'defi-v2': DefiV2,
     'crm-v2': CrmV2,
     'browser-v2': BrowserV2,
+    backup: Backup,
   }
 
   if (icons[avatarType]) {
