@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 3.0.4
+
+### Patch Changes
+
+- change color font label (500 for 300)
+
 ## 3.0.3
 
 ### Patch Changes

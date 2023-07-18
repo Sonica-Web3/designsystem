@@ -145,7 +145,9 @@ export const Input = styled('input', {
           },
 
           '& + label': {
-            color: '$primaryColor500',
+            color: '$primaryColor300',
+            background:
+              'linear-gradient(to bottom, $neutralColor100 50%, $neutralColorWhite 50%)',
           },
         },
       },
