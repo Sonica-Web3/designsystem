@@ -25,7 +25,7 @@ export const Container = styled('div', {
             },
 
             '& + label': {
-              color: '$neutralColor400',
+              color: '$neutralColor300',
             },
           },
         },
@@ -97,6 +97,8 @@ export const Input = styled('input', {
 
           '& + label': {
             color: '$errorColor500',
+            background:
+              'linear-gradient(to bottom, $neutralColor100 50%, $neutralColorWhite 50%)',
           },
         },
 
@@ -114,6 +116,8 @@ export const Input = styled('input', {
 
           '& + label': {
             color: '$errorColor500',
+            background:
+              'linear-gradient(to bottom, $neutralColor100 50%, $neutralColorWhite 50%)',
           },
         },
       },
@@ -123,7 +127,9 @@ export const Input = styled('input', {
           borderColor: '$primaryColor500',
 
           '& + label': {
-            color: '$primaryColor500',
+            color: '$primaryColor300',
+            background:
+              'linear-gradient(to bottom, $neutralColor100 50%, $neutralColorWhite 50%)',
           },
         },
         '&:placeholder-shown': {

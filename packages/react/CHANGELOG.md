@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 3.0.3
+
+### Patch Changes
+
+- change background label in inputs
+
 ## 3.0.2
 
 ### Patch Changes

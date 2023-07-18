@@ -240,14 +240,15 @@ export const Label = styled('label', {
   left: '9px',
   top: '8px',
 
-  background: '$neutralColorWhite',
+  background:
+    'linear-gradient(to bottom, $neutralColor100 50%, $neutralColorWhite 50%)',
 
   pointerEvents: 'none',
   transformOrigin: ' 0 0',
   transition: 'all 0.2s ease-in-out',
 
   '&[selected-value="true"]': {
-    color: '$primaryColor500',
+    color: '$primaryColor300',
 
     transform: 'scale(0.75) translateY(-1.4rem) translateX(-0.125rem)',
     padding: '0 2px',

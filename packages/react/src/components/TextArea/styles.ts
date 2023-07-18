@@ -111,6 +111,8 @@ export const TextArea = styled('textarea', {
 
           '& + label': {
             color: '$errorColor500',
+            background:
+              'linear-gradient(to bottom, $neutralColor100 50%, $neutralColorWhite 50%)',
           },
         },
       },
@@ -120,7 +122,9 @@ export const TextArea = styled('textarea', {
           borderColor: '$primaryColor500',
 
           '& + label': {
-            color: '$primaryColor500',
+            color: '$primaryColor300',
+            background:
+              'linear-gradient(to bottom, $neutralColor100 50%, $neutralColorWhite 50%)',
           },
         },
         '&:placeholder-shown': {
