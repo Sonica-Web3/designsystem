@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 3.0.8
+
+### Patch Changes
+
+- fix fontSize actionButton and color active when button delete
+
 ## 3.0.7
 
 ### Patch Changes
