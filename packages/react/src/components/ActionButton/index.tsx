@@ -1,17 +1,15 @@
-import React, { ComponentProps } from 'react'
-import Icon, { IconNameProps } from '@sonicaweb3/icons'
-
+import { ComponentProps } from 'react'
 import { ActionButtonContainer } from './styles'
 
 export interface ActionButtonProps
   extends ComponentProps<typeof ActionButtonContainer> {
-  iconName: IconNameProps
+  iconName: string
 }
 
 export function ActionButton({ iconName, ...rest }: ActionButtonProps) {
   return (
     <ActionButtonContainer {...rest}>
-      <Icon name={iconName} size="sm" />
+      <i className="material-symbols-rounded">{iconName}</i>
     </ActionButtonContainer>
   )
 }

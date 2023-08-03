@@ -3,7 +3,7 @@ import { styled } from '../../styles'
 export const ActionButtonContainer = styled('button', {
   all: 'unset',
 
-  background: '$neutralColorWhite',
+  background: '{bgColor}',
 
   borderRadius: '10px',
   boxShadow:
@@ -14,6 +14,10 @@ export const ActionButtonContainer = styled('button', {
   justifyContent: 'center',
 
   transition: 'all 0.1s',
+
+  '.material-symbols-rounded': {
+    fontSize: '1.3rem',
+  },
 
   variants: {
     size: {
@@ -33,7 +37,7 @@ export const ActionButtonContainer = styled('button', {
 
     variant: {
       default: {
-        /* border: '1px solid $neutralColor400', */
+        border: '1px solid transparent',
 
         svg: {
           path: {
@@ -44,19 +48,19 @@ export const ActionButtonContainer = styled('button', {
         '&:hover': {
           cursor: 'pointer',
           background: '$primaryColor900',
-          /* borderColor: '$primaryColor400', */
+          borderColor: '$primaryColor500',
         },
 
         '&:active': {
           cursor: 'pointer',
-          background: '$primaryColor700',
+          background: '$primaryColor500',
           /*  borderColor: '$primaryColor200', */
         },
 
         '&:disabled': {
           cursor: 'not-allowed',
           background: '$neutralColorWhite',
-          /*  borderColor: '$neutralColor400', */
+          borderColor: '$neutralColor200',
           svg: {
             path: {
               stroke: '$neutralColor400',

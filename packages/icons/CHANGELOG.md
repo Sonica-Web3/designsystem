@@ -1,5 +1,11 @@
 # @sonicaweb3/icons
 
+## 2.0.21
+
+### Patch Changes
+
+- change icon defi-v2 (include by Icon-designsystem)
+
 ## 2.0.20
 
 ### Patch Changes

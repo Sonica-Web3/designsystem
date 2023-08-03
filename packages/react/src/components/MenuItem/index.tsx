@@ -1,5 +1,6 @@
 import React, { ComponentProps } from 'react'
 import { MenuItemContainer } from './styles'
+import Icon from '@sonicaweb3/icons'
 
 export interface MenuItemProps
   extends ComponentProps<typeof MenuItemContainer> {
@@ -10,7 +11,12 @@ export interface MenuItemProps
 export function MenuItem({ iconName, children, ...rest }: MenuItemProps) {
   return (
     <MenuItemContainer {...rest}>
-      <i className="material-symbols-rounded">{iconName}</i>
+      {iconName === 'defi-v2' ? (
+        <Icon name={iconName} size="md" />
+      ) : (
+        <i className="material-symbols-rounded">{iconName}</i>
+      )}
+
       <span>{children}</span>
     </MenuItemContainer>
   )

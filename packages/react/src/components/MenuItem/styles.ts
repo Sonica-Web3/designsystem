@@ -28,15 +28,17 @@ export const MenuItemContainer = styled('div', {
     zIndex: 2,
   },
 
+  svg: {
+    path: {
+      stroke: '$neutralColorWhite',
+    },
+  },
+
   '.material-symbols-rounded': {
     fontSize: '24px',
-    position: 'absolute',
-    top: '50%',
-    transform: 'translateY(-50%)',
   },
 
   span: {
-    paddingLeft: '36px',
     whiteSpace: 'nowrap',
     overflowY: 'hidden',
   },
@@ -57,19 +59,25 @@ export const MenuItemContainer = styled('div', {
           alignItems: 'center',
         },
         color: '$greenColor70',
-        fontWeight: '400',
+        fontWeight: '500',
         background: '#242324',
+        svg: {
+          path: {
+            stroke: '$greenColor70',
+          },
+        },
       },
     },
 
     collapsed: {
       true: {
         width: '60px',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
         i: {
-          marginLeft: '-8px',
+          marginLeft: '12px',
+        },
+        svg: {
+          width: '120%',
+          marginLeft: '16px',
         },
         span: {
           visibility: 'hidden',
@@ -87,7 +95,9 @@ export const MenuItemContainer = styled('div', {
           color: '$greenColor70',
 
           svg: {
-            stroke: '$greenColor70',
+            path: {
+              stroke: '$greenColor70',
+            },
           },
         },
 

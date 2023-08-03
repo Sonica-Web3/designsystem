@@ -31,7 +31,7 @@ export const Container = styled('div', {
   variants: {
     selected: {
       true: {
-        background: '$primaryColor500',
+        border: '1px solid $primaryColor500',
         h2: {
           color: '$neutralColor900',
         },
@@ -46,7 +46,7 @@ export const Container = styled('div', {
           },
         },
         span: {
-          background: 'transparent',
+          background: '$primaryColor500',
           color: '$neutralColor900',
           '> svg': {
             path: {

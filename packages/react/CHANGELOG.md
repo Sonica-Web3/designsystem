@@ -1,5 +1,25 @@
 # @sonicaweb3/react
 
+## 3.0.7
+
+### Patch Changes
+
+- change icon defi-v2 (include by Icon-designsystem)
+- Updated dependencies
+  - @sonicaweb3/icons@2.0.21
+
+## 3.0.6
+
+### Patch Changes
+
+- change colors when active cardOption
+
+## 3.0.5
+
+### Patch Changes
+
+- change import icon in action button and change colors action button
+
 ## 3.0.4
 
 ### Patch Changes
