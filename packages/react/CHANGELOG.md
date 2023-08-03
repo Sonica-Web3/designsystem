@@ -1,5 +1,13 @@
 # @sonicaweb3/react
 
+## 3.0.9
+
+### Patch Changes
+
+- change icon defi navbar and fix margin when nav colapsed
+- Updated dependencies
+  - @sonicaweb3/icons@2.0.22
+
 ## 3.0.8
 
 ### Patch Changes
