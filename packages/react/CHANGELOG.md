@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 3.0.11
+
+### Patch Changes
+
+- adjust align icon nav collapsed + width collapsed
+
 ## 3.0.10
 
 ### Patch Changes

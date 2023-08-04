@@ -71,12 +71,12 @@ export const MenuItemContainer = styled('div', {
 
     collapsed: {
       true: {
-        width: '71px',
+        width: '60px',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
         svg: {
-          width: '48px',
+          width: '24px',
         },
         span: {
           visibility: 'hidden',
