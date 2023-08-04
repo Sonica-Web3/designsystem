@@ -11,7 +11,7 @@ export interface MenuItemProps
 export function MenuItem({ iconName, children, ...rest }: MenuItemProps) {
   return (
     <MenuItemContainer {...rest}>
-      {iconName === 'defi-v2' ? (
+      {iconName === 'defi-v3' ? (
         <Icon name={iconName} size="md" />
       ) : (
         <i className="material-symbols-rounded">{iconName}</i>

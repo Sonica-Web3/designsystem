@@ -1,5 +1,11 @@
 # @sonicaweb3/icons
 
+## 2.0.23
+
+### Patch Changes
+
+- icon defiv3 + adjust width svg in nav collapsed
+
 ## 2.0.22
 
 ### Patch Changes

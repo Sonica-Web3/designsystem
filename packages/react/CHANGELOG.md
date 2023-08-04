@@ -1,5 +1,13 @@
 # @sonicaweb3/react
 
+## 3.0.10
+
+### Patch Changes
+
+- icon defiv3 + adjust width svg in nav collapsed
+- Updated dependencies
+  - @sonicaweb3/icons@2.0.23
+
 ## 3.0.9
 
 ### Patch Changes

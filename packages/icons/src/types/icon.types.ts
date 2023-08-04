@@ -67,7 +67,7 @@ export type IconNameProps =
   | 'wallet-connect'
   | 'x'
   | 'folder'
-  | 'defi-v2'
+  | 'defi-v3'
   | 'crm-v2'
   | 'browser-v2'
   | 'backup'
