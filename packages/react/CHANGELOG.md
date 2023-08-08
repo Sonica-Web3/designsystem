@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 3.0.12
+
+### Patch Changes
+
+- added important in bgcolor hover and active of action button for dinamic bg with style prop in web3app
+
 ## 3.0.11
 
 ### Patch Changes

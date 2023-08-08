@@ -52,13 +52,13 @@ export const ActionButtonContainer = styled('button', {
 
         '&:hover': {
           cursor: 'pointer',
-          background: '$primaryColor900',
+          background: '$primaryColor900 !important',
           borderColor: '$primaryColor500',
         },
 
         '&:active': {
           cursor: 'pointer',
-          background: '$primaryColor500',
+          background: '$primaryColor500 !important',
           /*  borderColor: '$primaryColor200', */
         },
 
