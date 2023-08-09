@@ -1,5 +1,11 @@
 # @sonicaweb3/icons
 
+## 2.0.24
+
+### Patch Changes
+
+- update version react
+
 ## 2.0.23
 
 ### Patch Changes
