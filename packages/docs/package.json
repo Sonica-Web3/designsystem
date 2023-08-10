@@ -12,9 +12,6 @@
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "engines": {
-    "node": "16"
-  },
   "devDependencies": {
     "@babel/core": "^7.20.12",
     "@storybook/addon-a11y": "^6.5.16",
