@@ -1,45 +1,18 @@
 import { styled } from '../../styles'
 
 export const Container = styled('div', {
-  display: 'flex',
-  flexDirection: 'column',
   width: '100%',
-
-  variants: {
-    disabled: {
-      true: {
-        cursor: 'not-allowed',
-
-        input: {
-          cursor: 'not-allowed',
-          pointerEvents: 'none',
-          color: '$neutralColor800',
-          '&::placeholder': { color: '$neutralColor700' },
-
-          '&:not(:placeholder-shown)': {
-            '&:placeholder': {
-              opacity: 1,
-            },
-          },
-        },
-        p: {
-          color: '&neutralColor800',
-        },
-      },
-    },
-  },
-})
-
-export const Wrapper = styled('div', {
-  position: 'relative',
   display: 'flex',
+
+  position: 'relative',
 })
 
 export const Input = styled('input', {
   unset: 'all',
   width: '100%',
+  height: '32px',
   background: '$neutralColorWhite',
-  padding: '8px 4px',
+  padding: '0px 4px',
   border: 'none',
   fontWeight: '$regular',
   fontSize: '$sm',
@@ -47,9 +20,9 @@ export const Input = styled('input', {
   color: '$neutralColor800',
   fontFamily: '$default',
 
-  transition: 'all 0.2s ease-in-out',
-
   '&:focus': {
+    outline: 'none',
+    height: '31px',
     borderBottom: '1px solid $secondaryColor500',
   },
 
@@ -101,9 +74,25 @@ export const Input = styled('input', {
         },
       },
     },
+    disabled: {
+      true: {
+        disabled: true,
+        cursor: 'not-allowed',
+
+        '&:focus': {
+          outline: 'none',
+          borderColor: '$neutralColor500',
+        },
+      },
+
+      false: {
+        pointerEvents: 'auto',
+      },
+    },
   },
   defaultVariants: {
     hasError: false,
+    disabled: false,
   },
 })
 
@@ -114,12 +103,24 @@ export const Message = styled('p', {
   fontFamily: '$default',
   fontWeight: '$regular',
   marginTop: '$1',
-  marginLeft: '$3',
+  marginLeft: '$1',
+
+  position: 'absolute',
+  bottom: '-24px',
 
   variants: {
     hasError: {
       true: {
         color: '$errorColor500',
+      },
+    },
+    disabled: {
+      true: {
+        color: '$neutralColor500',
+      },
+
+      false: {
+        color: '$neutralColor700',
       },
     },
   },

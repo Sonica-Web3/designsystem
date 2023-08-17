@@ -28,17 +28,27 @@ export default {
   ],
 } as Meta<TextInputInlineProps>
 
-export const Primary: StoryObj<TextInputInlineProps> = {}
+export const Primary: StoryObj<TextInputInlineProps> = {
+  args: {
+    hasError: false,
+    value: '',
+    message: '',
+  },
+}
 
 export const HasError: StoryObj<TextInputInlineProps> = {
   args: {
     hasError: true,
-    value: '0x0000000',
+    value: '0x123',
+    message: 'Invalid address',
   },
 }
 
 export const Disabled: StoryObj<TextInputInlineProps> = {
   args: {
+    hasError: false,
+    value: '',
+    message: '',
     disabled: true,
   },
 }

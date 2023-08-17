@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 3.0.13
+
+### Patch Changes
+
+- Refactor TextInputInline with disabled, hasError e message
+
 ## 3.0.12
 
 ### Patch Changes
