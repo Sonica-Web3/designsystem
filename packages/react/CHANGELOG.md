@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 3.0.15
+
+### Patch Changes
+
+- Fix on focus TextInputInline size change
+
 ## 3.0.14
 
 ### Patch Changes

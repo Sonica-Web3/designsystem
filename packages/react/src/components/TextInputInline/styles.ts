@@ -26,7 +26,6 @@ export const Input = styled('input', {
 
   '&:focus': {
     outline: 'none',
-    height: '31px',
     borderBottom: '1px solid $secondaryColor500',
   },
 
@@ -45,10 +44,6 @@ export const Input = styled('input', {
         '&:focus': {
           outline: 'none',
           borderColor: '$errorColor500',
-
-          '&:placeholder': {
-            marginTop: '1px',
-          },
         },
         '&:placeholder-shown': {
           '&:placeholder': {
