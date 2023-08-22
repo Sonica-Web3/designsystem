@@ -1,5 +1,5 @@
 import { ComponentProps } from 'react'
-import { Container, Input, Message } from './styles'
+import { Container, Input, Message, Wrapper } from './styles'
 
 export interface TextInputInlineProps extends ComponentProps<typeof Input> {
   message?: string
@@ -14,15 +14,15 @@ export function TextInputInline({
   ...rest
 }: TextInputInlineProps) {
   return (
-    <>
+    <Wrapper>
       <Container>
         <Input disabled={disabled} {...rest} type="text" hasError={hasError} />
-        {message && (
-          <Message disabled={disabled} hasError={hasError}>
-            {message}
-          </Message>
-        )}
       </Container>
-    </>
+      {message && (
+        <Message disabled={disabled} hasError={hasError}>
+          {message}
+        </Message>
+      )}
+    </Wrapper>
   )
 }

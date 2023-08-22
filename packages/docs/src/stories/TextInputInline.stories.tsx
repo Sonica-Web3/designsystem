@@ -6,6 +6,7 @@ export default {
   component: TextInputInline,
 
   args: {
+    name: 'Admin wallet',
     placeholder: 'Add admin wallet',
   },
   decorators: [
@@ -31,7 +32,6 @@ export default {
 export const Primary: StoryObj<TextInputInlineProps> = {
   args: {
     hasError: false,
-    value: '',
     message: '',
   },
 }
@@ -39,7 +39,6 @@ export const Primary: StoryObj<TextInputInlineProps> = {
 export const HasError: StoryObj<TextInputInlineProps> = {
   args: {
     hasError: true,
-    value: '0x123',
     message: 'Invalid address',
   },
 }
@@ -47,7 +46,6 @@ export const HasError: StoryObj<TextInputInlineProps> = {
 export const Disabled: StoryObj<TextInputInlineProps> = {
   args: {
     hasError: false,
-    value: '',
     message: '',
     disabled: true,
   },

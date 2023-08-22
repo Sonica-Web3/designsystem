@@ -1,10 +1,14 @@
 import { styled } from '../../styles'
 
+export const Wrapper = styled('div', {
+  display: 'flex',
+  flexDirection: 'column',
+  width: '100%',
+  position: 'relative',
+})
+
 export const Container = styled('div', {
   width: '100%',
-  display: 'flex',
-
-  position: 'relative',
 })
 
 export const Input = styled('input', {
@@ -41,6 +45,10 @@ export const Input = styled('input', {
         '&:focus': {
           outline: 'none',
           borderColor: '$errorColor500',
+
+          '&:placeholder': {
+            marginTop: '1px',
+          },
         },
         '&:placeholder-shown': {
           '&:placeholder': {
@@ -78,6 +86,7 @@ export const Input = styled('input', {
       true: {
         disabled: true,
         cursor: 'not-allowed',
+        pointerEvents: 'none',
 
         '&:focus': {
           outline: 'none',
@@ -99,14 +108,14 @@ export const Input = styled('input', {
 export const Message = styled('p', {
   fontSize: '$xxs',
   lineHeight: '$xs',
-  color: '$neutralColor700',
+  color: '$secondaryColor500',
   fontFamily: '$default',
   fontWeight: '$regular',
-  marginTop: '$1',
+  margin: '$0',
   marginLeft: '$1',
 
   position: 'absolute',
-  bottom: '-24px',
+  bottom: '-$4',
 
   variants: {
     hasError: {

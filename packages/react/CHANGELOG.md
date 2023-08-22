@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 3.0.14
+
+### Patch Changes
+
+- Fix TextInputInline message spacing
+
 ## 3.0.13
 
 ### Patch Changes
