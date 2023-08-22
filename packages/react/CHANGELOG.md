@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 3.0.16
+
+### Patch Changes
+
+- Fix TextInputInline placeholder on focus
+
 ## 3.0.15
 
 ### Patch Changes

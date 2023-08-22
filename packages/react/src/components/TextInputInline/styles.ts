@@ -27,6 +27,10 @@ export const Input = styled('input', {
   '&:focus': {
     outline: 'none',
     borderBottom: '1px solid $secondaryColor500',
+
+    '&:placeholder': {
+      paddingTop: '1px',
+    },
   },
 
   '&:not(:placeholder-shown)': {
