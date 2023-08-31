@@ -8,7 +8,7 @@ export function Checkbox({ ...rest }: CheckboxProps) {
   return (
     <CheckboxContainer {...rest}>
       <CheckboxIndicator asChild forceMount>
-        <i className="material-symbols-rounded">check_small</i>
+        <i className="material-symbols-rounded notranslate">check_small</i>
       </CheckboxIndicator>
     </CheckboxContainer>
   )

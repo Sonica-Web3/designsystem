@@ -14,7 +14,7 @@ export function MenuItem({ iconName, children, ...rest }: MenuItemProps) {
       {iconName === 'defi-v3' ? (
         <Icon name={iconName} size="md" />
       ) : (
-        <i className="material-symbols-rounded">{iconName}</i>
+        <i className="material-symbols-rounded notranslate">{iconName}</i>
       )}
 
       <span>{children}</span>

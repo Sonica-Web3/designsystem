@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 3.0.17
+
+### Patch Changes
+
+- added notranslate for class icons of material-symbols
+
 ## 3.0.16
 
 ### Patch Changes

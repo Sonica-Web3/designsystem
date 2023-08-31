@@ -11,7 +11,7 @@ export interface SmallerButtonProps
 export function SmallerButton({ iconName, ...rest }: SmallerButtonProps) {
   return (
     <SmallerButtonContainer {...rest}>
-      <i className="material-symbols-rounded">{iconName}</i>
+      <i className="material-symbols-rounded notranslate">{iconName}</i>
     </SmallerButtonContainer>
   )
 }
