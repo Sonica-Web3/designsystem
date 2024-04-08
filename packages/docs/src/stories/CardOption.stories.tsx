@@ -1,12 +1,23 @@
-import type { StoryObj, Meta } from '@storybook/react'
-import { CardOption, CardOptionProps } from '@sonicaweb3/react'
 import Icon from '@sonicaweb3/icons'
+import { CardOption, CardOptionProps } from '@sonicaweb3/react'
+import type { Meta, StoryObj } from '@storybook/react'
 export default {
   title: 'Surfaces/Card Option',
   component: CardOption,
   args: {
     text: 'Token',
     icon: <Icon name="nft" size="lg" color="neutralColor800" />,
+    tooltip: 'This is a tooltip',
+    align: 'bottom',
+    isBranding: false,
+  },
+  argTypes: {
+    align: {
+      control: {
+        type: 'inline-radio',
+        options: ['left', 'right', 'top', 'bottom'],
+      },
+    },
   },
 } as Meta<CardOptionProps>
 
@@ -14,7 +25,6 @@ export const Primary: StoryObj<CardOptionProps> = {
   args: {
     selected: false,
     pillText: '',
-    isBranding: false,
     disabled: false,
   },
 }
@@ -22,7 +32,6 @@ export const Primary: StoryObj<CardOptionProps> = {
 export const Pill: StoryObj<CardOptionProps> = {
   args: {
     pillText: 'soon',
-    isBranding: false,
   },
 }
 
@@ -30,7 +39,6 @@ export const Selected: StoryObj<CardOptionProps> = {
   args: {
     selected: true,
     pillText: '',
-    isBranding: false,
   },
 }
 
@@ -38,6 +46,5 @@ export const Disabled: StoryObj<CardOptionProps> = {
   args: {
     disabled: true,
     pillText: '',
-    isBranding: false,
   },
 }

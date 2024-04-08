@@ -1,23 +1,29 @@
 import React, { ComponentProps } from 'react'
 import { Heading } from '../Heading'
 
-import Icon from '@sonicaweb3/icons'
-
-import { Container, Tooltip, SvgContainer } from './styles'
+import { InfoButton } from '../InfoButton'
 import { Pill } from '../Pill'
+import { Container, SvgContainer } from './styles'
 
 export interface CardOptionProps extends ComponentProps<typeof Container> {
   icon: React.ReactNode
   text: string
   pillText?: string
+  tooltip?: string
+  align?: 'left' | 'right' | 'top' | 'bottom'
 }
 
-export function CardOption({ icon, text, pillText, ...rest }: CardOptionProps) {
+export function CardOption({
+  icon,
+  text,
+  pillText,
+  tooltip,
+  align,
+  ...rest
+}: CardOptionProps) {
   return (
     <Container {...rest}>
-      <Tooltip>
-        <Icon name="info" size="sm" color="neutralColor800" />
-      </Tooltip>
+      {tooltip && <InfoButton text={tooltip} align={align} />}
       <SvgContainer>{icon}</SvgContainer>
       <Heading variant="small-title" color="neutralColor800">
         {text}

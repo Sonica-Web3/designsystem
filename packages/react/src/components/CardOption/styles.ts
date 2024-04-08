@@ -19,6 +19,12 @@ export const Container = styled('div', {
   boxSizing: 'border-box',
   padding: '$2',
 
+  button: {
+    position: 'absolute',
+    top: '$2',
+    right: '$2',
+  },
+
   h2: {
     color: '$neutralColor900',
     wordBreak: 'break-word',
@@ -45,7 +51,7 @@ export const Container = styled('div', {
             },
           },
         },
-        span: {
+        button: {
           background: '$primaryColor500',
           color: '$neutralColor900',
           '> svg': {
@@ -72,7 +78,7 @@ export const Container = styled('div', {
           },
         },
 
-        span: {
+        button: {
           background: '$neutralColor100',
           color: '$neutralColor300',
           '> svg': {
@@ -86,7 +92,7 @@ export const Container = styled('div', {
     },
     isBranding: {
       true: {
-        div: {
+        button: {
           background: 'transparent',
 
           svg: {
@@ -124,7 +130,7 @@ export const Container = styled('div', {
           background: '$primaryColor900',
           border: '1px solid $primaryColor500',
 
-          span: {
+          button: {
             background: '$primaryColor700',
             color: '$neutralColor900',
             '> svg': {
