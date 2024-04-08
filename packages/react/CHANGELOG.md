@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 3.0.18
+
+### Patch Changes
+
+- 00cb90e: Add tooltip message to InfoButton and CardOption components
+
 ## 3.0.17
 
 ### Patch Changes
