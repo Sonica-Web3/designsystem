@@ -1,36 +1,72 @@
 import { styled } from '../../styles'
 
-export const Wrapper = styled('div', {
+export const Container = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   width: '100%',
   position: 'relative',
-})
 
-export const Container = styled('div', {
-  width: '100%',
+  variants: {
+    disabled: {
+      true: {
+        cursor: 'not-allowed',
+
+        input: {
+          background: '$neutralColor200',
+          borderColor: '$neutralColor200',
+          cursor: 'not-allowed',
+          pointerEvents: 'none',
+          color: '$neutralColor200',
+          '&::placeholder': { color: '$neutralColor400' },
+
+          '&:not(:placeholder-shown)': {
+            borderColor: '$neutralColor200',
+
+            '&:placeholder': {
+              opacity: 1,
+            },
+
+            '& + label': {
+              color: '$neutralColor300',
+            },
+          },
+        },
+        label: {
+          color: '$neutralColor400',
+          background: 'transparent',
+        },
+
+        p: {
+          color: '$neutralColor400',
+        },
+      },
+    },
+  },
+
+  defaultVariants: {
+    disabled: false,
+  },
 })
 
 export const Input = styled('input', {
   unset: 'all',
   width: '100%',
-  height: '32px',
+  height: '31px',
   background: '$neutralColorWhite',
   padding: '0px 4px',
   border: 'none',
+  borderBottom: '1px solid transparent',
   fontWeight: '$regular',
   fontSize: '$sm',
   lineHeight: '$md',
   color: '$neutralColor800',
   fontFamily: '$default',
 
+  transition: 'all 0.2s ease-in-out',
+
   '&:focus': {
     outline: 'none',
     borderBottom: '1px solid $secondaryColor500',
-
-    '&:placeholder': {
-      paddingTop: '1px',
-    },
   },
 
   '&:not(:placeholder-shown)': {
@@ -81,26 +117,10 @@ export const Input = styled('input', {
         },
       },
     },
-    disabled: {
-      true: {
-        disabled: true,
-        cursor: 'not-allowed',
-        pointerEvents: 'none',
-
-        '&:focus': {
-          outline: 'none',
-          borderColor: '$neutralColor500',
-        },
-      },
-
-      false: {
-        pointerEvents: 'auto',
-      },
-    },
   },
+
   defaultVariants: {
     hasError: false,
-    disabled: false,
   },
 })
 
@@ -110,25 +130,13 @@ export const Message = styled('p', {
   color: '$secondaryColor500',
   fontFamily: '$default',
   fontWeight: '$regular',
-  margin: '$0',
+  marginTop: '$1',
   marginLeft: '$1',
-
-  position: 'absolute',
-  bottom: '-$4',
 
   variants: {
     hasError: {
       true: {
         color: '$errorColor500',
-      },
-    },
-    disabled: {
-      true: {
-        color: '$neutralColor500',
-      },
-
-      false: {
-        color: '$neutralColor700',
       },
     },
   },

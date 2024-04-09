@@ -9,17 +9,19 @@ export const Container = styled('div', {
       true: {
         cursor: 'not-allowed',
 
-        input: {
+        textarea: {
+          background: '$neutralColor200',
+          borderColor: '$neutralColor200',
           cursor: 'not-allowed',
           pointerEvents: 'none',
-          color: '$neutralColor700',
-          '&:placeholder': { color: '$neutralColor700' },
+          color: '$neutralColor200',
+          '&::placeholder': { color: '$neutralColor200' },
 
           '&:not(:placeholder-shown)': {
             borderColor: '$neutralColor700',
 
             '&:placeholder': {
-              opacity: 1,
+              opacity: 0,
             },
 
             '& + label': {
@@ -27,12 +29,14 @@ export const Container = styled('div', {
             },
           },
         },
+
         label: {
-          color: '$neutralColor700',
+          color: '$neutralColor400',
+          background: 'transparent',
         },
 
         p: {
-          color: '$neutralColor700',
+          color: '$neutralColor400',
         },
       },
     },
@@ -47,6 +51,7 @@ export const Wrapper = styled('div', {
 export const TextArea = styled('textarea', {
   unset: 'all',
   width: '100%',
+  height: '6.75rem',
   background: '$neutralColorWhite',
   padding: '$3 $2',
   border: '1px solid transparent',
@@ -56,7 +61,6 @@ export const TextArea = styled('textarea', {
   color: '$neutralColor700',
   fontFamily: '$default',
   fontWeight: '$regular',
-  height: '6.75rem',
   boxShadow:
     '0px 9px 21px -10px rgba(20, 20, 20, 0.10), 0px 2px 3px -2px rgba(20, 20, 20, 0.07)',
 
@@ -76,8 +80,12 @@ export const TextArea = styled('textarea', {
   },
 
   '&:not(:placeholder-shown)': {
+    '&:placeholder': {
+      opacity: 1,
+    },
+
     '& + label': {
-      transform: 'scale(0.75) translateY(-1.2rem) translateX(-0.125rem)',
+      transform: 'scale(0.75) translateY(-1.5rem) translateX(-0.125rem)',
       padding: '0 2px',
     },
   },

@@ -29,6 +29,7 @@ export const Container = styled('div', {
             },
           },
         },
+
         label: {
           color: '$neutralColor400',
           background: 'transparent',
@@ -50,9 +51,9 @@ export const Wrapper = styled('div', {
 export const Input = styled('input', {
   unset: 'all',
   width: '100%',
+  height: '40px',
   background: '$neutralColorWhite',
   padding: '0 $2',
-  height: '40px',
   border: '1px solid transparent',
   borderRadius: '10px',
   fontSize: '$md',

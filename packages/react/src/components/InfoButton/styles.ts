@@ -69,8 +69,10 @@ export const InfoButtonContainer = styled('button', {
     '.tooltiptext': {
       right: '150%',
       '&::after': {
-        right: '-4%',
-        top: 'calc(50% - 5px)',
+        right: '-4.7%',
+        top: 'auto',
+        left: 'auto',
+        bottom: 'calc(50% - 5px)',
         borderColor: 'transparent transparent transparent rgb(0, 0, 0, 0.7)',
       },
     },
@@ -82,7 +84,7 @@ export const InfoButtonContainer = styled('button', {
       '&::after': {
         right: 'auto',
         top: 'auto',
-        left: '-2%',
+        left: '-2.5%',
         bottom: 'calc(50% - 5px)',
         borderColor: 'transparent rgb(0, 0, 0, 0.7) transparent transparent',
       },

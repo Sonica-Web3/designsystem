@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 3.0.19
+
+### Patch Changes
+
+- Minor changes to disabled option on TextArea, TextInputInline and TextInput components and fix tooltip left chevron
+
 ## 3.0.18
 
 ### Patch Changes
