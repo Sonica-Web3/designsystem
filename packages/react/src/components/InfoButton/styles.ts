@@ -27,7 +27,7 @@ export const InfoButtonContainer = styled('button', {
     textAlign: 'center',
     padding: '5px 10px',
     position: 'absolute',
-    zIndex: '1',
+    zIndex: '99',
     margin: '0',
     whiteSpace: 'pre-wrap',
 

@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 3.0.20
+
+### Patch Changes
+
+- Change tooltip z-index and rollback CardOption small changes that broke isBranding option
+
 ## 3.0.19
 
 ### Patch Changes

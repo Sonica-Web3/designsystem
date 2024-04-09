@@ -51,7 +51,7 @@ export const Container = styled('div', {
             },
           },
         },
-        button: {
+        span: {
           background: '$primaryColor500',
           color: '$neutralColor900',
           '> svg': {
@@ -78,7 +78,7 @@ export const Container = styled('div', {
           },
         },
 
-        button: {
+        span: {
           background: '$neutralColor100',
           color: '$neutralColor300',
           '> svg': {
@@ -92,12 +92,12 @@ export const Container = styled('div', {
     },
     isBranding: {
       true: {
-        button: {
+        div: {
           background: 'transparent',
 
           svg: {
             path: {
-              stroke: '$none !important',
+              stroke: 'none !important',
               fill: '',
             },
           },
@@ -130,7 +130,7 @@ export const Container = styled('div', {
           background: '$primaryColor900',
           border: '1px solid $primaryColor500',
 
-          button: {
+          span: {
             background: '$primaryColor700',
             color: '$neutralColor900',
             '> svg': {
