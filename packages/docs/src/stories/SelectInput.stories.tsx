@@ -26,7 +26,7 @@ export default {
             height: '400px',
           }}
         >
-          {Story()}
+          <Story />
         </Box>
       )
     },

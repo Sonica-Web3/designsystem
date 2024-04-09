@@ -24,7 +24,7 @@ export const Primary: StoryObj<LoadingProps> = {
             background: '$neutralColorWhite',
           }}
         >
-          {Story()}
+          <Story />
         </Box>
       )
     },

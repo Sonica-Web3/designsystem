@@ -11,11 +11,27 @@ export default {
     (Story) => {
       return (
         <Box
-          as="label"
-          css={{ display: 'flex', flexDirection: 'row', gap: '$2' }}
+          css={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            width: '500px',
+            height: '200px',
+            background: '$secondaryColor100',
+          }}
         >
-          {Story()}
-          <Text variant="text">Accept terms of use</Text>
+          <Box
+            as="label"
+            css={{
+              display: 'flex',
+              alignItems: 'center',
+              flexDirection: 'row',
+              gap: '$2',
+            }}
+          >
+            <Story />
+            <Text variant="text">Accept terms of use</Text>
+          </Box>
         </Box>
       )
     },

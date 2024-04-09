@@ -38,15 +38,14 @@ export default {
         <Box
           css={{
             display: 'flex',
-            padding: '16px',
-            width: '500px',
             alignItems: 'center',
             justifyContent: 'center',
-            height: '500px',
-            background: '$errorColor200',
+            width: '500px',
+            height: '200px',
+            background: '$secondaryColor100',
           }}
         >
-          {Story()}
+          <Story />
         </Box>
       )
     },

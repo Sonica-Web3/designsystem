@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from '@storybook/react'
-import { InfoButton, InfoButtonProps } from '@sonicaweb3/react'
+import { Box, InfoButton, InfoButtonProps } from '@sonicaweb3/react'
 
 export default {
   title: 'Buttons/Info Button',
@@ -16,6 +16,22 @@ export default {
       },
     },
   },
+  decorators: [
+    (Story) => (
+      <Box
+        css={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          width: '500px',
+          height: '200px',
+          background: '$secondaryColor100',
+        }}
+      >
+        <Story />
+      </Box>
+    ),
+  ],
 } as Meta<InfoButtonProps>
 
 export const Primary: StoryObj<InfoButtonProps> = {}

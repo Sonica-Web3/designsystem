@@ -51,19 +51,28 @@ export default {
     ],
     placeholder: 'Select',
   },
+  argTypes: {
+    side: {
+      control: {
+        type: 'inline-radio',
+        options: ['top', 'bottom'],
+      },
+    },
+  },
   decorators: [
     (Story) => {
       return (
         <Box
           css={{
             display: 'flex',
-            padding: '16px',
-            width: '200px',
             alignItems: 'center',
-            height: '500px',
+            justifyContent: 'center',
+            width: '500px',
+            height: '620px',
+            background: '$secondaryColor100',
           }}
         >
-          {Story()}
+          <Story />
         </Box>
       )
     },
@@ -71,9 +80,3 @@ export default {
 } as Meta<SelectProps>
 
 export const Primary: StoryObj<SelectProps> = {}
-
-export const Collapsed: StoryObj<SelectProps> = {
-  args: {
-    collapsed: 'true',
-  },
-}

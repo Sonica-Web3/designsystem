@@ -10,29 +10,27 @@ export default {
     placeholder: 'Add admin wallet',
   },
   decorators: [
-    (Story) => {
-      return (
-        <Box
-          css={{
-            display: 'flex',
-            padding: '16px',
-            width: '500px',
-            alignItems: 'center',
-
-            height: '400px',
-          }}
-        >
-          {Story()}
-        </Box>
-      )
-    },
+    (Story) => (
+      <Box
+        css={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          width: '500px',
+          height: '250px',
+          background: '$neutralColor100',
+        }}
+      >
+        <Story />
+      </Box>
+    ),
   ],
 } as Meta<TextInputInlineProps>
 
 export const Primary: StoryObj<TextInputInlineProps> = {
   args: {
     hasError: false,
-    message: '',
+    message: 'TextInputInline message',
   },
 }
 

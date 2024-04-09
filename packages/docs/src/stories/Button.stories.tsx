@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from '@storybook/react'
-import { Button, ButtonProps } from '@sonicaweb3/react'
+import { Box, Button, ButtonProps } from '@sonicaweb3/react'
 
 export default {
   title: 'Buttons/CTA Button',
@@ -10,6 +10,33 @@ export default {
       console.log('clicked')
     },
   },
+  decorators: [
+    (Story) => {
+      return (
+        <Box
+          css={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            width: '500px',
+            height: '200px',
+            background: '$secondaryColor100',
+          }}
+        >
+          <Box
+            css={{
+              display: 'flex',
+              flexDirection: 'row',
+              gap: '$2',
+              background: '$neutralColorWhite',
+            }}
+          >
+            <Story />
+          </Box>
+        </Box>
+      )
+    },
+  ],
 } as Meta<ButtonProps>
 
 export const Solid: StoryObj<ButtonProps> = {

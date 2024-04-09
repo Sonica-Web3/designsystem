@@ -12,7 +12,6 @@ export default {
     (Story) => {
       return (
         <Box
-          as="label"
           css={{
             display: 'flex',
             flexDirection: 'row',
@@ -21,11 +20,10 @@ export default {
             gap: '$2',
             width: '500px',
             height: '200px',
-
-            background: '$primaryColor50',
+            background: '$secondaryColor100',
           }}
         >
-          {Story()}
+          <Story />
         </Box>
       )
     },

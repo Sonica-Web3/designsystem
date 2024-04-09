@@ -1,5 +1,5 @@
 import Icon from '@sonicaweb3/icons'
-import { CardOption, CardOptionProps } from '@sonicaweb3/react'
+import { Box, CardOption, CardOptionProps } from '@sonicaweb3/react'
 import type { Meta, StoryObj } from '@storybook/react'
 export default {
   title: 'Surfaces/Card Option',
@@ -19,6 +19,22 @@ export default {
       },
     },
   },
+  decorators: [
+    (Story) => (
+      <Box
+        css={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          width: '500px',
+          height: '250px',
+          background: '$secondaryColor100',
+        }}
+      >
+        <Story />
+      </Box>
+    ),
+  ],
 } as Meta<CardOptionProps>
 
 export const Primary: StoryObj<CardOptionProps> = {
