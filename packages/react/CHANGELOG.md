@@ -1,5 +1,11 @@
 # @sonicaweb3/react
 
+## 3.0.21
+
+### Patch Changes
+
+- add isBranding prop to component Type
+
 ## 3.0.20
 
 ### Patch Changes

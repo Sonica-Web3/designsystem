@@ -11,6 +11,7 @@ export interface CardOptionProps extends ComponentProps<typeof Container> {
   pillText?: string
   tooltip?: string
   align?: 'left' | 'right' | 'top' | 'bottom'
+  isBranding?: boolean
 }
 
 export function CardOption({
@@ -19,10 +20,11 @@ export function CardOption({
   pillText,
   tooltip,
   align,
+  isBranding,
   ...rest
 }: CardOptionProps) {
   return (
-    <Container {...rest}>
+    <Container isBranding={isBranding} {...rest}>
       {tooltip && <InfoButton text={tooltip} align={align} />}
       <SvgContainer>{icon}</SvgContainer>
       <Heading variant="small-title" color="neutralColor800">
