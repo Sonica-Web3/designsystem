@@ -1,5 +1,11 @@
 # @sonicaweb3/icons
 
+## 2.0.25
+
+### Patch Changes
+
+- Add Sonica and Base Network logos
+
 ## 2.0.24
 
 ### Patch Changes

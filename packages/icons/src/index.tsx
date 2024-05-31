@@ -67,6 +67,10 @@ import {
   CrmV2,
   BrowserV2,
   Backup,
+  BaseNetworkLogo,
+  BaseSymbolBlue,
+  SonicaLogoBlack,
+  SonicaLogoGreen,
 } from './icons'
 import {
   IconColor,
@@ -148,6 +152,10 @@ const geIcon = (avatarType: IconNameProps) => {
     'crm-v2': CrmV2,
     'browser-v2': BrowserV2,
     backup: Backup,
+    'base-network-logo': BaseNetworkLogo,
+    'base-symbol-blue': BaseSymbolBlue,
+    'sonica-logo-black': SonicaLogoBlack,
+    'sonica-logo-green': SonicaLogoGreen,
   }
 
   if (icons[avatarType]) {

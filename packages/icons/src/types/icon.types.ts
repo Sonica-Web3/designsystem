@@ -71,6 +71,10 @@ export type IconNameProps =
   | 'crm-v2'
   | 'browser-v2'
   | 'backup'
+  | 'base-network-logo'
+  | 'base-symbol-blue'
+  | 'sonica-logo-green'
+  | 'sonica-logo-black'
 
 export type IconSize = 'xs' | 'sm' | 'md' | 'lg'
 
