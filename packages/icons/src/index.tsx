@@ -71,6 +71,8 @@ import {
   BaseSymbolBlue,
   SonicaLogoBlack,
   SonicaLogoGreen,
+  XrplLogoBlack,
+  XrplLogoWhite,
 } from './icons'
 import {
   IconColor,
@@ -156,6 +158,8 @@ const geIcon = (avatarType: IconNameProps) => {
     'base-symbol-blue': BaseSymbolBlue,
     'sonica-logo-black': SonicaLogoBlack,
     'sonica-logo-green': SonicaLogoGreen,
+    'xrpl-logo-black': XrplLogoBlack,
+    'xrpl-logo-white': XrplLogoWhite,
   }
 
   if (icons[avatarType]) {

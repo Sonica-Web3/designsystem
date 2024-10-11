@@ -75,6 +75,8 @@ export type IconNameProps =
   | 'base-symbol-blue'
   | 'sonica-logo-green'
   | 'sonica-logo-black'
+  | 'xrpl-logo-black'
+  | 'xrpl-logo-white'
 
 export type IconSize = 'xs' | 'sm' | 'md' | 'lg'
 

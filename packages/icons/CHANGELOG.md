@@ -1,5 +1,11 @@
 # @sonicaweb3/icons
 
+## 2.0.26
+
+### Patch Changes
+
+- Add XRPL Devnet Sidechain black and white logos
+
 ## 2.0.25
 
 ### Patch Changes
